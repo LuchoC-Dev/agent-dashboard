@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Agent Dashboard: three rising bars (sessions over time) and a spark (the agent). Bronze accent palette. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2619"/>
+      <stop offset="1" stop-color="#1b1912"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="208" fill="url(#bg)"/>
+  <rect x="200" y="560" width="160" height="264" rx="40" fill="#91922f"/>
+  <rect x="432" y="424" width="160" height="400" rx="40" fill="#d3a329"/>
+  <rect x="664" y="472" width="160" height="352" rx="40" fill="#c4672e"/>
+  <path d="M744 160 C760 248 784 272 872 288 C784 304 760 328 744 416 C728 328 704 304 616 288 C704 272 728 248 744 160 Z" fill="#f1d58a"/>
+</svg>
