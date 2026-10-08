@@ -65,7 +65,7 @@ Requirements:
 - [Rust](https://rustup.rs/) (stable; MSVC toolchain on Windows) and the
   [Tauri v2 prerequisites](https://v2.tauri.app/start/prerequisites/) for your OS
   (on Windows: Visual Studio Build Tools with C++ and WebView2, preinstalled on Windows 11)
-- Node.js 20+
+- Node.js 24+
 
 ```sh
 npm install
