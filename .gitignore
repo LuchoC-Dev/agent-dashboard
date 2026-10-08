@@ -26,3 +26,7 @@ dist-ssr
 
 # Local skill installer lock (references private sources)
 skills-lock.json
+
+# Personal skill unrelated to this project (kept locally, not published)
+.claude/skills/youtube-video-context/
+.agents/skills/youtube-video-context/
