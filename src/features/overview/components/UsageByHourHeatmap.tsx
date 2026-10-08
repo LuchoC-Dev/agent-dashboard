@@ -1,7 +1,7 @@
 import { Fragment, memo, useMemo } from "react";
 import type { HourlyActivity } from "../../../bindings/HourlyActivity";
 import { Panel } from "../../../components/ui/Panel";
-import { TZ } from "../../../lib/dates";
+import { timeZone } from "../../../lib/dates";
 import { int } from "../../../lib/format";
 
 export const WEEKDAYS = ["lun", "mar", "mié", "jue", "vie", "sáb", "dom"];
@@ -63,7 +63,7 @@ export const UsageByHourHeatmap = memo(function UsageByHourHeatmap({
   const action = (w: number, h: number) =>
     weekday === w && hour === h ? "Quitar el filtro de día y hora" : "Filtrar el resumen por este día y hora";
   return (
-    <Panel title="Uso por hora" sub={`Mensajes registrados · Hora local · ${TZ}`}>
+    <Panel title="Uso por hora" sub={`Mensajes registrados · Hora local · ${timeZone()}`}>
       <div className="grid grid-cols-[30px_repeat(24,minmax(0,1fr))] gap-0.5 text-size-2xs text-ink-3 tabular-nums">
         <span />
         {Array.from({ length: 24 }, (_, h) => {
