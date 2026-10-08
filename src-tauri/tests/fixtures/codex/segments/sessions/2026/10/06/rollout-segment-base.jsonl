@@ -1,0 +1,7 @@
+{"timestamp":"2026-10-06T13:20:00.000Z","ordinal":0,"type":"session_meta","payload":{"id":"01990800-0000-7000-8000-000000000001","session_id":"01990800-0000-7000-8000-000000000001","cwd":"C:\\Users\\me\\dev\\app"}}
+{"timestamp":"2026-10-06T13:20:01.000Z","ordinal":1,"type":"turn_context","payload":{"turn_id":"01990800-0001-7000-8000-000000000001","model":"gpt-5.6-sol"}}
+{"timestamp":"2026-10-06T13:20:01.100Z","ordinal":2,"type":"event_msg","payload":{"type":"task_started","turn_id":"01990800-0001-7000-8000-000000000001"}}
+{"timestamp":"2026-10-06T13:20:02.000Z","ordinal":3,"type":"response_item","payload":{"type":"message","id":"base-main","role":"assistant","content":[{"type":"output_text","text":"Kept prefix"}]}}
+{"timestamp":"2026-10-06T13:20:03.000Z","ordinal":4,"type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":5,"output_tokens":1,"total_tokens":6},"last_token_usage":{"input_tokens":5,"cached_input_tokens":0,"output_tokens":1,"reasoning_output_tokens":0}}}}
+{"timestamp":"2026-10-06T13:20:04.000Z","ordinal":10,"type":"response_item","payload":{"type":"message","id":"discarded-tail","role":"assistant","content":[{"type":"output_text","text":"Discarded tail"}]}}
+{"timestamp":"2026-10-06T13:20:05.000Z","ordinal":11,"type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":25,"output_tokens":3,"total_tokens":28},"last_token_usage":{"input_tokens":20,"cached_input_tokens":0,"output_tokens":2,"reasoning_output_tokens":0}}}}

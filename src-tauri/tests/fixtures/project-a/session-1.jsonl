@@ -1,0 +1,9 @@
+{"type":"user","uuid":"u1","timestamp":"2026-10-01T10:00:00.000Z","sessionId":"session-1","cwd":"C:\\work\\alpha","gitBranch":"main","version":"2.1.0","message":{"content":"Please inspect this project"}}
+{"type":"assistant","uuid":"a1-part1","timestamp":"2026-10-01T10:00:01.000Z","message":{"id":"msg-stream","model":"claude-sonnet-5-5","content":[{"type":"text","text":"I will "},{"type":"tool_use","id":"tool-1","name":"Read","input":{"path":"README.md"}}],"usage":{"input_tokens":100,"output_tokens":10,"cache_read_input_tokens":20,"cache_creation_input_tokens":5}}}
+{"type":"assistant","uuid":"a1-part2","timestamp":"2026-10-01T10:00:02.000Z","message":{"id":"msg-stream","model":"claude-sonnet-5-5","content":[{"type":"text","text":"check it."}],"usage":{"input_tokens":120,"output_tokens":30,"cache_read_input_tokens":25,"cache_creation_input_tokens":8}}}
+{"type":"user","uuid":"u-tool","timestamp":"2026-10-01T10:00:04.000Z","message":{"content":[{"type":"tool_result","tool_use_id":"tool-1","content":"denied by fixture","is_error":true}]}}
+{"type":"user","uuid":"u2","timestamp":"2026-10-01T10:00:05.000Z","message":{"content":[{"type":"text","text":"Thanks"}]}}
+{"type":"ai-title","title":"Fixture session title","timestamp":"2026-10-01T10:00:06.000Z"}
+{"type":"future-event","timestamp":"2026-10-01T10:00:07.000Z"}
+{"type":"assistant","isMeta":true,"message":{"id":"synthetic","model":"<synthetic>","content":[{"type":"text","text":"meta"}]}}
+{"type":"assistant","message":

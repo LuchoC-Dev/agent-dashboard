@@ -1,0 +1,5 @@
+{"timestamp":"2026-10-06T13:12:00.000Z","ordinal":0,"type":"session_meta","payload":{"id":"01990700-0004-7000-8000-000000000001","session_id":"01990700-0000-7000-8000-000000000001","parent_thread_id":"01990700-0000-7000-8000-000000000001","source":{"subagent":{"other":"guardian"}},"thread_source":"guardian_review","agent_role":"reviewer","cwd":"C:\\Users\\me\\dev\\app"}}
+{"timestamp":"2026-10-06T13:12:01.000Z","ordinal":1,"type":"turn_context","payload":{"turn_id":"01990700-0005-7000-8000-000000000001","model":"codex-auto-review"}}
+{"timestamp":"2026-10-06T13:12:01.100Z","ordinal":2,"type":"event_msg","payload":{"type":"task_started","turn_id":"01990700-0005-7000-8000-000000000001"}}
+{"timestamp":"2026-10-06T13:12:02.000Z","ordinal":3,"type":"response_item","payload":{"type":"message","id":"guardian-message","role":"assistant","content":[{"type":"output_text","text":"Review passed"}]}}
+{"timestamp":"2026-10-06T13:12:03.000Z","ordinal":4,"type":"token_usage_record","payload":{"response_id":"guardian-response","turn_id":"01990700-0005-7000-8000-000000000001","usage":{"input_tokens":17,"cached_input_tokens":7,"output_tokens":1,"reasoning_output_tokens":0}}}

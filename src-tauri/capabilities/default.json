@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Main window. Read-only app: core only, no fs/shell/dialog/opener plugins.",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}
