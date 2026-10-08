@@ -6,6 +6,7 @@ import { RouterProvider } from "react-router/dom";
 import { describe, expect, it, vi } from "vitest";
 import { createQueryClient } from "../../app/queries";
 import { createRoutes } from "../../app/routes";
+import { hourLabel, WEEKDAYS } from "./components/UsageByHourHeatmap";
 
 // The v2.3 filter audit: every clickable element of Resumen either applies a filter (in the
 // URL, removable from a chip, cleared by clicking it again) or is not interactive.
@@ -59,20 +60,31 @@ const slotShown = (router: ReturnType<typeof renderAt>) =>
     { timeout: 10_000 },
   );
 
+/** The heatmap cell with the most messages, with its weekday and hour. */
+function busiestCell() {
+  const cells = within(panel("Uso por hora")).getAllByRole("button", { name: / · [\d.]+ mensajes/ }),
+    count = (c: HTMLElement) => Number(/ · ([\d.]+) mensajes/.exec(c.getAttribute("aria-label")!)![1].replace(/\./g, "")),
+    cell = cells.reduce((a, b) => (count(b) > count(a) ? b : a)),
+    [, day, h] = /^(\S+) (\d+):00/.exec(cell.getAttribute("aria-label")!)!;
+  return { cell, day, weekday: WEEKDAYS.indexOf(day), hour: Number(h) };
+}
+const slot = (day: string, hour: number) => new RegExp(`^${day} ${hour}:00 `);
+
 describe("Resumen filter audit (v2.3)", { timeout: 30_000 }, () => {
   it("a heatmap cell filters by weekday and hour; again clears both", async () => {
     const router = renderAt("/resumen" + RANGE);
     await ready();
-    const cell = within(panel("Uso por hora")).getByRole("button", { name: /^mar 12:00/ });
+    // The busiest slot: which one has messages depends on the machine's time zone.
+    const { cell, day, weekday, hour } = busiestCell();
     fireEvent.click(cell);
-    await waitFor(() => expect(params(router).get("diasem")).toBe("1"));
-    expect(params(router).get("hora")).toBe("12");
-    expect(await chip(/Quitar filtro Día de semana: mar/)).toBeTruthy();
-    expect(await chip(/Quitar filtro Hora: 12:00/)).toBeTruthy();
+    await waitFor(() => expect(params(router).get("diasem")).toBe(String(weekday)));
+    expect(params(router).get("hora")).toBe(String(hour));
+    expect(await chip(new RegExp(`Quitar filtro Día de semana: ${day}`))).toBeTruthy();
+    expect(await chip(new RegExp(`Quitar filtro Hora: ${hourLabel(hour)}`))).toBeTruthy();
     await waitFor(() =>
       expect(
         within(panel("Uso por hora"))
-          .getByRole("button", { name: /^mar 12:00/ })
+          .getByRole("button", { name: slot(day, hour) })
           .getAttribute("aria-pressed"),
       ).toBe("true"),
     );
@@ -83,7 +95,7 @@ describe("Resumen filter audit (v2.3)", { timeout: 30_000 }, () => {
           .getAllByRole("button", { name: / · [1-9][\d.]* mensajes/ }).length,
       ).toBeGreaterThan(1),
     );
-    fireEvent.click(within(panel("Uso por hora")).getByRole("button", { name: /^mar 12:00/ }));
+    fireEvent.click(within(panel("Uso por hora")).getByRole("button", { name: slot(day, hour) }));
     await waitFor(() => expect(params(router).has("diasem")).toBe(false));
     expect(params(router).has("hora")).toBe(false);
   });

@@ -1,7 +1,8 @@
 import type { DateRange } from "../bindings/DateRange";
 import type { SessionSummary } from "../bindings/SessionSummary";
 
-export const TZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+/** The machine time zone, read on each call so it is never stale. */
+export const timeZone = () => Intl.DateTimeFormat().resolvedOptions().timeZone;
 export const hasDate = (iso: string) => Number.isFinite(Date.parse(iso));
 // Calendar days use the machine timezone. Optional east-of-UTC minutes make boundary tests deterministic.
 export function localDay(iso: string, offsetMinutes?: number): string {
