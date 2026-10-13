@@ -1,3 +1,4 @@
+import type { CostBreakdown } from "../../../bindings/CostBreakdown";
 import type { GroupBucket } from "../../../bindings/GroupBucket";
 import type { Metrics } from "../../../bindings/Metrics";
 import type { Provider } from "../../../bindings/Provider";
@@ -6,7 +7,7 @@ import type { Usage } from "../../../bindings/Usage";
 import { memo } from "react";
 import { Legend } from "../../../components/ui/Legend";
 import { panel } from "../../../components/ui/styles";
-import { TokenBar } from "../../../components/ui/TokenBar";
+import { CostBar, TokenBar } from "../../../components/ui/TokenBar";
 import { UnpricedMark } from "../../../components/ui/UnpricedMark";
 import type { TokenKind } from "../../../lib/filters";
 import { int, tok, usd } from "../../../lib/format";
@@ -55,8 +56,8 @@ function providerSplit(groups: GroupBucket[], m: Metric, filters?: KpiFilters) {
 
 /**
  * One panel of KPI tiles; each tile selects the metric charted below it. With more than one
- * provider (`byProvider`), cost, tokens and sessions add a per-provider line. On Resumen
- * (`filters`) those lines and the token kinds are cross-filters: sibling buttons of the tile's
+ * provider (`byProvider`), cost, tokens and sessions add a per-provider line. Cost and tokens
+ * split by token kind. On Resumen (`filters`) those lines and the token kinds are cross-filters: sibling buttons of the tile's
  * own button, never nested in it.
  */
 export const KpiStrip = memo(function KpiStrip({
@@ -69,6 +70,7 @@ export const KpiStrip = memo(function KpiStrip({
   tool,
   filters,
   allUsage,
+  allCost,
 }: {
   totals: Metrics["totals"];
   metric: Metric;
@@ -81,6 +83,8 @@ export const KpiStrip = memo(function KpiStrip({
   filters?: KpiFilters;
   /** Every kind's tokens under a token-kind filter: the bar keeps them all to switch kinds. */
   allUsage?: Usage;
+  /** Every kind's cost under a token-kind filter, for the cost tile's bar. */
+  allCost?: CostBreakdown;
 }) {
   const lines = byProvider && byProvider.length > 1;
   return (
@@ -108,6 +112,16 @@ export const KpiStrip = memo(function KpiStrip({
               {f}
             </span>
           </button>
+          {m === "cost" && (
+            <CostBar
+              // Without a kind filter the parts add up to the total shown above.
+              cost={allCost ?? totals.costBreakdown}
+              total={allCost ? undefined : totals.costUsd}
+              compact
+              active={filters?.tokenKind}
+              onKind={filters?.onTokenKind}
+            />
+          )}
           {m === "tokens" && (
             <TokenBar
               usage={allUsage ?? totals.usage}

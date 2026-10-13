@@ -91,7 +91,8 @@ export type Trend = {
 
 /**
  * One row per day of the range (`date`, `count` of sessions, one value per series), read from
- * the precomputed per-day series. Total stacks token kinds (from the per-day buckets) or one
+ * the precomputed per-day series. Total stacks token kinds (tokens or cost, from the per-day
+ * buckets) or one
  * total (Herramientas: calls without and with error); the other groupings stack one series per
  * provider, model, project or branch, and under Herramientas each row also holds every series'
  * errors that day (`errorsKey`, for the tooltip). Every
@@ -129,10 +130,12 @@ export function dailyTrend(
       }
   else for (const d of source.byDay) if (rows.has(d.date)) rows.get(d.date)!.count = d.sessions;
   const series: TrendSeries[] = [];
-  if (group === "total" && metric === "tokens") {
-    for (const [key, label, color] of tokenKinds)
-      if (!tokenKind || key === tokenKind) series.push({ key, label, color, value: key });
-    for (const d of source.byDay) for (const { key } of series) add(d.date, key, d.usage[key as TokenKind]);
+  if (group === "total" && (metric === "tokens" || metric === "cost")) {
+    const kinds = tokenKinds.filter(([key]) => !tokenKind || key === tokenKind);
+    for (const [key, label, color] of kinds) series.push({ key, label, color, value: key });
+    for (const d of source.byDay)
+      for (const [key, , , costKey] of kinds)
+        add(d.date, key, metric === "cost" ? d.costBreakdown[costKey] : d.usage[key]);
   } else if (group === "total" && metric === "tools") {
     series.push(
       { key: "ok", label: "Sin error", color: "var(--color-primary)" },

@@ -1,4 +1,5 @@
 import { useCallback, useDeferredValue, useMemo, useState } from "react";
+import type { CostBreakdown } from "../../../bindings/CostBreakdown";
 import type { DateRange } from "../../../bindings/DateRange";
 import type { HourlyActivity } from "../../../bindings/HourlyActivity";
 import type { Provider } from "../../../bindings/Provider";
@@ -67,7 +68,7 @@ function sessionsQuery(projectKey?: string, f?: OverviewFilters) {
  * the classes in the source.
  */
 const SKELETON = {
-  kpis: "h-[313px] narrow:h-[336px] phone:h-[678px]",
+  kpis: "h-[342px] phone:h-[739px]",
   trend: "h-[363px] compact:h-[401px]",
   heatmap: "h-[315px] collapsed:h-[263px]",
   tools: "h-[315px]",
@@ -92,6 +93,7 @@ export function Dashboard({
   trend = metrics,
   activity,
   allUsage,
+  allCost,
   tools,
   range,
   colors,
@@ -109,6 +111,8 @@ export function Dashboard({
   activity?: HourlyActivity[];
   /** Every kind's tokens under a token-kind filter (the token tile's bar and share). */
   allUsage?: Usage;
+  /** Every kind's cost under a token-kind filter (the cost tile's bar). */
+  allCost?: CostBreakdown;
   tools: ToolStat[] | undefined;
   range: DateRange;
   colors: Palette;
@@ -220,6 +224,7 @@ export function Dashboard({
           tool={filters?.tool}
           filters={kpiFilters}
           allUsage={allUsage}
+          allCost={allCost}
         />
       ) : (
         <SectionSkeleton height={SKELETON.kpis} />

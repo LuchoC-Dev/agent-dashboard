@@ -50,3 +50,24 @@ export const tokenTitle = (u: Usage) =>
   tokenKinds.map(([k, l]) => `${l}: ${int(u[k])}`).join("\n");
 export const costOf = (c: CostBreakdown) =>
   c.input + c.output + c.cacheRead + c.cacheWrite;
+/**
+ * Each kind's cost rounded to whole cents so the parts add up to `total` as shown (rounded
+ * to cents): largest remainder, so a kind never moves more than one cent from its own value.
+ */
+export function costSplit(c: CostBreakdown, total = costOf(c)): CostBreakdown {
+  const keys = Object.keys(c) as (keyof CostBreakdown)[],
+    cents = keys.map((k) => Math.max(0, c[k]) * 100),
+    out = cents.map(Math.floor);
+  let diff = Math.round(total * 100) - out.reduce((n, v) => n + v, 0);
+  const order = keys
+    .map((_, i) => i)
+    .sort((a, b) => cents[b] - out[b] - (cents[a] - out[a]) || cents[b] - cents[a]);
+  // Add the missing cents to the largest remainders; drop extra ones from the smallest.
+  for (let i = 0; diff > 0; i = (i + 1) % order.length, diff--) out[order[i]]++;
+  for (let i = order.length - 1; diff < 0 && i >= 0; i--)
+    if (out[order[i]] > 0) {
+      out[order[i]]--;
+      diff++;
+    }
+  return Object.fromEntries(keys.map((k, i) => [k, out[i] / 100])) as CostBreakdown;
+}
