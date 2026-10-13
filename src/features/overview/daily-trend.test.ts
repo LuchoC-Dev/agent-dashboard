@@ -65,7 +65,8 @@ describe("daily trend from the precomputed series", () => {
 
   it("picks the day with the highest stacked total", () => {
     const { data, series } = dailyTrend(source, range, "total", "cost", colors);
-    expect(Math.max(...data.map((d) => Number(d.total || 0)))).toBe(peakDay(data, series)!.total);
+    const stacked = (d: (typeof data)[number]) => series.reduce((n, s) => n + Number(d[s.key] || 0), 0);
+    expect(Math.max(...data.map(stacked))).toBe(stacked(peakDay(data, series)!));
   });
 
   it("draws every project as its own segment, with its total for the legend", () => {
@@ -98,6 +99,24 @@ describe("daily trend from the precomputed series", () => {
     const { data, series } = dailyTrend(source, range, "total", "tokens", colors, { tokenKind: "outputTokens" });
     expect(series.map((s) => s.key)).toEqual(["outputTokens"]);
     expect(trendSum(data, series)).toBe(source.byDay.reduce((n, d) => n + d.usage.outputTokens, 0));
+  });
+
+  it("stacks Costo · Total by token kind, from the per-day cost breakdown", () => {
+    const { data, series } = dailyTrend(source, range, "total", "cost", colors);
+    expect(series.map((s) => s.value)).toEqual([
+      "cacheReadTokens", "outputTokens", "cacheCreationTokens", "inputTokens",
+    ]);
+    const day = source.byDay.find((d) => d.costUsd > 0)!,
+      row = data.find((r) => r.date === day.date)!;
+    expect(Number(row.cacheReadTokens || 0)).toBeCloseTo(day.costBreakdown.cacheRead, 9);
+    expect(Number(row.inputTokens || 0)).toBeCloseTo(day.costBreakdown.input, 9);
+    expect(trendSum(data, series)).toBeCloseTo(source.byDay.reduce((n, d) => n + d.costUsd, 0), 6);
+  });
+
+  it("counts only the filtered token kind in Costo · Total", () => {
+    const { data, series } = dailyTrend(source, range, "total", "cost", colors, { tokenKind: "cacheReadTokens" });
+    expect(series.map((s) => s.key)).toEqual(["cacheReadTokens"]);
+    expect(trendSum(data, series)).toBeCloseTo(source.byDay.reduce((n, d) => n + d.costBreakdown.cacheRead, 0), 9);
   });
 
   it("leaves empty segments out, so no rectangle is drawn for them", () => {
