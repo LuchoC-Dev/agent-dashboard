@@ -1115,10 +1115,24 @@ fn elapsed_item_ms(item: &Value) -> Option<u64> {
 }
 
 fn user_text(item: &Value) -> String {
-    item.get("content")
-        .or_else(|| item.get("text"))
-        .and_then(Value::as_str)
-        .map(ToOwned::to_owned)
+    let content = match item.get("content") {
+        Some(Value::String(text)) => Some(text.clone()),
+        Some(Value::Array(parts)) => Some(
+            parts
+                .iter()
+                .filter(|part| part.get("type").and_then(Value::as_str) == Some("text"))
+                .filter_map(|part| part.get("text").and_then(Value::as_str))
+                .collect::<Vec<_>>()
+                .join(""),
+        ),
+        _ => None,
+    };
+    content
+        .or_else(|| {
+            item.get("text")
+                .and_then(Value::as_str)
+                .map(ToOwned::to_owned)
+        })
         .or_else(|| {
             item.get("text_elements")
                 .and_then(Value::as_array)
@@ -1455,6 +1469,24 @@ mod tests {
         assert_eq!(tool.result.as_deref(), Some("C:/app"));
         assert_eq!(tool.input["command"], "pwd");
         assert_eq!(summary.models, vec!["gpt-5.6-sol"]);
+    }
+
+    #[test]
+    fn desktop_user_content_arrays_preserve_prompt_and_conversation_message() {
+        let parsed = parse_fixture("desktop-user-content");
+        assert_eq!(
+            parsed.summary.first_prompt.as_deref(),
+            Some("Please inspect this project")
+        );
+        let messages = &parsed.detail.as_ref().unwrap().messages;
+        let user = messages
+            .iter()
+            .find(|message| message.role == Role::User)
+            .expect("Desktop user message should be preserved");
+        let Block::Text { text } = &user.blocks[0] else {
+            panic!("expected user message text block");
+        };
+        assert_eq!(text, "Please inspect this project");
     }
 
     #[test]
