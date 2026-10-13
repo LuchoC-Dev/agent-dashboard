@@ -382,7 +382,8 @@ fn parse_events(reader: impl BufRead) -> Result<ParsedFile, AppError> {
         let typ = v.get("type").and_then(Value::as_str).unwrap_or("");
         if typ == "ai-title" {
             title = v
-                .get("title")
+                .get("aiTitle")
+                .or_else(|| v.get("title"))
                 .or_else(|| v.get("content"))
                 .and_then(Value::as_str)
                 .map(str::to_string);
@@ -869,5 +870,23 @@ mod title_tests {
             panic!("expected user message text block");
         };
         assert_eq!(text, body);
+    }
+
+    #[test]
+    fn reads_claude_ai_title_and_keeps_the_latest_title() {
+        let input = include_str!("../../tests/fixtures/project-a/parser-fixtures/ai-title.jsonl");
+        let parsed = parse_events(Cursor::new(input)).unwrap();
+
+        assert_eq!(parsed.title.as_deref(), Some("Latest real-format title"));
+        assert_eq!(parsed.first_prompt.as_deref(), Some("Repair this issue"));
+    }
+
+    #[test]
+    fn keeps_legacy_ai_title_keys_as_fallbacks() {
+        for (key, expected) in [("title", "Legacy title"), ("content", "Legacy content")] {
+            let input = format!(r#"{{"type":"ai-title","{key}":"{expected}"}}"#);
+            let parsed = parse_events(Cursor::new(input)).unwrap();
+            assert_eq!(parsed.title.as_deref(), Some(expected));
+        }
     }
 }
