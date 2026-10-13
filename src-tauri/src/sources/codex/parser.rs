@@ -10,7 +10,8 @@ use chrono::DateTime;
 use serde_json::{json, Value};
 
 use super::super::{
-    aggregates_from_detail, message_metrics_from_detail, model_aggregates_from_detail, Parsed, Unit,
+    aggregates_from_detail, message_metrics_from_detail, model_aggregates_from_detail,
+    populate_message_costs, Parsed, Unit,
 };
 use super::{Header, HEADER_PREFIX, INDEX_TITLE_KEY, ROOT_ID_KEY};
 use crate::{
@@ -91,6 +92,9 @@ impl WorkingMessage {
             model: self.model,
             blocks: self.blocks,
             usage,
+            cost_usd: None,
+            cost_breakdown: None,
+            unpriced_tokens: None,
             branch: self.branch,
         }
     }
@@ -317,11 +321,12 @@ fn parse_with_details(unit: &Unit, include_details: bool) -> Result<Parsed, AppE
             .cmp(&b.started_at)
             .then_with(|| a.id.cmp(&b.id))
     });
-    let detail = SessionDetail {
+    let mut detail = SessionDetail {
         summary: summary.clone(),
         messages: main.messages,
         subagents,
     };
+    populate_message_costs(&mut detail, Provider::Codex, &HashMap::new());
     let (tool_aggregates, hourly_activity) = aggregates_from_detail(&detail);
     let model_aggregates = model_aggregates_from_detail(&detail);
     let message_metrics = message_metrics_from_detail(&detail, Provider::Codex, &HashMap::new());
@@ -728,6 +733,9 @@ fn parse_file(
                                 Vec::new()
                             },
                             usage: None,
+                            cost_usd: None,
+                            cost_breakdown: None,
+                            unpriced_tokens: None,
                             branch: line_branch.clone(),
                         });
                     }
@@ -1410,6 +1418,58 @@ mod tests {
     }
 
     #[test]
+    fn per_message_costs_match_summary_for_main_and_subagents() {
+        for fixture in [
+            "basic",
+            "broken",
+            "context-only-count",
+            "desktop-user-content",
+            "dup-token-count",
+            "exec-inner",
+            "fork",
+            "model-switch",
+            "records-mid-file",
+            "reset",
+            "segments",
+            "spawn",
+        ] {
+            let parsed = parse_fixture(fixture);
+            let detail = parsed.detail.as_ref().unwrap();
+            let messages = detail.messages.iter().chain(
+                detail
+                    .subagents
+                    .iter()
+                    .flat_map(|agent| agent.messages.iter()),
+            );
+            let mut breakdown = CostBreakdown::default();
+            let mut cost = 0.0;
+            let mut unpriced = 0u64;
+            for message in messages {
+                if message.role == Role::User || message.usage.is_none() {
+                    assert!(message.cost_usd.is_none(), "{fixture}: {}", message.id);
+                    assert!(message.cost_breakdown.is_none(), "{fixture}: {}", message.id);
+                    assert!(message.unpriced_tokens.is_none(), "{fixture}: {}", message.id);
+                }
+                if let Some(parts) = message.cost_breakdown {
+                    breakdown.input += parts.input;
+                    breakdown.output += parts.output;
+                    breakdown.cache_read += parts.cache_read;
+                    breakdown.cache_write += parts.cache_write;
+                }
+                cost += message.cost_usd.unwrap_or(0.0);
+                unpriced += message.unpriced_tokens.unwrap_or(0);
+            }
+            let expected = detail.summary.cost_breakdown;
+            assert!((breakdown.input - expected.input).abs() < 1e-12, "{fixture}");
+            assert!((breakdown.output - expected.output).abs() < 1e-12, "{fixture}");
+            assert!((breakdown.cache_read - expected.cache_read).abs() < 1e-12, "{fixture}");
+            assert!((breakdown.cache_write - expected.cache_write).abs() < 1e-12, "{fixture}");
+            assert!((cost - detail.summary.cost_usd).abs() < 1e-12, "{fixture}");
+            assert_eq!(unpriced, detail.summary.unpriced_tokens.unwrap_or(0), "{fixture}");
+        }
+    }
+
+    #[test]
     fn summary_scan_keeps_dashboard_aggregates_without_session_payloads() {
         let unit = fixture_unit("exec-inner");
         let full = parse(&unit).unwrap();
@@ -1659,6 +1719,9 @@ mod tests {
             model: None,
             blocks: Vec::new(),
             usage: Some(usage),
+            cost_usd: None,
+            cost_breakdown: None,
+            unpriced_tokens: None,
             branch: None,
         };
 

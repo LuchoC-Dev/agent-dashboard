@@ -33,6 +33,102 @@ type MockData = {
   scanReport: ScanReport;
 };
 
+/** Keeps the mock detail payload aligned with optional per-message costs. */
+function normalizeMockCosts(data: MockData): MockData {
+  const normalizeMessages = (messages: SessionDetail["messages"]) =>
+    messages.map((message) => {
+      if (!message.usage || message.branch != null) {
+        const { costUsd: _costUsd, costBreakdown: _costBreakdown, unpricedTokens: _unpricedTokens, ...rest } = message;
+        return rest;
+      }
+      const costBreakdown = message.costBreakdown ?? {
+        input: 0,
+        output: 0,
+        cacheRead: 0,
+        cacheWrite: 0,
+      };
+      return {
+        ...message,
+        costBreakdown,
+        costUsd:
+          message.costUsd ??
+          costBreakdown.input +
+            costBreakdown.output +
+            costBreakdown.cacheRead +
+            costBreakdown.cacheWrite,
+      };
+    });
+  const totalsFor = (messages: SessionDetail["messages"]) => {
+    const costBreakdown = messages.reduce(
+      (total, message) => ({
+        input: total.input + (message.costBreakdown?.input ?? 0),
+        output: total.output + (message.costBreakdown?.output ?? 0),
+        cacheRead: total.cacheRead + (message.costBreakdown?.cacheRead ?? 0),
+        cacheWrite: total.cacheWrite + (message.costBreakdown?.cacheWrite ?? 0),
+      }),
+      { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+    );
+    const unpricedTokens = messages.reduce(
+      (total, message) => total + (message.unpricedTokens ?? 0),
+      0,
+    );
+    return {
+      costBreakdown,
+      costUsd:
+        costBreakdown.input +
+        costBreakdown.output +
+        costBreakdown.cacheRead +
+        costBreakdown.cacheWrite,
+      unpricedTokens: unpricedTokens || undefined,
+    };
+  };
+  const details = Object.fromEntries(
+    Object.entries(data.details).map(([id, detail]) => {
+      const messages = normalizeMessages(detail.messages);
+      const subagents = detail.subagents.map((agent) => {
+        const agentMessages = normalizeMessages(agent.messages);
+        return {
+          ...agent,
+          ...totalsFor(agentMessages),
+          messages: agentMessages,
+        };
+      });
+      const messageTotals = totalsFor(messages);
+      const subagentTotals = subagents.reduce(
+        (total, agent) => ({
+          input: total.input + agent.costBreakdown.input,
+          output: total.output + agent.costBreakdown.output,
+          cacheRead: total.cacheRead + agent.costBreakdown.cacheRead,
+          cacheWrite: total.cacheWrite + agent.costBreakdown.cacheWrite,
+        }),
+        { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+      );
+      const costBreakdown = {
+        input: messageTotals.costBreakdown.input + subagentTotals.input,
+        output: messageTotals.costBreakdown.output + subagentTotals.output,
+        cacheRead: messageTotals.costBreakdown.cacheRead + subagentTotals.cacheRead,
+        cacheWrite: messageTotals.costBreakdown.cacheWrite + subagentTotals.cacheWrite,
+      };
+      const unpricedTokens =
+        (messageTotals.unpricedTokens ?? 0) +
+        subagents.reduce((total, agent) => total + (agent.unpricedTokens ?? 0), 0);
+      const summary = {
+        ...detail.summary,
+        costBreakdown,
+        costUsd:
+          costBreakdown.input +
+          costBreakdown.output +
+          costBreakdown.cacheRead +
+          costBreakdown.cacheWrite,
+        unpricedTokens: unpricedTokens || undefined,
+      };
+      return [id, { ...detail, summary, messages, subagents }];
+    }),
+  );
+  const sessions = data.sessions.map((session) => details[session.id]?.summary ?? session);
+  return { ...data, sessions, details };
+}
+
 // Development-only fixtures make failure/empty/loading states reviewable without touching logs.
 const mock = async (): Promise<MockData> => {
   const state = new URLSearchParams(location.hash.split("?")[1]).get("estado");
@@ -46,8 +142,9 @@ const mock = async (): Promise<MockData> => {
   // Measurements only: emulate the native command latency (`sessionStorage["mock-latency"]` ms).
   const latency = Number(globalThis.sessionStorage?.getItem("mock-latency") || 0);
   if (latency) await new Promise((resolve) => setTimeout(resolve, latency));
-  const data = (await import("./mocks/mock-data.json"))
-    .default as unknown as MockData;
+  const data = normalizeMockCosts(
+    (await import("./mocks/mock-data.json")).default as unknown as MockData,
+  );
   const only = state?.startsWith("solo-") ? state.slice(5) : null;
   if (only === "claude" || only === "codex") return onlyProvider(data, only);
   if (state === "escaneo") return scanInProgress(data);

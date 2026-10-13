@@ -344,6 +344,60 @@ pub(crate) fn message_metrics_from_detail(
     records
 }
 
+/// Adds per-message cost fields using the same pricing path as aggregate metrics.
+/// `exact_costs` preserves provider-specific context that isn't carried by `Message`.
+pub(crate) fn populate_message_costs(
+    detail: &mut SessionDetail,
+    provider: Provider,
+    exact_costs: &HashMap<String, CostBreakdown>,
+) {
+    fn populate(
+        messages: &mut [crate::model::Message],
+        provider: Provider,
+        exact_costs: &HashMap<String, CostBreakdown>,
+    ) {
+        for message in messages {
+            let Some(usage) = message.usage else {
+                continue;
+            };
+            let model = message
+                .model
+                .as_deref()
+                .filter(|model| !model.is_empty())
+                .unwrap_or("unknown");
+            let cost = exact_costs.get(&message.id).copied().unwrap_or_else(|| {
+                crate::pricing::cost_breakdown_for(
+                    provider,
+                    model,
+                    usage,
+                    crate::pricing::PriceCtx {
+                        request_input_tokens: Some(
+                            usage.input_tokens.saturating_add(usage.cache_read_tokens),
+                        ),
+                        ..crate::pricing::PriceCtx::default()
+                    },
+                )
+            });
+            message.cost_usd = Some(cost.total());
+            message.cost_breakdown = Some(cost);
+            let unpriced_model = message
+                .model
+                .as_deref()
+                .filter(|model| !model.is_empty())
+                .or_else(|| (provider == Provider::Codex).then_some("unknown"));
+            let unpriced = unpriced_model
+                .map(|model| crate::pricing::unpriced_tokens_for(provider, model, usage))
+                .unwrap_or(0);
+            message.unpriced_tokens = (unpriced > 0).then_some(unpriced);
+        }
+    }
+
+    populate(&mut detail.messages, provider, exact_costs);
+    for subagent in &mut detail.subagents {
+        populate(&mut subagent.messages, provider, exact_costs);
+    }
+}
+
 fn append_message_metrics(
     records: &mut Vec<MessageMetric>,
     messages: &[crate::model::Message],
