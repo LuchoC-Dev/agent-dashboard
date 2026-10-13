@@ -12,7 +12,7 @@ use serde_json::{json, Value};
 
 use super::{
     aggregates_from_detail, message_metrics_from_detail, model_aggregates_from_detail,
-    per_model_usage, Discovery, Parsed, SessionSource, Unit,
+    per_model_usage, populate_message_costs, Discovery, Parsed, SessionSource, Unit,
 };
 use crate::{
     model::{
@@ -266,12 +266,14 @@ impl ClaudeSource {
             cost_breakdown,
             unpriced_tokens: (unpriced_tokens > 0).then_some(unpriced_tokens),
         };
+        let mut detail = SessionDetail {
+            summary,
+            messages: root.messages,
+            subagents,
+        };
+        populate_message_costs(&mut detail, Provider::Claude, &message_costs);
         Ok((
-            SessionDetail {
-                summary,
-                messages: root.messages,
-                subagents,
-            },
+            detail,
             model_costs,
             message_costs,
             scan_errors,
@@ -435,6 +437,9 @@ fn parse_events(reader: impl BufRead) -> Result<ParsedFile, AppError> {
                     model: model.map(str::to_string),
                     blocks: Vec::new(),
                     usage: None,
+                    cost_usd: None,
+                    cost_breakdown: None,
+                    unpriced_tokens: None,
                     branch: None,
                 });
                 i
@@ -562,6 +567,9 @@ fn parse_events(reader: impl BufRead) -> Result<ParsedFile, AppError> {
                     model: None,
                     blocks,
                     usage: None,
+                    cost_usd: None,
+                    cost_breakdown: None,
+                    unpriced_tokens: None,
                     branch: None,
                 });
             }

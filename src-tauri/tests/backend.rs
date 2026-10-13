@@ -53,6 +53,41 @@ fn copy_fixtures(to: &Path) {
     cp(&fixture_root(), to);
 }
 
+fn assert_message_costs_match_summary(detail: &agent_dashboard_lib::model::SessionDetail) {
+    use agent_dashboard_lib::model::CostBreakdown;
+    let messages = detail.messages.iter().chain(
+        detail
+            .subagents
+            .iter()
+            .flat_map(|agent| agent.messages.iter()),
+    );
+    let mut breakdown = CostBreakdown::default();
+    let mut cost = 0.0;
+    let mut unpriced = 0u64;
+    for message in messages {
+        if message.role == agent_dashboard_lib::model::Role::User || message.usage.is_none() {
+            assert!(message.cost_usd.is_none());
+            assert!(message.cost_breakdown.is_none());
+            assert!(message.unpriced_tokens.is_none());
+        }
+        if let Some(parts) = message.cost_breakdown {
+            breakdown.input += parts.input;
+            breakdown.output += parts.output;
+            breakdown.cache_read += parts.cache_read;
+            breakdown.cache_write += parts.cache_write;
+        }
+        cost += message.cost_usd.unwrap_or(0.0);
+        unpriced += message.unpriced_tokens.unwrap_or(0);
+    }
+    let expected = detail.summary.cost_breakdown;
+    assert!((breakdown.input - expected.input).abs() < 1e-12);
+    assert!((breakdown.output - expected.output).abs() < 1e-12);
+    assert!((breakdown.cache_read - expected.cache_read).abs() < 1e-12);
+    assert!((breakdown.cache_write - expected.cache_write).abs() < 1e-12);
+    assert!((cost - detail.summary.cost_usd).abs() < 1e-12);
+    assert_eq!(unpriced, detail.summary.unpriced_tokens.unwrap_or(0));
+}
+
 #[test]
 fn parses_streaming_tool_results_titles_unknowns_and_subagents() {
     let p = fixture_root().join("project-a/session-1.jsonl");
@@ -84,6 +119,7 @@ fn parses_streaming_tool_results_titles_unknowns_and_subagents() {
     assert!(tool.is_error);
     assert_eq!(tool.duration_ms, Some(3000));
     assert_eq!(d.subagents[0].id, "abc");
+    assert_message_costs_match_summary(&d);
     let breakdown_total = |b: agent_dashboard_lib::model::CostBreakdown| {
         b.input + b.output + b.cache_read + b.cache_write
     };
@@ -91,6 +127,17 @@ fn parses_streaming_tool_results_titles_unknowns_and_subagents() {
     assert!(
         (breakdown_total(d.subagents[0].cost_breakdown) - d.subagents[0].cost_usd).abs() < 1e-12
     );
+}
+
+#[test]
+fn claude_per_message_costs_include_subagents_and_unpriced_usage() {
+    for path in [
+        fixture_root().join("project-a/session-1.jsonl"),
+        fixture_root().join("project-b/session-2.jsonl"),
+    ] {
+        let detail = ClaudeSource::parse_file(&path).unwrap();
+        assert_message_costs_match_summary(&detail);
+    }
 }
 
 #[test]
@@ -325,13 +372,62 @@ fn real_claude_smoke_parses_all_sessions() {
     assert!(report.errors.is_empty());
     let summaries = state.summaries().unwrap();
     assert_eq!(report.sessions as usize, summaries.len());
+    let mut cost_mismatches = 0usize;
+    let mut get_session_payload_delta_bytes = 0isize;
     for summary in &summaries {
-        state.session(&summary.id).unwrap();
+        let detail = state.session(&summary.id).unwrap();
+        let messages = detail.messages.iter().chain(
+            detail
+                .subagents
+                .iter()
+                .flat_map(|agent| agent.messages.iter()),
+        );
+        let mut cost = 0.0;
+        let mut breakdown = agent_dashboard_lib::model::CostBreakdown::default();
+        let mut unpriced = 0u64;
+        for message in messages {
+            cost += message.cost_usd.unwrap_or(0.0);
+            unpriced += message.unpriced_tokens.unwrap_or(0);
+            if let Some(parts) = message.cost_breakdown {
+                breakdown.input += parts.input;
+                breakdown.output += parts.output;
+                breakdown.cache_read += parts.cache_read;
+                breakdown.cache_write += parts.cache_write;
+            }
+        }
+        let expected = detail.summary.cost_breakdown;
+        if (cost - detail.summary.cost_usd).abs() > 1e-9
+            || (breakdown.input - expected.input).abs() > 1e-9
+            || (breakdown.output - expected.output).abs() > 1e-9
+            || (breakdown.cache_read - expected.cache_read).abs() > 1e-9
+            || (breakdown.cache_write - expected.cache_write).abs() > 1e-9
+            || unpriced != detail.summary.unpriced_tokens.unwrap_or(0)
+        {
+            cost_mismatches += 1;
+        }
+        let after = serde_json::to_vec(&detail).unwrap().len();
+        let mut before_detail = detail.clone();
+        let strip_costs = |messages: &mut [agent_dashboard_lib::model::Message]| {
+            for message in messages {
+                message.cost_usd = None;
+                message.cost_breakdown = None;
+                message.unpriced_tokens = None;
+            }
+        };
+        strip_costs(&mut before_detail.messages);
+        for agent in &mut before_detail.subagents {
+            strip_costs(&mut agent.messages);
+        }
+        get_session_payload_delta_bytes +=
+            after as isize - serde_json::to_vec(&before_detail).unwrap().len() as isize;
     }
+    assert_eq!(cost_mismatches, 0, "per-message cost mismatches");
     println!(
-        "sessions={} messages={} tools={}",
+        "sessions={} messages={} tools={} per_message_cost_mismatches={} get_session_payload_delta_bytes={}",
         summaries.len(),
         summaries.iter().map(|s| s.message_count).sum::<u32>(),
-        summaries.iter().map(|s| s.tool_call_count).sum::<u32>()
+        summaries.iter().map(|s| s.tool_call_count).sum::<u32>(),
+        cost_mismatches,
+        get_session_payload_delta_bytes,
     );
 }

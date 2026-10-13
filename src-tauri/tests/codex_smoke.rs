@@ -79,6 +79,7 @@ fn real_codex_smoke_parses_all_sessions_reports_usage_and_memory() {
     let mut subagent_count = 0u64;
     let mut usage_verified_sessions = 0usize;
     let mut active_sessions_skipped = 0usize;
+    let mut cost_mismatches = 0usize;
     for summary in &summaries {
         let source_dir = summary.source_dir.as_deref().unwrap();
         let (_, discovery) = discoveries
@@ -107,6 +108,36 @@ fn real_codex_smoke_parses_all_sessions_reports_usage_and_memory() {
                 summary.id
             );
             usage_verified_sessions += 1;
+        }
+        let detail = state.session(&summary.id).unwrap();
+        let messages = detail.messages.iter().chain(
+            detail
+                .subagents
+                .iter()
+                .flat_map(|agent| agent.messages.iter()),
+        );
+        let mut cost = 0.0;
+        let mut breakdown = agent_dashboard_lib::model::CostBreakdown::default();
+        let mut unpriced = 0u64;
+        for message in messages {
+            cost += message.cost_usd.unwrap_or(0.0);
+            unpriced += message.unpriced_tokens.unwrap_or(0);
+            if let Some(parts) = message.cost_breakdown {
+                breakdown.input += parts.input;
+                breakdown.output += parts.output;
+                breakdown.cache_read += parts.cache_read;
+                breakdown.cache_write += parts.cache_write;
+            }
+        }
+        let expected = detail.summary.cost_breakdown;
+        if (cost - detail.summary.cost_usd).abs() > 1e-9
+            || (breakdown.input - expected.input).abs() > 1e-9
+            || (breakdown.output - expected.output).abs() > 1e-9
+            || (breakdown.cache_read - expected.cache_read).abs() > 1e-9
+            || (breakdown.cache_write - expected.cache_write).abs() > 1e-9
+            || unpriced != detail.summary.unpriced_tokens.unwrap_or(0)
+        {
+            cost_mismatches += 1;
         }
         message_count += summary.message_count as u64;
         tool_count += summary.tool_call_count as u64;
@@ -138,6 +169,21 @@ fn real_codex_smoke_parses_all_sessions_reports_usage_and_memory() {
         serde_json::to_value(sample).unwrap()
     );
     let sample_detail_json_bytes = serde_json::to_vec(&sample_detail).unwrap().len();
+    let mut before_sample_detail = sample_detail.clone();
+    let strip_costs = |messages: &mut [agent_dashboard_lib::model::Message]| {
+        for message in messages {
+            message.cost_usd = None;
+            message.cost_breakdown = None;
+            message.unpriced_tokens = None;
+        }
+    };
+    strip_costs(&mut before_sample_detail.messages);
+    for agent in &mut before_sample_detail.subagents {
+        strip_costs(&mut agent.messages);
+    }
+    let sample_detail_payload_delta_bytes = sample_detail_json_bytes as isize
+        - serde_json::to_vec(&before_sample_detail).unwrap().len() as isize;
+    assert_eq!(cost_mismatches, 0, "per-message cost mismatches");
 
     let sessions_per_home = reported_sources
         .iter()
@@ -145,7 +191,7 @@ fn real_codex_smoke_parses_all_sessions_reports_usage_and_memory() {
         .collect::<Vec<_>>()
         .join(";");
     println!(
-        "Codex smoke: sessions={} duplicates_merged={} sessions_per_home=[{}] files={} messages={} tools={} subagents={} usage_verified={} active_skipped={} first_scan_ms={} estimated_cache_mib={:.2} startup_commands=4 startup_get_session_calls=0 list_sessions_json_bytes={} metrics_json_bytes={} tool_stats_json_bytes={} scan_report_json_bytes={} startup_payload_bytes={} one_lazy_detail_json_bytes={}",
+        "Codex smoke: sessions={} duplicates_merged={} sessions_per_home=[{}] files={} messages={} tools={} subagents={} usage_verified={} active_skipped={} per_message_cost_mismatches={} first_scan_ms={} estimated_cache_mib={:.2} startup_commands=4 startup_get_session_calls=0 list_sessions_json_bytes={} metrics_json_bytes={} tool_stats_json_bytes={} scan_report_json_bytes={} startup_payload_bytes={} one_lazy_detail_json_bytes={} one_lazy_detail_payload_delta_bytes={}",
         summaries.len(),
         report.duplicates_merged.unwrap_or_default(),
         sessions_per_home,
@@ -155,6 +201,7 @@ fn real_codex_smoke_parses_all_sessions_reports_usage_and_memory() {
         subagent_count,
         usage_verified_sessions,
         active_sessions_skipped,
+        cost_mismatches,
         elapsed.as_millis(),
         estimated_cache_bytes as f64 / (1024.0 * 1024.0),
         all_sessions_json_bytes,
@@ -163,6 +210,7 @@ fn real_codex_smoke_parses_all_sessions_reports_usage_and_memory() {
         report_json_bytes,
         startup_payload_bytes,
         sample_detail_json_bytes,
+        sample_detail_payload_delta_bytes,
     );
 }
 
