@@ -7,7 +7,7 @@ import { usd } from "../../lib/format";
 import { costOf, tokenKinds } from "../../lib/usage";
 import { mock } from "../../test/fixtures";
 import { dashboardReady, panelOf, renderApp } from "../../test/render";
-import { answerRow } from "./answers";
+import { answerRow, chartAnswers } from "./answers";
 
 vi.mock("@tauri-apps/api/core", () => ({
   isTauri: () => false,
@@ -62,24 +62,31 @@ describe("per-answer cost (v2.9)", { timeout: 30_000 }, () => {
   });
 
   it("the per-answer costs add up to the session's cost tile", () => {
-    // The mock still counts discarded Codex rollback branches in its totals, unlike the
-    // contract, so only sessions without them are compared.
-    const checked = mock.sessions.filter(
-      (s) => mock.details[s.id] && !mock.details[s.id].messages.some((m) => m.branch),
-    );
-    expect(checked.length).toBeGreaterThan(10);
-    for (const s of checked) {
+    const sessions = mock.sessions.filter((s) => mock.details[s.id]);
+    // Sessions with discarded Codex rollback branches are covered too.
+    expect(sessions.some((s) => mock.details[s.id].messages.some((m) => m.branch))).toBe(true);
+    for (const s of sessions) {
       const d = mock.details[s.id];
       // The chart's answers plus the subagents' (shown apart, "en subagentes") make the tile.
-      const main = d.messages.filter((m) => m.role === "assistant").map(answerRow),
-        sub = d.subagents.flatMap((a) => a.messages.filter((m) => m.role === "assistant")).map(answerRow),
+      const main = chartAnswers(d.messages).map(answerRow),
+        sub = d.subagents.flatMap((a) => chartAnswers(a.messages)).map(answerRow),
         rows = [...main, ...sub];
+      expect(main.every((r) => !d.messages.find((m) => m.id === r.id)?.branch)).toBe(true);
       expect(usd(sumOf(rows, (r) => costOf(r.cost))), s.id).toBe(usd(s.costUsd));
       for (const [, , , ck] of tokenKinds)
         expect(sumOf(rows, (r) => r.cost[ck]), `${s.id} ${ck}`).toBeCloseTo(s.costBreakdown[ck], 6);
       expect(sumOf(rows, (r) => r.unpriced), s.id).toBe(s.unpricedTokens ?? 0);
       if (!d.subagents.length) expect(usd(sumOf(main, (r) => costOf(r.cost)))).toBe(usd(s.costUsd));
     }
+  });
+
+  it("discarded rollback branches stay out of the chart in every metric", () => {
+    const d = Object.values(mock.details).find((x) => x.messages.some((m) => m.branch && m.role === "assistant"))!;
+    const ids = new Set(chartAnswers(d.messages).map((m) => m.id));
+    for (const m of d.messages.filter((x) => x.branch)) expect(ids.has(m.id)).toBe(false);
+    // Tokens follow the same rows: the chart's tokens are the main history's.
+    const main = d.messages.filter((m) => m.role === "assistant" && !m.branch);
+    expect(ids.size).toBe(main.length);
   });
 
   it("Por respuesta offers Costo, stacked by token kind with the same legend", async () => {
