@@ -146,6 +146,13 @@ the dashboards; the KPI strip and touched-files table in the session detail). Fi
   series' errors in the tooltip of the groupings (`tool_errors`, contract v2.6). Por proyecto draws **every** project as its own segment; only
   the legend is limited to two lines (largest first) with "+N más" for the rest. Models and
   branches past the top 8 fold into "Resto" in the chart.
+- **Cost by token kind (v2.8).** The Costo tile (Resumen, the project page and the session
+  detail, all through `KpiStrip`) splits its total by kind with `CostBar`, built like the
+  token bar (`TokenBar.tsx`: same order, colors, legend and click → `tokens` filter; under a
+  kind it shows every kind's cost from the unfiltered query, the selected one marked). The
+  amounts are rounded to cents with `costSplit` (`lib/usage.ts`, largest remainder) so they add
+  up to the total as shown. In the daily chart, Costo · Total stacks `byDay[].costBreakdown`
+  like Tokens · Total stacks the token kinds.
 - **"Todo" span (v2.4.1).** An open range starts the daily chart at the first day with data
   in the current scope and filters (`trendSpan`, from the range-wide series) and ends it at the
   last one;
