@@ -3,6 +3,13 @@ import { time } from "../../lib/format";
 import { callsIn } from "../../lib/sessions";
 import { zeroCost } from "../../lib/usage";
 
+/**
+ * The answers the "Por respuesta" chart draws: the main history's, like the session totals.
+ * Discarded Codex rollback branches stay out (the conversation still shows them).
+ */
+export const chartAnswers = (messages: Message[]) =>
+  messages.filter((m) => m.role === "assistant" && !m.branch);
+
 /** One bar of the "Por respuesta" chart: an assistant message's figures. */
 export function answerRow(m: Message) {
   const calls = callsIn([m]);

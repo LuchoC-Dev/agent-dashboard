@@ -17,7 +17,7 @@ import { Segments } from "../../../../components/ui/Segments";
 import { button, note } from "../../../../components/ui/styles";
 import { int, tok, usd } from "../../../../lib/format";
 import { tokenKinds } from "../../../../lib/usage";
-import { answerRow, type AnswerRow } from "../../answers";
+import { answerRow, chartAnswers, type AnswerRow } from "../../answers";
 import type { Focus } from "../../focus";
 
 type AnswerMetric = "cost" | "tokens" | "context" | "output" | "tools";
@@ -71,7 +71,7 @@ export function PerAnswerChart({
 }) {
   const [metric, setMetric] = useState<AnswerMetric>("tokens"),
     [page, setPage] = useState(0);
-  const answers = detail.messages.filter((m) => m.role === "assistant"),
+  const answers = chartAnswers(detail.messages),
     rows = answers.slice(page * PAGE, (page + 1) * PAGE).map(answerRow);
   const series = seriesFor(metric),
     format = metric === "tools" ? int : metric === "cost" ? usd : tok;
