@@ -105,8 +105,8 @@ export const KpiStrip = memo(function KpiStrip({
                   : "text-[24px] leading-[30px]")
               }
             >
+              {m === "cost" && <UnpricedMark tokens={totals.unpricedTokens} before />}
               {v}
-              {m === "cost" && <UnpricedMark tokens={totals.unpricedTokens} />}
             </span>
             <span className="flex flex-wrap items-center gap-1.5 text-size-xs text-ink-3 tabular-nums">
               {f}

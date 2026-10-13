@@ -38,6 +38,7 @@ export function SessionOverview({
     usage: s.usage,
     costUsd: s.costUsd,
     costBreakdown: s.costBreakdown,
+    unpricedTokens: s.unpricedTokens,
     activeMs: s.durationMs,
   };
   return (

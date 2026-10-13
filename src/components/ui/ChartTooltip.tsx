@@ -1,4 +1,5 @@
 import { Swatch } from "./Swatch";
+import { UnpricedMark } from "./UnpricedMark";
 import { errorText, note } from "./styles";
 
 export const tooltip =
@@ -6,7 +7,8 @@ export const tooltip =
 
 /**
  * Recharts tooltip content: total, non-zero series and an optional hint. With `highlight`
- * (the hovered segment's data key) that series comes first and stands out.
+ * (the hovered segment's data key) that series comes first and stands out. With `unpriced`
+ * tokens the total carries the unpriced mark before it.
  */
 export function ChartTooltip({
   active,
@@ -17,6 +19,7 @@ export function ChartTooltip({
   countForLabel,
   labelFormat = (l) => String(l),
   highlight,
+  unpriced,
 }: {
   active?: boolean;
   payload?: readonly {
@@ -33,6 +36,7 @@ export function ChartTooltip({
   countForLabel?: (label: string | number) => number;
   labelFormat?: (label: string | number) => string;
   highlight?: string;
+  unpriced?: number;
 }) {
   if (!active || !payload?.length) return null;
   const lit = (p: (typeof payload)[number]) => highlight !== undefined && p.dataKey === highlight;
@@ -43,6 +47,7 @@ export function ChartTooltip({
     <div className={tooltip}>
       <div className="text-ink-3">{label === undefined ? "" : labelFormat(label)}</div>
       <strong className="mt-[3px] mb-1.5 block text-size-lg">
+        <UnpricedMark tokens={unpriced} before />
         {format(payload.reduce((n, p) => n + Number(p.value || 0), 0))}
       </strong>
       {rows.map((p) => (
