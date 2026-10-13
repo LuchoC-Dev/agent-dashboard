@@ -108,8 +108,8 @@ export function useDashboardData({ projectKey }: DashboardScope = {}) {
     enabled: ready && slot,
     placeholderData: keepPreviousData,
   });
-  // Under a token kind the token bar still shows (and switches between) every kind, and the
-  // tile says what share of all tokens the kind is: the same figures without the kind.
+  // Under a token kind the token and cost bars still show (and switch between) every kind, and the
+  // token tile says what share of all tokens the kind is: the same figures without the kind.
   const allKinds = useQuery({
     ...overviewQueries.metrics(dayRange, provider, fixture, cross),
     enabled: ready && !!filters.tokenKind,
@@ -205,6 +205,7 @@ export function useDashboardData({ projectKey }: DashboardScope = {}) {
     trend,
     activity: slot ? unslotted.data?.hourlyActivity : undefined,
     allUsage: filters.tokenKind ? allKinds.data?.totals.usage : undefined,
+    allCost: filters.tokenKind ? allKinds.data?.totals.costBreakdown : undefined,
     tools: ready ? tools.data : undefined,
     files,
     // The previous slot's (or tool's) sessions stand in until the new ones load: stale too.
