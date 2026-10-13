@@ -33,6 +33,47 @@ type MockData = {
   scanReport: ScanReport;
 };
 
+/** Keeps the mock detail payload aligned with optional per-message costs. */
+function normalizeMockCosts(data: MockData): MockData {
+  const normalizeMessages = (messages: SessionDetail["messages"]) =>
+    messages.map((message) => {
+      if (!message.usage) {
+        const { costUsd: _costUsd, costBreakdown: _costBreakdown, unpricedTokens: _unpricedTokens, ...rest } = message;
+        return rest;
+      }
+      const costBreakdown = message.costBreakdown ?? {
+        input: 0,
+        output: 0,
+        cacheRead: 0,
+        cacheWrite: 0,
+      };
+      return {
+        ...message,
+        costBreakdown,
+        costUsd:
+          message.costUsd ??
+          costBreakdown.input +
+            costBreakdown.output +
+            costBreakdown.cacheRead +
+            costBreakdown.cacheWrite,
+      };
+    });
+  const details = Object.fromEntries(
+    Object.entries(data.details).map(([id, detail]) => [
+      id,
+      {
+        ...detail,
+        messages: normalizeMessages(detail.messages),
+        subagents: detail.subagents.map((agent) => ({
+          ...agent,
+          messages: normalizeMessages(agent.messages),
+        })),
+      },
+    ]),
+  );
+  return { ...data, details };
+}
+
 // Development-only fixtures make failure/empty/loading states reviewable without touching logs.
 const mock = async (): Promise<MockData> => {
   const state = new URLSearchParams(location.hash.split("?")[1]).get("estado");
@@ -46,8 +87,9 @@ const mock = async (): Promise<MockData> => {
   // Measurements only: emulate the native command latency (`sessionStorage["mock-latency"]` ms).
   const latency = Number(globalThis.sessionStorage?.getItem("mock-latency") || 0);
   if (latency) await new Promise((resolve) => setTimeout(resolve, latency));
-  const data = (await import("./mocks/mock-data.json"))
-    .default as unknown as MockData;
+  const data = normalizeMockCosts(
+    (await import("./mocks/mock-data.json")).default as unknown as MockData,
+  );
   const only = state?.startsWith("solo-") ? state.slice(5) : null;
   if (only === "claude" || only === "codex") return onlyProvider(data, only);
   if (state === "escaneo") return scanInProgress(data);

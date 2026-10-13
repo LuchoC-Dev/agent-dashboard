@@ -1554,7 +1554,14 @@
             "outputTokens": 2888,
             "cacheReadTokens": 161621,
             "cacheCreationTokens": 4230
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000026,
+            "output": 0.02888,
+            "cacheRead": 0.0323242,
+            "cacheWrite": 0.010575
+          },
+          "costUsd": 0.0718052
         },
         {
           "id": "a649ce60-1e89-4edd-9066-07a9daa0d942",
@@ -1606,7 +1613,14 @@
             "outputTokens": 3541,
             "cacheReadTokens": 39968,
             "cacheCreationTokens": 10636
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000038,
+            "output": 0.03541,
+            "cacheRead": 0.0079936,
+            "cacheWrite": 0.02659
+          },
+          "costUsd": 0.0700316
         },
         {
           "id": "1e9f4a6f-d90a-4f02-a1e4-a8a833a99bbe",
@@ -1703,7 +1717,14 @@
             "outputTokens": 2274,
             "cacheReadTokens": 123011,
             "cacheCreationTokens": 8193
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000062,
+            "output": 0.02274,
+            "cacheRead": 0.0246022,
+            "cacheWrite": 0.0204825
+          },
+          "costUsd": 0.0678867
         },
         {
           "id": "ccd879ba-cfcc-4ed3-a5f8-f15f5a03d6f9",
@@ -1754,7 +1775,14 @@
             "outputTokens": 877,
             "cacheReadTokens": 134608,
             "cacheCreationTokens": 13654
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000012,
+            "output": 0.00877,
+            "cacheRead": 0.026921600000000004,
+            "cacheWrite": 0.034135
+          },
+          "costUsd": 0.0698386
         },
         {
           "id": "480ac3d3-de44-4af1-8a00-a008517fb7dc",
@@ -1838,7 +1866,14 @@
             "outputTokens": 299,
             "cacheReadTokens": 138525,
             "cacheCreationTokens": 1898
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00008,
+            "output": 0.00299,
+            "cacheRead": 0.027705,
+            "cacheWrite": 0.004745
+          },
+          "costUsd": 0.03552
         },
         {
           "id": "e892efd8-fdaf-4c1c-815e-ab634ea2c304",
@@ -1899,7 +1934,14 @@
             "outputTokens": 1576,
             "cacheReadTokens": 174512,
             "cacheCreationTokens": 2547
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00006,
+            "output": 0.01576,
+            "cacheRead": 0.0349024,
+            "cacheWrite": 0.0063675
+          },
+          "costUsd": 0.0570899
         },
         {
           "id": "78438f94-9920-4b34-81f3-59fbbd021a15",
@@ -1938,7 +1980,14 @@
             "outputTokens": 2635,
             "cacheReadTokens": 115826,
             "cacheCreationTokens": 10670
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00006,
+            "output": 0.02635,
+            "cacheRead": 0.0231652,
+            "cacheWrite": 0.026675
+          },
+          "costUsd": 0.0762502
         },
         {
           "id": "c2c7346c-668c-41f9-b3e2-ad279a035b1c",
@@ -2023,7 +2072,14 @@
             "outputTokens": 1211,
             "cacheReadTokens": 58600,
             "cacheCreationTokens": 1020
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00006200000000000004,
+            "output": 0.0121,
+            "cacheRead": 0.011685799999999996,
+            "cacheWrite": 0.0025300000000000045
+          },
+          "costUsd": 0.0263778
         }
       ],
       "subagents": []
@@ -2125,7 +2181,14 @@
             "outputTokens": 623,
             "cacheReadTokens": 24863,
             "cacheCreationTokens": 14751
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000175,
+            "output": 0.015575,
+            "cacheRead": 0.0124315,
+            "cacheWrite": 0.09219375
+          },
+          "costUsd": 0.12037525
         },
         {
           "id": "468d047d-dad4-463d-bd9d-f5da2b43c176",
@@ -2188,7 +2251,14 @@
             "outputTokens": 1864,
             "cacheReadTokens": 152215,
             "cacheCreationTokens": 6203
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00015,
+            "output": 0.0466,
+            "cacheRead": 0.0761075,
+            "cacheWrite": 0.03876875
+          },
+          "costUsd": 0.16162625
         },
         {
           "id": "141908e6-a57a-4ea3-af25-7a2d5c052cdb",
@@ -2260,7 +2330,14 @@
             "outputTokens": 2240,
             "cacheReadTokens": 118787,
             "cacheCreationTokens": 2670
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00007500000000000003,
+            "output": 0.056025,
+            "cacheRead": 0.05936100000000001,
+            "cacheWrite": 0.01673749999999999
+          },
+          "costUsd": 0.1321985
         }
       ],
       "subagents": []
@@ -2339,7 +2416,14 @@
             "outputTokens": 500,
             "cacheReadTokens": 104164,
             "cacheCreationTokens": 5524
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000096,
+            "output": 0.01,
+            "cacheRead": 0.020832800000000002,
+            "cacheWrite": 0.01381
+          },
+          "costUsd": 0.0447388
         },
         {
           "id": "82edfc47-3b84-4f70-80d4-cd1d56e78267",
@@ -2403,7 +2487,14 @@
             "outputTokens": 3720,
             "cacheReadTokens": 169111,
             "cacheCreationTokens": 13794
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00016,
+            "output": 0.0744,
+            "cacheRead": 0.033822200000000004,
+            "cacheWrite": 0.034485
+          },
+          "costUsd": 0.14286719999999997
         },
         {
           "id": "cd8434c4-3f4d-4a19-a0d0-50ef8115f106",
@@ -2466,7 +2557,14 @@
             "outputTokens": 3455,
             "cacheReadTokens": 167581,
             "cacheCreationTokens": 12182
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00004,
+            "output": 0.0691,
+            "cacheRead": 0.0335162,
+            "cacheWrite": 0.030455
+          },
+          "costUsd": 0.1331112
         },
         {
           "id": "af4ce470-9794-47a5-8037-502557c30ee3",
@@ -2555,7 +2653,14 @@
             "outputTokens": 293,
             "cacheReadTokens": 169592,
             "cacheCreationTokens": 2359
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000112,
+            "output": 0.00586,
+            "cacheRead": 0.0339184,
+            "cacheWrite": 0.0058975
+          },
+          "costUsd": 0.0457879
         },
         {
           "id": "690a25b8-ed81-4bd1-8eb6-0336d62ef472",
@@ -2618,7 +2723,14 @@
             "outputTokens": 3360,
             "cacheReadTokens": 64551,
             "cacheCreationTokens": 14674
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000128,
+            "output": 0.0672,
+            "cacheRead": 0.0129102,
+            "cacheWrite": 0.036685
+          },
+          "costUsd": 0.1169232
         },
         {
           "id": "d663df67-c896-490e-8fc5-6f655b16ba41",
@@ -2657,7 +2769,14 @@
             "outputTokens": 2241,
             "cacheReadTokens": 32131,
             "cacheCreationTokens": 1972
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000024,
+            "output": 0.04482,
+            "cacheRead": 0.006426200000000001,
+            "cacheWrite": 0.00493
+          },
+          "costUsd": 0.056200200000000006
         },
         {
           "id": "296babca-6b59-40a0-bf6b-75a231a72e72",
@@ -2720,7 +2839,14 @@
             "outputTokens": 2796,
             "cacheReadTokens": 31118,
             "cacheCreationTokens": 3473
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000052,
+            "output": 0.05592,
+            "cacheRead": 0.0062236,
+            "cacheWrite": 0.0086825
+          },
+          "costUsd": 0.0708781
         },
         {
           "id": "24e6cbc0-3b71-40d0-84e1-becdf4388ef1",
@@ -2759,7 +2885,14 @@
             "outputTokens": 2167,
             "cacheReadTokens": 141208,
             "cacheCreationTokens": 704
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00008799999999999986,
+            "output": 0.04330000000000006,
+            "cacheRead": 0.02825040000000001,
+            "cacheWrite": 0.13845499999999997
+          },
+          "costUsd": 0.21009340000000004
         }
       ],
       "subagents": []
@@ -2839,7 +2972,14 @@
             "outputTokens": 2681,
             "cacheReadTokens": 53623,
             "cacheCreationTokens": 3435
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000026,
+            "output": 0.02681,
+            "cacheRead": 0.0107246,
+            "cacheWrite": 0.0085875
+          },
+          "costUsd": 0.0461481
         },
         {
           "id": "448393c6-7c4d-491e-a9de-3427b2f15e19",
@@ -2915,7 +3055,14 @@
             "outputTokens": 513,
             "cacheReadTokens": 89580,
             "cacheCreationTokens": 6343
-          }
+          },
+          "costBreakdown": {
+            "input": -0.000026,
+            "output": 0.005090000000000001,
+            "cacheRead": 0.0178754,
+            "cacheWrite": 0.015812500000000004
+          },
+          "costUsd": 0.038751900000000006
         }
       ],
       "subagents": [
@@ -2963,7 +3110,14 @@
                 "outputTokens": 3616,
                 "cacheReadTokens": 41725,
                 "cacheCreationTokens": 4041
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000039,
+                "output": 0.01808,
+                "cacheRead": 0.0041725,
+                "cacheWrite": 0.00505125
+              },
+              "costUsd": 0.02734275
             },
             {
               "id": "df959480-4c48-4179-b850-947b3f675d29",
@@ -3014,7 +3168,14 @@
                 "outputTokens": 2592,
                 "cacheReadTokens": 113029,
                 "cacheCreationTokens": 727
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000061000000000000005,
+                "output": 0.012920000000000001,
+                "cacheRead": 0.0113275,
+                "cacheWrite": 0.0009487499999999999
+              },
+              "costUsd": 0.025257250000000002
             }
           ],
           "usage": {
@@ -3075,7 +3236,14 @@
                 "outputTokens": 1353,
                 "cacheReadTokens": 117007,
                 "cacheCreationTokens": 5854
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000025,
+                "output": 0.006765,
+                "cacheRead": 0.011700700000000001,
+                "cacheWrite": 0.0073175
+              },
+              "costUsd": 0.025808200000000003
             },
             {
               "id": "bca86a02-7e9a-4d36-a5ce-3a9566e9a15e",
@@ -3137,7 +3305,14 @@
                 "outputTokens": 3917,
                 "cacheReadTokens": 163738,
                 "cacheCreationTokens": 3412
-              }
+              },
+              "costBreakdown": {
+                "input": -0.000025,
+                "output": 0.019635,
+                "cacheRead": 0.0163993,
+                "cacheWrite": 0.0042825
+              },
+              "costUsd": 0.040291799999999996
             }
           ],
           "usage": {
@@ -3266,7 +3441,14 @@
             "outputTokens": 478,
             "cacheReadTokens": 128266,
             "cacheCreationTokens": 609
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000165,
+            "output": 0.01195,
+            "cacheRead": 0.064133,
+            "cacheWrite": 0.00380625
+          },
+          "costUsd": 0.08005425
         },
         {
           "id": "16142544-9258-4aa5-bf5f-d5ac1faedacc",
@@ -3305,7 +3487,14 @@
             "outputTokens": 2555,
             "cacheReadTokens": 179816,
             "cacheCreationTokens": 9445
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000195,
+            "output": 0.063875,
+            "cacheRead": 0.089908,
+            "cacheWrite": 0.05903125
+          },
+          "costUsd": 0.21300925
         },
         {
           "id": "0a434bce-0b57-49d7-83ac-00125ac1eeaf",
@@ -3355,7 +3544,14 @@
             "outputTokens": 1627,
             "cacheReadTokens": 130948,
             "cacheCreationTokens": 4767
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00005,
+            "output": 0.040675,
+            "cacheRead": 0.065474,
+            "cacheWrite": 0.02979375
+          },
+          "costUsd": 0.13599275000000002
         },
         {
           "id": "6e002b9c-0a50-4c40-ae1c-8255aab28d51",
@@ -3453,7 +3649,14 @@
             "outputTokens": 611,
             "cacheReadTokens": 138833,
             "cacheCreationTokens": 1189
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000075,
+            "output": 0.015275,
+            "cacheRead": 0.0694165,
+            "cacheWrite": 0.00743125
+          },
+          "costUsd": 0.09219775000000001
         },
         {
           "id": "ec48c07e-7955-4bb2-b7e5-2ac8f2f15173",
@@ -3526,7 +3729,14 @@
             "outputTokens": 3728,
             "cacheReadTokens": 135127,
             "cacheCreationTokens": 1403
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000115,
+            "output": 0.0932,
+            "cacheRead": 0.0675635,
+            "cacheWrite": 0.00876875
+          },
+          "costUsd": 0.16964725
         },
         {
           "id": "0b696e00-f85e-40f4-a62e-b0cfda8db088",
@@ -3565,7 +3775,14 @@
             "outputTokens": 2817,
             "cacheReadTokens": 69584,
             "cacheCreationTokens": 11498
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000115,
+            "output": 0.070425,
+            "cacheRead": 0.034792,
+            "cacheWrite": 0.0718625
+          },
+          "costUsd": 0.1771945
         },
         {
           "id": "a046305a-7f03-4999-9d4f-41b159b63b86",
@@ -3661,7 +3878,14 @@
             "outputTokens": 1914,
             "cacheReadTokens": 146148,
             "cacheCreationTokens": 1117
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00008500000000000011,
+            "output": 0.0479,
+            "cacheRead": 0.07311299999999993,
+            "cacheWrite": 0.007006250000000019
+          },
+          "costUsd": 0.12810424999999995
         }
       ],
       "subagents": []
@@ -3786,7 +4010,14 @@
             "outputTokens": 3071,
             "cacheReadTokens": 77321,
             "cacheCreationTokens": 6321
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000128,
+            "output": 0.06142,
+            "cacheRead": 0.0154642,
+            "cacheWrite": 0.0158025
+          },
+          "costUsd": 0.0928147
         },
         {
           "id": "03921ff3-cf71-41c7-ba75-96a402f7d815",
@@ -3859,7 +4090,14 @@
             "outputTokens": 3188,
             "cacheReadTokens": 74755,
             "cacheCreationTokens": 5869
-          }
+          },
+          "costBreakdown": {
+            "input": -0.00002799999999999999,
+            "output": 0.06377999999999999,
+            "cacheRead": 0.014935799999999997,
+            "cacheWrite": 0.045197499999999995
+          },
+          "costUsd": 0.12388529999999998
         }
       ],
       "subagents": []
@@ -3971,7 +4209,14 @@
             "outputTokens": 2246,
             "cacheReadTokens": 164131,
             "cacheCreationTokens": 10126
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00006,
+            "output": 0.03369,
+            "cacheRead": 0.04923929999999999,
+            "cacheWrite": 0.0379725
+          },
+          "costUsd": 0.12096179999999998
         },
         {
           "id": "c794ffed-fd57-4d53-9ec6-3725c7b8ea61",
@@ -4033,7 +4278,14 @@
             "outputTokens": 2629,
             "cacheReadTokens": 141276,
             "cacheCreationTokens": 2363
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000081,
+            "output": 0.039435,
+            "cacheRead": 0.0423828,
+            "cacheWrite": 0.00886125
+          },
+          "costUsd": 0.09076005
         },
         {
           "id": "11313fb2-de31-413b-b18d-40426b42de0d",
@@ -4083,7 +4335,14 @@
             "outputTokens": 940,
             "cacheReadTokens": 65257,
             "cacheCreationTokens": 13022
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000048,
+            "output": 0.0141,
+            "cacheRead": 0.0195771,
+            "cacheWrite": 0.0488325
+          },
+          "costUsd": 0.08255760000000001
         },
         {
           "id": "cb50e453-8b4a-42e0-b928-b61a4df73e01",
@@ -4122,7 +4381,14 @@
             "outputTokens": 596,
             "cacheReadTokens": 42433,
             "cacheCreationTokens": 6648
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000105,
+            "output": 0.00894,
+            "cacheRead": 0.012729899999999999,
+            "cacheWrite": 0.02493
+          },
+          "costUsd": 0.0467049
         },
         {
           "id": "eda616bd-f67a-4aea-aac0-e0cb728fa094",
@@ -4161,7 +4427,14 @@
             "outputTokens": 2470,
             "cacheReadTokens": 94448,
             "cacheCreationTokens": 909
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00006,
+            "output": 0.03705,
+            "cacheRead": 0.0283344,
+            "cacheWrite": 0.00340875
+          },
+          "costUsd": 0.06885315
         },
         {
           "id": "82578e80-7841-4f2f-843b-27b5a30e70af",
@@ -4235,7 +4508,14 @@
             "outputTokens": 483,
             "cacheReadTokens": 138683,
             "cacheCreationTokens": 11452
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000087,
+            "output": 0.007245,
+            "cacheRead": 0.0416049,
+            "cacheWrite": 0.042945
+          },
+          "costUsd": 0.09188189999999999
         },
         {
           "id": "8b763857-8d4a-4ede-a272-39dc19d1353c",
@@ -4320,7 +4600,14 @@
             "outputTokens": 307,
             "cacheReadTokens": 39598,
             "cacheCreationTokens": 2634
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000057,
+            "output": 0.004605,
+            "cacheRead": 0.0118794,
+            "cacheWrite": 0.0098775
+          },
+          "costUsd": 0.0264189
         },
         {
           "id": "35bafddc-3a71-464a-9a85-724047062dad",
@@ -4383,7 +4670,14 @@
             "outputTokens": 2878,
             "cacheReadTokens": 123589,
             "cacheCreationTokens": 12893
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00010199999999999999,
+            "output": 0.04313500000000001,
+            "cacheRead": 0.03705219999999998,
+            "cacheWrite": 0.048372499999999985
+          },
+          "costUsd": 0.12866169999999996
         }
       ],
       "subagents": []
@@ -4510,7 +4804,14 @@
             "outputTokens": 635,
             "cacheReadTokens": 164412,
             "cacheCreationTokens": 14081
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000035,
+            "output": 0.003175,
+            "cacheRead": 0.0164412,
+            "cacheWrite": 0.01760125
+          },
+          "costUsd": 0.03725245
         },
         {
           "id": "a607c182-3b40-4c54-af60-970ce076ea70",
@@ -4595,7 +4896,14 @@
             "outputTokens": 1539,
             "cacheReadTokens": 51358,
             "cacheCreationTokens": 14685
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00006500000000000001,
+            "output": 0.007725,
+            "cacheRead": 0.005158800000000002,
+            "cacheWrite": 0.018398750000000002
+          },
+          "costUsd": 0.03134755
         }
       ],
       "subagents": [
@@ -4680,7 +4988,14 @@
                 "outputTokens": 3329,
                 "cacheReadTokens": 29423,
                 "cacheCreationTokens": 3875
-              }
+              },
+              "costBreakdown": {
+                "input": 0,
+                "output": 0.0166,
+                "cacheRead": 0.0029,
+                "cacheWrite": 0.0048
+              },
+              "costUsd": 0.0243
             }
           ],
           "usage": {
@@ -4822,7 +5137,14 @@
             "outputTokens": 1295,
             "cacheReadTokens": 149723,
             "cacheCreationTokens": 14838
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000102,
+            "output": 0.019425,
+            "cacheRead": 0.0449169,
+            "cacheWrite": 0.0556425
+          },
+          "costUsd": 0.1200864
         },
         {
           "id": "f58ad733-bde4-46a0-a49d-3d3155354c8b",
@@ -4909,7 +5231,14 @@
             "outputTokens": 316,
             "cacheReadTokens": 21890,
             "cacheCreationTokens": 14828
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000075,
+            "output": 0.00474,
+            "cacheRead": 0.006567,
+            "cacheWrite": 0.055605
+          },
+          "costUsd": 0.066987
         },
         {
           "id": "3d30cb9d-7e06-47b0-9d32-ef14c9937a08",
@@ -5010,7 +5339,14 @@
             "outputTokens": 1629,
             "cacheReadTokens": 169090,
             "cacheCreationTokens": 13213
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000027,
+            "output": 0.024435,
+            "cacheRead": 0.050727,
+            "cacheWrite": 0.04954875
+          },
+          "costUsd": 0.12473775000000001
         },
         {
           "id": "f59eb58c-552f-413c-a2b4-7f485571afa2",
@@ -5062,7 +5398,14 @@
             "outputTokens": 1053,
             "cacheReadTokens": 91877,
             "cacheCreationTokens": 14852
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000054,
+            "output": 0.015795,
+            "cacheRead": 0.0275631,
+            "cacheWrite": 0.055695
+          },
+          "costUsd": 0.0991071
         },
         {
           "id": "00bde10e-d56d-4c82-8d1d-4fc7662afbff",
@@ -5112,7 +5455,14 @@
             "outputTokens": 1026,
             "cacheReadTokens": 42479,
             "cacheCreationTokens": 9154
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00012,
+            "output": 0.01539,
+            "cacheRead": 0.012743699999999998,
+            "cacheWrite": 0.0343275
+          },
+          "costUsd": 0.0625812
         },
         {
           "id": "40bb5628-121e-4c31-9257-56566775d4de",
@@ -5151,7 +5501,14 @@
             "outputTokens": 3737,
             "cacheReadTokens": 60109,
             "cacheCreationTokens": 14911
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00012200000000000004,
+            "output": 0.056014999999999954,
+            "cacheRead": 0.018082300000000023,
+            "cacheWrite": 0.05588125000000005
+          },
+          "costUsd": 0.13010055000000004
         }
       ],
       "subagents": [
@@ -5199,7 +5556,14 @@
                 "outputTokens": 651,
                 "cacheReadTokens": 131943,
                 "cacheCreationTokens": 5575
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000004,
+                "output": 0.003255,
+                "cacheRead": 0.0131943,
+                "cacheWrite": 0.00696875
+              },
+              "costUsd": 0.02342205
             },
             {
               "id": "e0b242e4-2ec6-4014-8b35-3d94ec645ba9",
@@ -5275,7 +5639,14 @@
                 "outputTokens": 2316,
                 "cacheReadTokens": 119868,
                 "cacheCreationTokens": 10793
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000015,
+                "output": 0.01158,
+                "cacheRead": 0.0119868,
+                "cacheWrite": 0.01349125
+              },
+              "costUsd": 0.037073049999999996
             },
             {
               "id": "7bed6215-6f5a-4713-a727-d934e84ac5ad",
@@ -5370,7 +5741,14 @@
                 "outputTokens": 2240,
                 "cacheReadTokens": 67831,
                 "cacheCreationTokens": 14543
-              }
+              },
+              "costBreakdown": {
+                "input": -0.000019,
+                "output": 0.011164999999999996,
+                "cacheRead": 0.006818900000000003,
+                "cacheWrite": 0.018140000000000003
+              },
+              "costUsd": 0.0361049
             }
           ],
           "usage": {
@@ -5493,7 +5871,14 @@
                 "outputTokens": 2796,
                 "cacheReadTokens": 40806,
                 "cacheCreationTokens": 7457
-              }
+              },
+              "costBreakdown": {
+                "input": 0,
+                "output": 0.014,
+                "cacheRead": 0.0041,
+                "cacheWrite": 0.0093
+              },
+              "costUsd": 0.0274
             }
           ],
           "usage": {
@@ -5566,7 +5951,14 @@
                 "outputTokens": 3436,
                 "cacheReadTokens": 144617,
                 "cacheCreationTokens": 5857
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000009,
+                "output": 0.01718,
+                "cacheRead": 0.014461700000000001,
+                "cacheWrite": 0.00732125
+              },
+              "costUsd": 0.038971950000000005
             },
             {
               "id": "eb90f653-8e3a-4086-9b5b-555628e1b3af",
@@ -5640,7 +6032,14 @@
                 "outputTokens": 800,
                 "cacheReadTokens": 23909,
                 "cacheCreationTokens": 10327
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000019,
+                "output": 0.004,
+                "cacheRead": 0.0023909,
+                "cacheWrite": 0.01290875
+              },
+              "costUsd": 0.01931865
             },
             {
               "id": "736005f0-fd86-44c3-847d-90ee75163dd7",
@@ -5716,7 +6115,14 @@
                 "outputTokens": 1051,
                 "cacheReadTokens": 23844,
                 "cacheCreationTokens": 12906
-              }
+              },
+              "costBreakdown": {
+                "input": -0.000028000000000000003,
+                "output": 0.005219999999999999,
+                "cacheRead": 0.002347399999999996,
+                "cacheWrite": 0.016170000000000004
+              },
+              "costUsd": 0.0237094
             }
           ],
           "usage": {
@@ -5855,7 +6261,14 @@
             "outputTokens": 1671,
             "cacheReadTokens": 52447,
             "cacheCreationTokens": 782
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000006,
+            "output": 0.008355,
+            "cacheRead": 0.005244700000000001,
+            "cacheWrite": 0.0009775
+          },
+          "costUsd": 0.014583200000000001
         },
         {
           "id": "b581b5b9-5f4d-471f-abc4-e242760d6a67",
@@ -5955,7 +6368,14 @@
             "outputTokens": 3858,
             "cacheReadTokens": 103625,
             "cacheCreationTokens": 10029
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000031,
+            "output": 0.01929,
+            "cacheRead": 0.0103625,
+            "cacheWrite": 0.01253625
+          },
+          "costUsd": 0.04221975
         },
         {
           "id": "bf6aa487-f49e-4503-83e5-f6510e04d082",
@@ -6017,7 +6437,14 @@
             "outputTokens": 1570,
             "cacheReadTokens": 20112,
             "cacheCreationTokens": 11626
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000003,
+            "output": 0.00785,
+            "cacheRead": 0.0020112,
+            "cacheWrite": 0.0145325
+          },
+          "costUsd": 0.0243967
         },
         {
           "id": "fe468701-8e5e-4f35-b6ee-6399e952e056",
@@ -6069,7 +6496,14 @@
             "outputTokens": 3143,
             "cacheReadTokens": 166256,
             "cacheCreationTokens": 14062
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000039,
+            "output": 0.015715,
+            "cacheRead": 0.0166256,
+            "cacheWrite": 0.0175775
+          },
+          "costUsd": 0.049957100000000004
         },
         {
           "id": "9050d1dc-0630-4674-8b25-f62f8f649666",
@@ -6132,7 +6566,14 @@
             "outputTokens": 2156,
             "cacheReadTokens": 44226,
             "cacheCreationTokens": 6244
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000011,
+            "output": 0.01078,
+            "cacheRead": 0.0044226000000000005,
+            "cacheWrite": 0.007805
+          },
+          "costUsd": 0.0230186
         },
         {
           "id": "bd2742fa-c2b0-4ec9-b64e-ed8aeb7a2896",
@@ -6171,7 +6612,14 @@
             "outputTokens": 308,
             "cacheReadTokens": 31341,
             "cacheCreationTokens": 3963
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000010000000000000013,
+            "output": 0.0015099999999999975,
+            "cacheRead": 0.0031334000000000015,
+            "cacheWrite": 0.0049712499999999896
+          },
+          "costUsd": 0.009624649999999988
         }
       ],
       "subagents": [
@@ -6242,7 +6690,14 @@
                 "outputTokens": 1446,
                 "cacheReadTokens": 88790,
                 "cacheCreationTokens": 14024
-              }
+              },
+              "costBreakdown": {
+                "input": 0,
+                "output": 0.0072,
+                "cacheRead": 0.0089,
+                "cacheWrite": 0.0175
+              },
+              "costUsd": 0.033600000000000005
             }
           ],
           "usage": {
@@ -6335,7 +6790,14 @@
             "outputTokens": 3793,
             "cacheReadTokens": 27508,
             "cacheCreationTokens": 14168
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000036,
+            "output": 0.03793,
+            "cacheRead": 0.005501600000000001,
+            "cacheWrite": 0.03542
+          },
+          "costUsd": 0.0788876
         },
         {
           "id": "92c7b093-4a83-49b7-bf72-bf48b134e2d6",
@@ -6436,7 +6898,14 @@
             "outputTokens": 1971,
             "cacheReadTokens": 127629,
             "cacheCreationTokens": 12648
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000072,
+            "output": 0.01971,
+            "cacheRead": 0.0255258,
+            "cacheWrite": 0.03162
+          },
+          "costUsd": 0.07692779999999999
         },
         {
           "id": "32c08dea-55ea-4366-bda0-be9a076805b1",
@@ -6475,7 +6944,14 @@
             "outputTokens": 2261,
             "cacheReadTokens": 106913,
             "cacheCreationTokens": 5017
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000048,
+            "output": 0.02261,
+            "cacheRead": 0.0213826,
+            "cacheWrite": 0.0125425
+          },
+          "costUsd": 0.0565831
         },
         {
           "id": "793f6949-aefb-410c-8535-b9510ab88f05",
@@ -6573,7 +7049,14 @@
             "outputTokens": 2953,
             "cacheReadTokens": 121436,
             "cacheCreationTokens": 10370
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000066,
+            "output": 0.02953,
+            "cacheRead": 0.024287200000000002,
+            "cacheWrite": 0.025925
+          },
+          "costUsd": 0.07980820000000001
         },
         {
           "id": "49a64d09-8840-4170-891d-8af78c4daef0",
@@ -6612,7 +7095,14 @@
             "outputTokens": 2806,
             "cacheReadTokens": 32474,
             "cacheCreationTokens": 10338
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00007,
+            "output": 0.02806,
+            "cacheRead": 0.0064948,
+            "cacheWrite": 0.025845
+          },
+          "costUsd": 0.060469800000000004
         },
         {
           "id": "359029a4-a355-4d72-b20b-3b0f6b819dea",
@@ -6651,7 +7141,14 @@
             "outputTokens": 1510,
             "cacheReadTokens": 151303,
             "cacheCreationTokens": 9280
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000042,
+            "output": 0.0151,
+            "cacheRead": 0.030260600000000002,
+            "cacheWrite": 0.0232
+          },
+          "costUsd": 0.0686026
         },
         {
           "id": "152ae9bf-b8fa-45ae-a67e-03a9f02d92ba",
@@ -6739,7 +7236,14 @@
             "outputTokens": 1098,
             "cacheReadTokens": 75386,
             "cacheCreationTokens": 12729
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000028,
+            "output": 0.01098,
+            "cacheRead": 0.0150772,
+            "cacheWrite": 0.0318225
+          },
+          "costUsd": 0.0579077
         },
         {
           "id": "aa5757a2-968f-4e6e-a55b-8c7ced545479",
@@ -6837,7 +7341,14 @@
             "outputTokens": 2573,
             "cacheReadTokens": 159530,
             "cacheCreationTokens": 13693
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000038000000000000056,
+            "output": 0.025779999999999997,
+            "cacheRead": 0.03187019999999999,
+            "cacheWrite": 0.03422499999999998
+          },
+          "costUsd": 0.09191319999999996
         }
       ],
       "subagents": []
@@ -6964,7 +7475,14 @@
             "outputTokens": 252,
             "cacheReadTokens": 36171,
             "cacheCreationTokens": 1555
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000038,
+            "output": 0.00126,
+            "cacheRead": 0.0036171000000000003,
+            "cacheWrite": 0.00194375
+          },
+          "costUsd": 0.0068588500000000005
         },
         {
           "id": "98202325-f07f-4af7-afef-c428e304322f",
@@ -7014,7 +7532,14 @@
             "outputTokens": 1489,
             "cacheReadTokens": 103628,
             "cacheCreationTokens": 8940
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000034,
+            "output": 0.007445,
+            "cacheRead": 0.010362800000000002,
+            "cacheWrite": 0.011175
+          },
+          "costUsd": 0.029016800000000002
         },
         {
           "id": "75a6b10c-ad3c-4f12-94e4-54e0ab61fdae",
@@ -7099,7 +7624,14 @@
             "outputTokens": 2886,
             "cacheReadTokens": 134790,
             "cacheCreationTokens": 7001
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00001,
+            "output": 0.01443,
+            "cacheRead": 0.013479,
+            "cacheWrite": 0.00875125
+          },
+          "costUsd": 0.03667025
         },
         {
           "id": "06069b92-f833-4e2e-8ce8-66a0dd6d7e0d",
@@ -7150,7 +7682,14 @@
             "outputTokens": 2907,
             "cacheReadTokens": 128695,
             "cacheCreationTokens": 2903
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000018000000000000004,
+            "output": 0.014564999999999995,
+            "cacheRead": 0.012841100000000001,
+            "cacheWrite": 0.0036299999999999943
+          },
+          "costUsd": 0.03105409999999999
         }
       ],
       "subagents": [
@@ -7222,7 +7761,14 @@
                 "outputTokens": 2375,
                 "cacheReadTokens": 132461,
                 "cacheCreationTokens": 1002
-              }
+              },
+              "costBreakdown": {
+                "input": 0,
+                "output": 0.0119,
+                "cacheRead": 0.0132,
+                "cacheWrite": 0.0013
+              },
+              "costUsd": 0.0264
             }
           ],
           "usage": {
@@ -7328,7 +7874,14 @@
                 "outputTokens": 567,
                 "cacheReadTokens": 46692,
                 "cacheCreationTokens": 7546
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000035,
+                "output": 0.002835,
+                "cacheRead": 0.0046692,
+                "cacheWrite": 0.0094325
+              },
+              "costUsd": 0.0169717
             },
             {
               "id": "a9cd5efd-f441-4ad7-8d51-c032bb7951e2",
@@ -7426,7 +7979,14 @@
                 "outputTokens": 844,
                 "cacheReadTokens": 150401,
                 "cacheCreationTokens": 10921
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000023,
+                "output": 0.00422,
+                "cacheRead": 0.0150401,
+                "cacheWrite": 0.01365125
+              },
+              "costUsd": 0.03293435
             },
             {
               "id": "2aa5acfc-998a-45db-9dd2-90604a680755",
@@ -7510,7 +8070,14 @@
                 "outputTokens": 424,
                 "cacheReadTokens": 164579,
                 "cacheCreationTokens": 10801
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000042000000000000004,
+                "output": 0.002145000000000001,
+                "cacheRead": 0.016490700000000007,
+                "cacheWrite": 0.01351625
+              },
+              "costUsd": 0.03219395000000001
             }
           ],
           "usage": {
@@ -7616,7 +8183,14 @@
             "outputTokens": 317,
             "cacheReadTokens": 147868,
             "cacheCreationTokens": 7146
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000033,
+            "output": 0.001585,
+            "cacheRead": 0.014786800000000001,
+            "cacheWrite": 0.0089325
+          },
+          "costUsd": 0.0253373
         },
         {
           "id": "673ad096-0ca8-408a-87ce-233135971190",
@@ -7700,7 +8274,14 @@
             "outputTokens": 1683,
             "cacheReadTokens": 23809,
             "cacheCreationTokens": 5660
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000067,
+            "output": 0.008415000000000002,
+            "cacheRead": 0.002413199999999999,
+            "cacheWrite": 0.007067499999999999
+          },
+          "costUsd": 0.017962699999999998
         }
       ],
       "subagents": [
@@ -7772,7 +8353,14 @@
                 "outputTokens": 2950,
                 "cacheReadTokens": 89845,
                 "cacheCreationTokens": 2255
-              }
+              },
+              "costBreakdown": {
+                "input": 0,
+                "output": 0.0148,
+                "cacheRead": 0.009,
+                "cacheWrite": 0.0028
+              },
+              "costUsd": 0.026600000000000002
             }
           ],
           "usage": {
@@ -7892,7 +8480,14 @@
                 "outputTokens": 844,
                 "cacheReadTokens": 52668,
                 "cacheCreationTokens": 3729
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000017,
+                "output": 0.00422,
+                "cacheRead": 0.0052668,
+                "cacheWrite": 0.00466125
+              },
+              "costUsd": 0.014165049999999998
             },
             {
               "id": "62a068d6-e9d2-4ca2-8c01-fc2c0b3de7fb",
@@ -7990,7 +8585,14 @@
                 "outputTokens": 1533,
                 "cacheReadTokens": 67892,
                 "cacheCreationTokens": 9170
-              }
+              },
+              "costBreakdown": {
+                "input": -0.000017,
+                "output": 0.007680000000000001,
+                "cacheRead": 0.006833199999999999,
+                "cacheWrite": 0.011438750000000001
+              },
+              "costUsd": 0.025934950000000002
             }
           ],
           "usage": {
@@ -8083,7 +8685,14 @@
             "outputTokens": 1181,
             "cacheReadTokens": 64081,
             "cacheCreationTokens": 2397
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000057,
+            "output": 0.017715,
+            "cacheRead": 0.0192243,
+            "cacheWrite": 0.00898875
+          },
+          "costUsd": 0.04598505
         },
         {
           "id": "37626370-db88-4a16-877e-2d0dfb29d568",
@@ -8135,7 +8744,14 @@
             "outputTokens": 2675,
             "cacheReadTokens": 50966,
             "cacheCreationTokens": 6515
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000043,
+            "output": 0.040084999999999996,
+            "cacheRead": 0.015275700000000003,
+            "cacheWrite": 0.024411249999999995
+          },
+          "costUsd": 0.07981495
         }
       ],
       "subagents": []
@@ -8252,7 +8868,14 @@
             "outputTokens": 3765,
             "cacheReadTokens": 74879,
             "cacheCreationTokens": 6130
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000175,
+            "output": 0.094125,
+            "cacheRead": 0.0374395,
+            "cacheWrite": 0.0383125
+          },
+          "costUsd": 0.170052
         },
         {
           "id": "a9eca13f-d0ae-4303-9ce8-0eb010d903d8",
@@ -8313,7 +8936,14 @@
             "outputTokens": 2162,
             "cacheReadTokens": 68176,
             "cacheCreationTokens": 10204
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000065,
+            "output": 0.05405,
+            "cacheRead": 0.034088,
+            "cacheWrite": 0.063775
+          },
+          "costUsd": 0.151978
         },
         {
           "id": "887463d4-1eb7-4b16-8cd8-cd5c5d5ec2a9",
@@ -8401,7 +9031,14 @@
             "outputTokens": 2687,
             "cacheReadTokens": 30676,
             "cacheCreationTokens": 5132
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000165,
+            "output": 0.067175,
+            "cacheRead": 0.015338,
+            "cacheWrite": 0.032075
+          },
+          "costUsd": 0.114753
         },
         {
           "id": "87d1a87f-97af-4640-a276-447fff1f930a",
@@ -8490,7 +9127,14 @@
             "outputTokens": 946,
             "cacheReadTokens": 44268,
             "cacheCreationTokens": 5779
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000035,
+            "output": 0.02365,
+            "cacheRead": 0.022134,
+            "cacheWrite": 0.03611875
+          },
+          "costUsd": 0.08193775
         },
         {
           "id": "fe6ee2dc-4fda-485e-8ec5-62c478752a49",
@@ -8541,7 +9185,14 @@
             "outputTokens": 2065,
             "cacheReadTokens": 108395,
             "cacheCreationTokens": 2326
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000015,
+            "output": 0.051625,
+            "cacheRead": 0.0541975,
+            "cacheWrite": 0.0145375
+          },
+          "costUsd": 0.120375
         },
         {
           "id": "16fc9314-6fae-4812-99ec-bab7f2947b83",
@@ -8618,7 +9269,14 @@
             "outputTokens": 1705,
             "cacheReadTokens": 42946,
             "cacheCreationTokens": 11267
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00014500000000000016,
+            "output": 0.042675000000000074,
+            "cacheRead": 0.021502999999999994,
+            "cacheWrite": 0.07038124999999998
+          },
+          "costUsd": 0.13470425000000005
         }
       ],
       "subagents": [
@@ -8691,7 +9349,14 @@
                 "outputTokens": 3934,
                 "cacheReadTokens": 104472,
                 "cacheCreationTokens": 14645
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000026,
+                "output": 0.01967,
+                "cacheRead": 0.0104472,
+                "cacheWrite": 0.01830625
+              },
+              "costUsd": 0.048449450000000005
             },
             {
               "id": "59fd1de2-1ad3-4ac9-b26d-c6727e75fb36",
@@ -8742,7 +9407,14 @@
                 "outputTokens": 3367,
                 "cacheReadTokens": 130984,
                 "cacheCreationTokens": 3396
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000006,
+                "output": 0.016835,
+                "cacheRead": 0.013098400000000001,
+                "cacheWrite": 0.004245
+              },
+              "costUsd": 0.0341844
             },
             {
               "id": "478b5f0e-a21f-4ae0-8d27-ec4753d621ce",
@@ -8827,7 +9499,14 @@
                 "outputTokens": 1239,
                 "cacheReadTokens": 59945,
                 "cacheCreationTokens": 7503
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000068,
+                "output": 0.006195000000000006,
+                "cacheRead": 0.005954399999999999,
+                "cacheWrite": 0.009348749999999996
+              },
+              "costUsd": 0.02156615
             }
           ],
           "usage": {
@@ -8945,7 +9624,14 @@
                 "outputTokens": 596,
                 "cacheReadTokens": 42433,
                 "cacheCreationTokens": 6648
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000035,
+                "output": 0.00298,
+                "cacheRead": 0.0042433,
+                "cacheWrite": 0.00831
+              },
+              "costUsd": 0.0155683
             },
             {
               "id": "eda616bd-f67a-4aea-aac0-e0cb728fa094",
@@ -8984,7 +9670,14 @@
                 "outputTokens": 2470,
                 "cacheReadTokens": 94448,
                 "cacheCreationTokens": 909
-              }
+              },
+              "costBreakdown": {
+                "input": 0.00002,
+                "output": 0.01235,
+                "cacheRead": 0.009444800000000001,
+                "cacheWrite": 0.00113625
+              },
+              "costUsd": 0.02295105
             },
             {
               "id": "82578e80-7841-4f2f-843b-27b5a30e70af",
@@ -9058,7 +9751,14 @@
                 "outputTokens": 483,
                 "cacheReadTokens": 138683,
                 "cacheCreationTokens": 11452
-              }
+              },
+              "costBreakdown": {
+                "input": 0.00004500000000000001,
+                "output": 0.0023700000000000006,
+                "cacheRead": 0.0139119,
+                "cacheWrite": 0.014353750000000004
+              },
+              "costUsd": 0.030680650000000004
             }
           ],
           "usage": {
@@ -9119,7 +9819,14 @@
                 "outputTokens": 1149,
                 "cacheReadTokens": 61983,
                 "cacheCreationTokens": 2833
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000007,
+                "output": 0.005745,
+                "cacheRead": 0.0061983,
+                "cacheWrite": 0.00354125
+              },
+              "costUsd": 0.01549155
             },
             {
               "id": "452db1f8-5c8e-4325-8141-2857582daa5e",
@@ -9180,7 +9887,14 @@
                 "outputTokens": 1084,
                 "cacheReadTokens": 90402,
                 "cacheCreationTokens": 3531
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000006,
+                "output": 0.00542,
+                "cacheRead": 0.0090402,
+                "cacheWrite": 0.00441375
+              },
+              "costUsd": 0.01887995
             },
             {
               "id": "76d05eaf-ba99-4243-83e8-bc528036e602",
@@ -9282,7 +9996,14 @@
                 "outputTokens": 3395,
                 "cacheReadTokens": 107109,
                 "cacheCreationTokens": 1562
-              }
+              },
+              "costBreakdown": {
+                "input": -0.000013000000000000004,
+                "output": 0.016935,
+                "cacheRead": 0.010661499999999999,
+                "cacheWrite": 0.0019450000000000005
+              },
+              "costUsd": 0.0295285
             }
           ],
           "usage": {
@@ -9398,7 +10119,14 @@
             "outputTokens": 3867,
             "cacheReadTokens": 174560,
             "cacheCreationTokens": 922
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000015,
+            "output": 0.019335,
+            "cacheRead": 0.017456,
+            "cacheWrite": 0.0011525
+          },
+          "costUsd": 0.037958500000000006
         },
         {
           "id": "c9d48031-ac7d-457f-b146-338161ff578d",
@@ -9473,7 +10201,14 @@
             "outputTokens": 3285,
             "cacheReadTokens": 70913,
             "cacheCreationTokens": 8926
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000038,
+            "output": 0.016425,
+            "cacheRead": 0.0070913,
+            "cacheWrite": 0.0111575
+          },
+          "costUsd": 0.0347118
         },
         {
           "id": "5cf444d9-edf3-44da-81e7-6562939ea333",
@@ -9524,7 +10259,14 @@
             "outputTokens": 1937,
             "cacheReadTokens": 43228,
             "cacheCreationTokens": 11721
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000033,
+            "output": 0.009685,
+            "cacheRead": 0.0043228,
+            "cacheWrite": 0.01465125
+          },
+          "costUsd": 0.028692049999999997
         },
         {
           "id": "61589aeb-7a7e-4686-896a-7c8227c34ba7",
@@ -9586,7 +10328,14 @@
             "outputTokens": 1373,
             "cacheReadTokens": 134929,
             "cacheCreationTokens": 10842
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000009,
+            "output": 0.006865,
+            "cacheRead": 0.013492900000000002,
+            "cacheWrite": 0.0135525
+          },
+          "costUsd": 0.0339194
         },
         {
           "id": "adf8946c-aa06-493e-b492-b38e931aa344",
@@ -9648,7 +10397,14 @@
             "outputTokens": 3078,
             "cacheReadTokens": 36829,
             "cacheCreationTokens": 12119
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000009,
+            "output": 0.01539,
+            "cacheRead": 0.0036829000000000002,
+            "cacheWrite": 0.01514875
+          },
+          "costUsd": 0.03423065
         },
         {
           "id": "f7d15dd5-fef5-48ad-b33b-de46a0a49d3d",
@@ -9710,7 +10466,14 @@
             "outputTokens": 1389,
             "cacheReadTokens": 124805,
             "cacheCreationTokens": 11446
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00003,
+            "output": 0.006945,
+            "cacheRead": 0.0124805,
+            "cacheWrite": 0.0143075
+          },
+          "costUsd": 0.033763
         },
         {
           "id": "d38fbfe0-4ede-4b06-8311-280fc970bb14",
@@ -9771,7 +10534,14 @@
             "outputTokens": 2344,
             "cacheReadTokens": 58921,
             "cacheCreationTokens": 7192
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000024,
+            "output": 0.01172,
+            "cacheRead": 0.0058921,
+            "cacheWrite": 0.00899
+          },
+          "costUsd": 0.0266261
         },
         {
           "id": "bccae9c1-9bd7-4e62-bd6e-06822f0e89c5",
@@ -9810,7 +10580,14 @@
             "outputTokens": 1339,
             "cacheReadTokens": 177225,
             "cacheCreationTokens": 3601
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00004200000000000002,
+            "output": 0.006735000000000019,
+            "cacheRead": 0.017681500000000003,
+            "cacheWrite": 0.004540000000000002
+          },
+          "costUsd": 0.028998500000000024
         }
       ],
       "subagents": []
@@ -9925,7 +10702,14 @@
             "outputTokens": 681,
             "cacheReadTokens": 30727,
             "cacheCreationTokens": 6528
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00009,
+            "output": 0.017025,
+            "cacheRead": 0.0153635,
+            "cacheWrite": 0.0408
+          },
+          "costUsd": 0.0732785
         },
         {
           "id": "93e00bde-10ed-456d-8828-d1d4fc7662af",
@@ -10024,7 +10808,14 @@
             "outputTokens": 3189,
             "cacheReadTokens": 101388,
             "cacheCreationTokens": 14150
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00018,
+            "output": 0.079725,
+            "cacheRead": 0.050694,
+            "cacheWrite": 0.0884375
+          },
+          "costUsd": 0.21903650000000002
         },
         {
           "id": "3bacc2e0-e0b2-442e-82ec-60148b353d94",
@@ -10087,7 +10878,14 @@
             "outputTokens": 2671,
             "cacheReadTokens": 171394,
             "cacheCreationTokens": 7256
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00013000000000000007,
+            "output": 0.06675,
+            "cacheRead": 0.0857425,
+            "cacheWrite": 0.0453625
+          },
+          "costUsd": 0.197985
         }
       ],
       "subagents": [
@@ -10147,7 +10945,14 @@
                 "outputTokens": 833,
                 "cacheReadTokens": 167601,
                 "cacheCreationTokens": 14200
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000036,
+                "output": 0.004165,
+                "cacheRead": 0.016760100000000003,
+                "cacheWrite": 0.01775
+              },
+              "costUsd": 0.0387111
             },
             {
               "id": "647160a2-77f7-4276-b787-4a39c71bec7e",
@@ -10242,7 +11047,14 @@
                 "outputTokens": 2499,
                 "cacheReadTokens": 168395,
                 "cacheCreationTokens": 1334
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000064,
+                "output": 0.012534999999999998,
+                "cacheRead": 0.01683989999999999,
+                "cacheWrite": 0.0016500000000000022
+              },
+              "costUsd": 0.031088899999999992
             }
           ],
           "usage": {
@@ -10381,7 +11193,14 @@
             "outputTokens": 3534,
             "cacheReadTokens": 95285,
             "cacheCreationTokens": 9189
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00003,
+            "output": 0.05301,
+            "cacheRead": 0.0285855,
+            "cacheWrite": 0.03445875
+          },
+          "costUsd": 0.11608425
         },
         {
           "id": "507fd82c-fa54-48f0-9f73-dcf03cb80e82",
@@ -10420,7 +11239,14 @@
             "outputTokens": 3160,
             "cacheReadTokens": 79110,
             "cacheCreationTokens": 13762
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000105,
+            "output": 0.0474,
+            "cacheRead": 0.023733,
+            "cacheWrite": 0.0516075
+          },
+          "costUsd": 0.1228455
         },
         {
           "id": "b90f6538-e3a0-4869-b5b5-55628e1b3afa",
@@ -10494,7 +11320,14 @@
             "outputTokens": 800,
             "cacheReadTokens": 23909,
             "cacheCreationTokens": 10327
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000057,
+            "output": 0.012,
+            "cacheRead": 0.0071727,
+            "cacheWrite": 0.03872625
+          },
+          "costUsd": 0.05795594999999999
         },
         {
           "id": "736005f0-fd86-44c3-847d-90ee75163dd7",
@@ -10570,7 +11403,14 @@
             "outputTokens": 1051,
             "cacheReadTokens": 23844,
             "cacheCreationTokens": 12906
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000036,
+            "output": 0.015765,
+            "cacheRead": 0.0071532,
+            "cacheWrite": 0.0483975
+          },
+          "costUsd": 0.0713517
         },
         {
           "id": "16c712e6-3ae7-4cb9-8194-ccd78d92acd9",
@@ -10621,7 +11461,14 @@
             "outputTokens": 2106,
             "cacheReadTokens": 142758,
             "cacheCreationTokens": 7000
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000042,
+            "output": 0.03159,
+            "cacheRead": 0.0428274,
+            "cacheWrite": 0.02625
+          },
+          "costUsd": 0.1007094
         },
         {
           "id": "297cb4f8-c7de-468b-b580-0d91fd3b3395",
@@ -10672,7 +11519,14 @@
             "outputTokens": 2431,
             "cacheReadTokens": 143553,
             "cacheCreationTokens": 13112
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000093,
+            "output": 0.036465,
+            "cacheRead": 0.043065900000000004,
+            "cacheWrite": 0.04917
+          },
+          "costUsd": 0.1287939
         },
         {
           "id": "d2460c77-abea-404f-9772-f8b69b9709c6",
@@ -10711,7 +11565,14 @@
             "outputTokens": 970,
             "cacheReadTokens": 23112,
             "cacheCreationTokens": 14061
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000051,
+            "output": 0.01455,
+            "cacheRead": 0.0069336,
+            "cacheWrite": 0.05272875
+          },
+          "costUsd": 0.07426335
         },
         {
           "id": "581b5b95-f4d7-41f2-bc4e-242760d6a678",
@@ -10787,7 +11648,14 @@
             "outputTokens": 2433,
             "cacheReadTokens": 178569,
             "cacheCreationTokens": 4793
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000072,
+            "output": 0.036495,
+            "cacheRead": 0.0535707,
+            "cacheWrite": 0.01797375
+          },
+          "costUsd": 0.10811145
         },
         {
           "id": "af605975-02a8-425f-9aca-834c63f959dc",
@@ -10863,7 +11731,14 @@
             "outputTokens": 1946,
             "cacheReadTokens": 72979,
             "cacheCreationTokens": 1612
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00011399999999999995,
+            "output": 0.029225,
+            "cacheRead": 0.02185799999999999,
+            "cacheWrite": 0.0060875000000000234
+          },
+          "costUsd": 0.057284500000000016
         }
       ],
       "subagents": []
@@ -10954,7 +11829,14 @@
             "outputTokens": 686,
             "cacheReadTokens": 99837,
             "cacheCreationTokens": 14214
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000044,
+            "output": 0.00686,
+            "cacheRead": 0.0199674,
+            "cacheWrite": 0.035535
+          },
+          "costUsd": 0.0624064
         },
         {
           "id": "06306740-b25f-462f-8f64-9666cd5c185d",
@@ -11004,7 +11886,14 @@
             "outputTokens": 929,
             "cacheReadTokens": 137426,
             "cacheCreationTokens": 4776
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000056000000000000006,
+            "output": 0.009240000000000002,
+            "cacheRead": 0.027532600000000004,
+            "cacheWrite": 0.011965000000000003
+          },
+          "costUsd": 0.048793600000000006
         }
       ],
       "subagents": []
@@ -11132,7 +12021,14 @@
             "outputTokens": 2128,
             "cacheReadTokens": 61127,
             "cacheCreationTokens": 5545
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000012,
+            "output": 0.04256,
+            "cacheRead": 0.0122254,
+            "cacheWrite": 0.0138625
+          },
+          "costUsd": 0.0686599
         },
         {
           "id": "efd2c45b-1627-46df-bd04-4805adc15c3b",
@@ -11205,7 +12101,14 @@
             "outputTokens": 1222,
             "cacheReadTokens": 122799,
             "cacheCreationTokens": 8125
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000044,
+            "output": 0.02444,
+            "cacheRead": 0.024559800000000003,
+            "cacheWrite": 0.0203125
+          },
+          "costUsd": 0.0693563
         },
         {
           "id": "9be3ef30-6764-4ea7-968f-1480d78800bc",
@@ -11291,7 +12194,14 @@
             "outputTokens": 2033,
             "cacheReadTokens": 151533,
             "cacheCreationTokens": 3676
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000048,
+            "output": 0.04066,
+            "cacheRead": 0.030306600000000003,
+            "cacheWrite": 0.00919
+          },
+          "costUsd": 0.08020460000000001
         },
         {
           "id": "3663da0b-e9a0-4768-85b1-da1988440d19",
@@ -11365,7 +12275,14 @@
             "outputTokens": 3195,
             "cacheReadTokens": 112315,
             "cacheCreationTokens": 11128
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000092,
+            "output": 0.0639,
+            "cacheRead": 0.022463,
+            "cacheWrite": 0.02782
+          },
+          "costUsd": 0.11427499999999999
         },
         {
           "id": "14c600f6-6c34-4b24-8be4-f9a0b623c604",
@@ -11415,7 +12332,14 @@
             "outputTokens": 240,
             "cacheReadTokens": 67233,
             "cacheCreationTokens": 10886
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000144,
+            "output": 0.0048,
+            "cacheRead": 0.0134466,
+            "cacheWrite": 0.027215
+          },
+          "costUsd": 0.045605599999999996
         },
         {
           "id": "d7b2cd5c-ad44-4c6d-a24a-749a64d09884",
@@ -11478,7 +12402,14 @@
             "outputTokens": 761,
             "cacheReadTokens": 177310,
             "cacheCreationTokens": 2439
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00008,
+            "output": 0.01522,
+            "cacheRead": 0.035462,
+            "cacheWrite": 0.0060975
+          },
+          "costUsd": 0.0568595
         },
         {
           "id": "81d84168-10ce-45c1-bbcd-7f152ae9bfb8",
@@ -11530,7 +12461,14 @@
             "outputTokens": 3756,
             "cacheReadTokens": 133024,
             "cacheCreationTokens": 7045
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000068,
+            "output": 0.07512,
+            "cacheRead": 0.0266048,
+            "cacheWrite": 0.0176125
+          },
+          "costUsd": 0.1194053
         },
         {
           "id": "bab09b5a-d06c-4740-8a60-eef03d1c8a00",
@@ -11582,7 +12520,14 @@
             "outputTokens": 797,
             "cacheReadTokens": 129367,
             "cacheCreationTokens": 12779
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000108,
+            "output": 0.01594,
+            "cacheRead": 0.0258734,
+            "cacheWrite": 0.0319475
+          },
+          "costUsd": 0.07386889999999999
         },
         {
           "id": "fb0bff7a-3370-412f-9f72-2aa5757a2968",
@@ -11645,7 +12590,14 @@
             "outputTokens": 1970,
             "cacheReadTokens": 61727,
             "cacheCreationTokens": 2437
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00020399999999999997,
+            "output": 0.039360000000000006,
+            "cacheRead": 0.012358399999999992,
+            "cacheWrite": 0.16624249999999996
+          },
+          "costUsd": 0.21816489999999997
         }
       ],
       "subagents": []
@@ -11749,7 +12701,14 @@
             "outputTokens": 3013,
             "cacheReadTokens": 178244,
             "cacheCreationTokens": 955
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000024,
+            "output": 0.015065,
+            "cacheRead": 0.0178244,
+            "cacheWrite": 0.00119375
+          },
+          "costUsd": 0.03410715
         },
         {
           "id": "30186330-2b26-4b0e-b836-b15dde801edc",
@@ -11844,7 +12803,14 @@
             "outputTokens": 1874,
             "cacheReadTokens": 81269,
             "cacheCreationTokens": 14927
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00007599999999999999,
+            "output": 0.009334999999999993,
+            "cacheRead": 0.008175600000000005,
+            "cacheWrite": 0.018706250000000015
+          },
+          "costUsd": 0.036292850000000015
         }
       ],
       "subagents": [
@@ -11916,7 +12882,14 @@
                 "outputTokens": 2686,
                 "cacheReadTokens": 79507,
                 "cacheCreationTokens": 11817
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000013,
+                "output": 0.01343,
+                "cacheRead": 0.007950700000000002,
+                "cacheWrite": 0.01477125
+              },
+              "costUsd": 0.03616495
             },
             {
               "id": "97245449-34bc-415e-8feb-34c0f5f6f21f",
@@ -12015,7 +12988,14 @@
                 "outputTokens": 1344,
                 "cacheReadTokens": 91029,
                 "cacheCreationTokens": 877
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000027,
+                "output": 0.00672,
+                "cacheRead": 0.009102899999999999,
+                "cacheWrite": 0.00109625
+              },
+              "costUsd": 0.01694615
             },
             {
               "id": "69ba0be3-2776-446f-872d-9662da43797c",
@@ -12077,7 +13057,14 @@
                 "outputTokens": 562,
                 "cacheReadTokens": 20970,
                 "cacheCreationTokens": 12953
-              }
+              },
+              "costBreakdown": {
+                "input": 0.00006000000000000001,
+                "output": 0.0028499999999999984,
+                "cacheRead": 0.0021463999999999962,
+                "cacheWrite": 0.0162325
+              },
+              "costUsd": 0.021288899999999996
             }
           ],
           "usage": {
@@ -12163,7 +13150,14 @@
                 "outputTokens": 294,
                 "cacheReadTokens": 83439,
                 "cacheCreationTokens": 14053
-              }
+              },
+              "costBreakdown": {
+                "input": 0.000039,
+                "output": 0.00147,
+                "cacheRead": 0.0083439,
+                "cacheWrite": 0.01756625
+              },
+              "costUsd": 0.027419149999999996
             },
             {
               "id": "c8582650-9000-4e08-be9e-ec13d12763ba",
@@ -12249,7 +13243,14 @@
                 "outputTokens": 2048,
                 "cacheReadTokens": 107405,
                 "cacheCreationTokens": 12344
-              }
+              },
+              "costBreakdown": {
+                "input": 0.00002,
+                "output": 0.01024,
+                "cacheRead": 0.0107405,
+                "cacheWrite": 0.01543
+              },
+              "costUsd": 0.0364305
             },
             {
               "id": "8e035940-0391-4234-ae35-913a79425ca7",
@@ -12324,7 +13325,14 @@
                 "outputTokens": 1125,
                 "cacheReadTokens": 149514,
                 "cacheCreationTokens": 820
-              }
+              },
+              "costBreakdown": {
+                "input": 0.00004100000000000001,
+                "output": 0.005589999999999996,
+                "cacheRead": 0.014915600000000001,
+                "cacheWrite": 0.0010037500000000046
+              },
+              "costUsd": 0.021550350000000003
             }
           ],
           "usage": {
@@ -12442,7 +13450,14 @@
                 "outputTokens": 977,
                 "cacheReadTokens": 69792,
                 "cacheCreationTokens": 5334
-              }
+              },
+              "costBreakdown": {
+                "input": 0.00002,
+                "output": 0.004885,
+                "cacheRead": 0.0069792000000000005,
+                "cacheWrite": 0.0066675
+              },
+              "costUsd": 0.0185517
             },
             {
               "id": "977bb5f2-ed7d-460d-a03f-f20ef1673ad0",
@@ -12481,7 +13496,14 @@
                 "outputTokens": 2711,
                 "cacheReadTokens": 103409,
                 "cacheCreationTokens": 835
-              }
+              },
+              "costBreakdown": {
+                "input": 0.00008,
+                "output": 0.013515000000000001,
+                "cacheRead": 0.0103208,
+                "cacheWrite": 0.0010325000000000004
+              },
+              "costUsd": 0.0249483
             }
           ],
           "usage": {
@@ -12609,7 +13631,14 @@
             "outputTokens": 268,
             "cacheReadTokens": 116277,
             "cacheCreationTokens": 2508
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00003,
+            "output": 0.00402,
+            "cacheRead": 0.0348831,
+            "cacheWrite": 0.009405
+          },
+          "costUsd": 0.048338099999999995
         },
         {
           "id": "0bb73c6c-eb46-4fd1-a6f1-68d1fb61dccc",
@@ -12709,7 +13738,14 @@
             "outputTokens": 1850,
             "cacheReadTokens": 46953,
             "cacheCreationTokens": 6195
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000099,
+            "output": 0.02775,
+            "cacheRead": 0.0140859,
+            "cacheWrite": 0.02323125
+          },
+          "costUsd": 0.06516614999999999
         },
         {
           "id": "b0f82251-67a0-4676-9253-2f8bdaf4c88c",
@@ -12794,7 +13830,14 @@
             "outputTokens": 2960,
             "cacheReadTokens": 30707,
             "cacheCreationTokens": 6944
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000015,
+            "output": 0.0444,
+            "cacheRead": 0.0092121,
+            "cacheWrite": 0.02604
+          },
+          "costUsd": 0.0796671
         },
         {
           "id": "c3fc897a-8e61-485b-bb33-81d1778bc1d6",
@@ -12833,7 +13876,14 @@
             "outputTokens": 3767,
             "cacheReadTokens": 165942,
             "cacheCreationTokens": 7325
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000021,
+            "output": 0.056505,
+            "cacheRead": 0.049782599999999996,
+            "cacheWrite": 0.02746875
+          },
+          "costUsd": 0.13377735000000002
         },
         {
           "id": "112d55f9-32f4-40b7-b46e-7c8549b25a37",
@@ -12883,7 +13933,14 @@
             "outputTokens": 576,
             "cacheReadTokens": 73156,
             "cacheCreationTokens": 10386
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00006,
+            "output": 0.00864,
+            "cacheRead": 0.0219468,
+            "cacheWrite": 0.0389475
+          },
+          "costUsd": 0.0695943
         },
         {
           "id": "4963f742-56ba-48aa-83c5-a07184805900",
@@ -12944,7 +14001,14 @@
             "outputTokens": 2337,
             "cacheReadTokens": 127125,
             "cacheCreationTokens": 1713
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00007499999999999995,
+            "output": 0.035085000000000005,
+            "cacheRead": 0.038089500000000026,
+            "cacheWrite": 0.00640750000000001
+          },
+          "costUsd": 0.07965700000000003
         }
       ],
       "subagents": []
@@ -13071,7 +14135,14 @@
             "outputTokens": 3096,
             "cacheReadTokens": 38758,
             "cacheCreationTokens": 13583
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000072,
+            "output": 0.06192,
+            "cacheRead": 0.0077516,
+            "cacheWrite": 0.0339575
+          },
+          "costUsd": 0.1037011
         },
         {
           "id": "5f561bc2-6a94-4f5a-89c7-d99ea9eca13f",
@@ -13157,7 +14228,14 @@
             "outputTokens": 1882,
             "cacheReadTokens": 134247,
             "cacheCreationTokens": 1779
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000116,
+            "output": 0.03764,
+            "cacheRead": 0.026849400000000002,
+            "cacheWrite": 0.0044475
+          },
+          "costUsd": 0.0690529
         },
         {
           "id": "79ba2948-0263-4c5b-aee9-9c0cbb157309",
@@ -13219,7 +14297,14 @@
             "outputTokens": 3787,
             "cacheReadTokens": 83472,
             "cacheCreationTokens": 9870
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000011999999999999994,
+            "output": 0.07574,
+            "cacheRead": 0.01669899999999999,
+            "cacheWrite": 0.08779500000000001
+          },
+          "costUsd": 0.18024600000000002
         }
       ],
       "subagents": []
@@ -13298,7 +14383,14 @@
             "outputTokens": 3437,
             "cacheReadTokens": 28884,
             "cacheCreationTokens": 5104
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000175,
+            "output": 0.085925,
+            "cacheRead": 0.014442,
+            "cacheWrite": 0.0319
+          },
+          "costUsd": 0.132442
         },
         {
           "id": "520b86c6-c67c-4aa2-a9c5-4d95bf7949b2",
@@ -13360,7 +14452,14 @@
             "outputTokens": 3084,
             "cacheReadTokens": 44228,
             "cacheCreationTokens": 14577
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000155,
+            "output": 0.0771,
+            "cacheRead": 0.022114,
+            "cacheWrite": 0.09110625
+          },
+          "costUsd": 0.19047525
         },
         {
           "id": "562c4787-52a4-49e3-b587-f10d47134f05",
@@ -13423,7 +14522,14 @@
             "outputTokens": 3607,
             "cacheReadTokens": 149197,
             "cacheCreationTokens": 10890
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00017,
+            "output": 0.090175,
+            "cacheRead": 0.07464399999999999,
+            "cacheWrite": 0.06809374999999998
+          },
+          "costUsd": 0.23308274999999998
         }
       ],
       "subagents": []
@@ -13560,7 +14666,14 @@
             "outputTokens": 624,
             "cacheReadTokens": 102956,
             "cacheCreationTokens": 7835
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000056,
+            "output": 0.00624,
+            "cacheRead": 0.0205912,
+            "cacheWrite": 0.0195875
+          },
+          "costUsd": 0.0464747
         },
         {
           "id": "27e75fb3-6f04-47e0-bc59-003674c34366",
@@ -13622,7 +14735,14 @@
             "outputTokens": 1929,
             "cacheReadTokens": 77996,
             "cacheCreationTokens": 3274
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000026,
+            "output": 0.01929,
+            "cacheRead": 0.0155992,
+            "cacheWrite": 0.008185
+          },
+          "costUsd": 0.043100200000000005
         },
         {
           "id": "5272c96b-6815-41b7-acc0-804c0dc9c999",
@@ -13711,7 +14831,14 @@
             "outputTokens": 1605,
             "cacheReadTokens": 154175,
             "cacheCreationTokens": 11121
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00011800000000000002,
+            "output": 0.016069999999999997,
+            "cacheRead": 0.030809600000000006,
+            "cacheWrite": 0.027827499999999998
+          },
+          "costUsd": 0.0748251
         }
       ],
       "subagents": []
@@ -13790,7 +14917,14 @@
             "outputTokens": 3598,
             "cacheReadTokens": 24263,
             "cacheCreationTokens": 12745
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000034,
+            "output": 0.01799,
+            "cacheRead": 0.0024263,
+            "cacheWrite": 0.01593125
+          },
+          "costUsd": 0.03638155
         },
         {
           "id": "3c293553-4df7-462c-b81d-60849cb23490",
@@ -13865,7 +14999,14 @@
             "outputTokens": 2770,
             "cacheReadTokens": 29371,
             "cacheCreationTokens": 8838
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000038,
+            "output": 0.01385,
+            "cacheRead": 0.0029371,
+            "cacheWrite": 0.0110475
+          },
+          "costUsd": 0.027872599999999997
         },
         {
           "id": "f5d9e7fc-8257-48e8-8784-1f2f843b27b5",
@@ -13904,7 +15045,14 @@
             "outputTokens": 2044,
             "cacheReadTokens": 23187,
             "cacheCreationTokens": 9856
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000037,
+            "output": 0.01022,
+            "cacheRead": 0.0023187000000000004,
+            "cacheWrite": 0.01232
+          },
+          "costUsd": 0.0248957
         },
         {
           "id": "14321156-3a5d-42e5-9009-3f517544b87e",
@@ -13990,7 +15138,14 @@
             "outputTokens": 3911,
             "cacheReadTokens": 81090,
             "cacheCreationTokens": 13149
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00003,
+            "output": 0.019555,
+            "cacheRead": 0.008109,
+            "cacheWrite": 0.01643625
+          },
+          "costUsd": 0.044130249999999996
         },
         {
           "id": "a0802b1c-452d-4b1f-85c8-e32541412857",
@@ -14041,7 +15196,14 @@
             "outputTokens": 1745,
             "cacheReadTokens": 34720,
             "cacheCreationTokens": 5623
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000004,
+            "output": 0.008725,
+            "cacheRead": 0.003472,
+            "cacheWrite": 0.00702875
+          },
+          "costUsd": 0.01922975
         },
         {
           "id": "3f1b5341-3735-4baf-9dc3-a7164a1a8572",
@@ -14092,7 +15254,14 @@
             "outputTokens": 3633,
             "cacheReadTokens": 80096,
             "cacheCreationTokens": 970
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00005700000000000003,
+            "output": 0.018159999999999996,
+            "cacheRead": 0.008036899999999996,
+            "cacheWrite": 0.0012362499999999943
+          },
+          "costUsd": 0.027490149999999988
         }
       ],
       "subagents": []
@@ -14231,7 +15400,14 @@
             "outputTokens": 2670,
             "cacheReadTokens": 146929,
             "cacheCreationTokens": 6903
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000008,
+            "output": 0.01335,
+            "cacheRead": 0.014692900000000002,
+            "cacheWrite": 0.00862875
+          },
+          "costUsd": 0.03667965
         },
         {
           "id": "64663745-90a6-407c-9823-b40c54ef6097",
@@ -14327,7 +15503,14 @@
             "outputTokens": 988,
             "cacheReadTokens": 87866,
             "cacheCreationTokens": 13684
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00002,
+            "output": 0.00494,
+            "cacheRead": 0.0087866,
+            "cacheWrite": 0.017105
+          },
+          "costUsd": 0.0308516
         },
         {
           "id": "aec5936c-4269-4680-9064-c1cc3cb94fe9",
@@ -14378,7 +15561,14 @@
             "outputTokens": 976,
             "cacheReadTokens": 149382,
             "cacheCreationTokens": 6423
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000039,
+            "output": 0.00488,
+            "cacheRead": 0.0149382,
+            "cacheWrite": 0.00802875
+          },
+          "costUsd": 0.02788595
         },
         {
           "id": "6c72c0cd-6bed-4037-9aab-55f30fa8c6c6",
@@ -14417,7 +15607,14 @@
             "outputTokens": 735,
             "cacheReadTokens": 160731,
             "cacheCreationTokens": 6027
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000025,
+            "output": 0.003675,
+            "cacheRead": 0.0160731,
+            "cacheWrite": 0.00753375
+          },
+          "costUsd": 0.027306849999999997
         },
         {
           "id": "678486da-c03c-4ba8-93f9-30eb874a5587",
@@ -14481,7 +15678,14 @@
             "outputTokens": 862,
             "cacheReadTokens": 43442,
             "cacheCreationTokens": 10339
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000019,
+            "output": 0.00431,
+            "cacheRead": 0.0043441999999999995,
+            "cacheWrite": 0.01292375
+          },
+          "costUsd": 0.021596949999999997
         },
         {
           "id": "7fc3ba54-6d7b-4a8f-8db8-060dc51b68cc",
@@ -14544,7 +15748,14 @@
             "outputTokens": 1331,
             "cacheReadTokens": 126057,
             "cacheCreationTokens": 14783
-          }
+          },
+          "costBreakdown": {
+            "input": -0.000010999999999999996,
+            "output": 0.006644999999999998,
+            "cacheRead": 0.012565000000000007,
+            "cacheWrite": 0.01848000000000001
+          },
+          "costUsd": 0.03767900000000002
         }
       ],
       "subagents": []
@@ -14671,7 +15882,14 @@
             "outputTokens": 262,
             "cacheReadTokens": 105884,
             "cacheCreationTokens": 6472
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000027,
+            "output": 0.00131,
+            "cacheRead": 0.010588400000000001,
+            "cacheWrite": 0.00809
+          },
+          "costUsd": 0.020015400000000003
         },
         {
           "id": "e9c19bd7-e627-4d6e-8682-2f0e89c52007",
@@ -14723,7 +15941,14 @@
             "outputTokens": 2965,
             "cacheReadTokens": 174970,
             "cacheCreationTokens": 3407
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000038,
+            "output": 0.014825,
+            "cacheRead": 0.017497,
+            "cacheWrite": 0.00425875
+          },
+          "costUsd": 0.03661875
         },
         {
           "id": "f39f99a8-25ee-4687-9c8e-5885344f0f4b",
@@ -14785,7 +16010,14 @@
             "outputTokens": 2353,
             "cacheReadTokens": 153670,
             "cacheCreationTokens": 3864
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000009,
+            "output": 0.011765,
+            "cacheRead": 0.015367,
+            "cacheWrite": 0.00483
+          },
+          "costUsd": 0.031971
         },
         {
           "id": "21637f80-2aea-4b59-a26a-c202ec073c0c",
@@ -14872,7 +16104,14 @@
             "outputTokens": 1945,
             "cacheReadTokens": 57651,
             "cacheCreationTokens": 586
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000037,
+            "output": 0.009725,
+            "cacheRead": 0.0057651,
+            "cacheWrite": 0.0007325
+          },
+          "costUsd": 0.0162596
         },
         {
           "id": "34c51dfa-7318-404d-a10f-363df47a3908",
@@ -14968,7 +16207,14 @@
             "outputTokens": 632,
             "cacheReadTokens": 108691,
             "cacheCreationTokens": 10448
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000003,
+            "output": 0.00316,
+            "cacheRead": 0.0108691,
+            "cacheWrite": 0.01306
+          },
+          "costUsd": 0.0270921
         },
         {
           "id": "3cb3e17b-ed62-4156-b5a7-132727d934e8",
@@ -15052,7 +16298,14 @@
             "outputTokens": 1206,
             "cacheReadTokens": 141970,
             "cacheCreationTokens": 11781
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000013,
+            "output": 0.00603,
+            "cacheRead": 0.014197,
+            "cacheWrite": 0.01472625
+          },
+          "costUsd": 0.034966250000000004
         },
         {
           "id": "47f4d038-4fc6-4e45-8ef2-5e23c3a0df25",
@@ -15114,7 +16367,14 @@
             "outputTokens": 2106,
             "cacheReadTokens": 37241,
             "cacheCreationTokens": 12113
-          }
+          },
+          "costBreakdown": {
+            "input": 0.000029,
+            "output": 0.01053,
+            "cacheRead": 0.0037241,
+            "cacheWrite": 0.01514125
+          },
+          "costUsd": 0.029424350000000002
         },
         {
           "id": "9de57d8f-a14f-4e03-880e-935d446418fa",
@@ -15166,7 +16426,14 @@
             "outputTokens": 3066,
             "cacheReadTokens": 111201,
             "cacheCreationTokens": 11860
-          }
+          },
+          "costBreakdown": {
+            "input": 0.00004399999999999996,
+            "output": 0.015354999999999994,
+            "cacheRead": 0.011092299999999986,
+            "cacheWrite": 0.01486125
+          },
+          "costUsd": 0.04135254999999998
         }
       ],
       "subagents": []
@@ -15296,7 +16563,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.023204,
+            "output": 0.0376,
+            "cacheRead": 0.059380800000000004,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.12018480000000001
         },
         {
           "id": "538e3a08-69b5-4b55-9628-e1b3afaea82d",
@@ -15332,7 +16606,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.020896,
+            "output": 0.10914,
+            "cacheRead": 0.048859200000000005,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.17889520000000003
         },
         {
           "id": "838951c9-d194-45e6-9da8-dd70621d506f",
@@ -15429,7 +16710,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0389,
+            "output": 0.02856000000000003,
+            "cacheRead": 0.08376,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.15122000000000002
         }
       ],
       "subagents": [
@@ -15474,7 +16762,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 59621,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -15534,7 +16830,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 211530,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -15687,7 +16991,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.047576,
+            "output": 0.04125,
+            "cacheRead": 0.0155847,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1044107
         },
         {
           "id": "e4b8f5ad-0c3f-48dd-8bd3-c39f3b4e54d9",
@@ -15738,7 +17049,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.044424,
+            "output": 0.01796,
+            "cacheRead": 0.0185712,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.08095519999999999
         },
         {
           "id": "a2896371-4013-4b98-9a1b-7ca6d621fa38",
@@ -15774,7 +17092,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.017864,
+            "output": 0.05516,
+            "cacheRead": 0.010795200000000001,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.08381920000000001
         },
         {
           "id": "134f09ff-0531-442d-9d03-daaa9888095e",
@@ -15823,7 +17148,14 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-dcb269a7"
+          "branch": "rollback-dcb269a7",
+          "costBreakdown": {
+            "input": 0.045286,
+            "output": 0.02218,
+            "cacheRead": 0.0162017,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.0836677
         },
         {
           "id": "ffd04480-5adc-415c-bb14-932d87c9234f",
@@ -15859,7 +17191,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.023049999999999987,
+            "output": 0.05815000000000001,
+            "cacheRead": 0.010447199999999983,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.09164719999999998
         }
       ],
       "subagents": [
@@ -15904,7 +17243,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 185159,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -15964,7 +17311,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 228790,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -16059,7 +17414,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.027452,
+            "output": 0.060828,
+            "cacheRead": 0.0428716,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1311516
         },
         {
           "id": "d78800bc-d0c0-40ba-8a3c-84b6d6924195",
@@ -16160,7 +17522,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.03442,
+            "output": 0.041244,
+            "cacheRead": 0.016462,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.09212600000000001
         },
         {
           "id": "152ae9bf-b8fa-45ae-a67e-03a9f02d92ba",
@@ -16230,7 +17599,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.048418,
+            "output": 0.038988,
+            "cacheRead": 0.009992400000000002,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.09739840000000001
         },
         {
           "id": "a0998f33-7207-4f7a-abc1-38ac25b9d293",
@@ -16266,7 +17642,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.02560999999999998,
+            "output": 0.028340000000000004,
+            "cacheRead": 0.038674,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.09262399999999998
         }
       ],
       "subagents": [
@@ -16311,7 +17694,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 49065,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -16371,7 +17762,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 43196,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -16431,7 +17830,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 215121,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -16546,7 +17953,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0019783,
+            "output": 0.000362,
+            "cacheRead": 0.00022323000000000002,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.00256353
         },
         {
           "id": "87ec7006-461f-4225-b820-9a818c7b1ee8",
@@ -16635,7 +18049,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0020433,
+            "output": 0.002873,
+            "cacheRead": 0.0021079700000000002,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.007024270000000001
         },
         {
           "id": "1f1b3fbb-61d9-4e2e-ad07-3bb7b0f28243",
@@ -16752,7 +18173,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0029657000000000004,
+            "output": 0.000766,
+            "cacheRead": 0.00198222,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.00571392
         },
         {
           "id": "ec10a009-7c51-47e4-ba3d-3f1c55e45bc1",
@@ -16808,7 +18236,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0013297,
+            "output": 0.002078,
+            "cacheRead": 0.00170353,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.00511123
         },
         {
           "id": "d78d51c0-32bb-4795-9e21-6ee7f69c55ee",
@@ -16844,7 +18279,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0016829999999999987,
+            "output": 0.0007210000000000003,
+            "cacheRead": 0.001883049999999999,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.004287049999999998
         }
       ],
       "subagents": [
@@ -16889,7 +18331,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 159489,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -16964,7 +18414,14 @@
                   "type": "text",
                   "text": "Listo: apliqué el cambio y la suite pasa."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0.0011,
+                "output": 0.0014,
+                "cacheRead": 0.0002,
+                "cacheWrite": 0
+              },
+              "costUsd": 0.0027
             }
           ],
           "usage": {
@@ -17023,7 +18480,14 @@
                   "type": "text",
                   "text": "Listo: apliqué el cambio y la suite pasa."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0.0002,
+                "output": 0.0015,
+                "cacheRead": 0.0015,
+                "cacheWrite": 0
+              },
+              "costUsd": 0.0032
             }
           ],
           "usage": {
@@ -17145,7 +18609,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.097884,
+            "output": 0.10154,
+            "cacheRead": 0.059308,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.25873199999999996
         },
         {
           "id": "3b316116-6b63-42fa-a13a-ce3cda264c5f",
@@ -17210,7 +18681,14 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-7e65785c"
+          "branch": "rollback-7e65785c",
+          "costBreakdown": {
+            "input": 0.101036,
+            "output": 0.11098,
+            "cacheRead": 0.043110800000000005,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.2551268
         },
         {
           "id": "23313597-1190-4d9c-8327-73b51fe24e6e",
@@ -17367,7 +18845,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.072348,
+            "output": 0.01086,
+            "cacheRead": 0.050350400000000003,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1335584
         },
         {
           "id": "b4b651da-a02a-425f-b789-77f039088a62",
@@ -17403,7 +18888,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.08936,
+            "output": 0.01342,
+            "cacheRead": 0.0669352,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1697152
         },
         {
           "id": "155a6bb6-9ce6-4c15-8277-fca8eaa6aab3",
@@ -17513,7 +19005,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.10438,
+            "output": 0.0531,
+            "cacheRead": 0.037220800000000005,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1947008
         },
         {
           "id": "1ad3ac93-26dc-4672-be75-fb36f047e0bc",
@@ -17549,7 +19048,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.05749200000000004,
+            "output": 0.05159999999999998,
+            "cacheRead": 0.03047479999999997,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1395668
         }
       ],
       "subagents": [
@@ -17594,7 +19100,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 241405,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -17654,7 +19168,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 218835,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -17714,7 +19236,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 49385,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -17774,7 +19304,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 222569,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -17845,7 +19383,14 @@
                   "type": "text",
                   "text": "Listo: apliqué el cambio y la suite pasa."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0.0009,
+                "output": 0.002,
+                "cacheRead": 0.0009,
+                "cacheWrite": 0
+              },
+              "costUsd": 0.0037999999999999996
             }
           ],
           "usage": {
@@ -17904,7 +19449,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 191341,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -17964,7 +19517,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 101493,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -18024,7 +19585,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 126920,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -18084,7 +19653,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 54717,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -18144,7 +19721,14 @@
                   "type": "text",
                   "text": "Listo: apliqué el cambio y la suite pasa."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0.0021,
+                "output": 0.0029,
+                "cacheRead": 0.002,
+                "cacheWrite": 0
+              },
+              "costUsd": 0.006999999999999999
             }
           ],
           "usage": {
@@ -18285,7 +19869,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0015652,
+            "output": 0.0046596,
+            "cacheRead": 0.00238718,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.00861198
         },
         {
           "id": "0de1f029-fcf9-4203-9131-3fb2de3113bf",
@@ -18344,7 +19935,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0012086000000000002,
+            "output": 0.0054804,
+            "cacheRead": 0.00121048,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.00789948
         },
         {
           "id": "1a4df73e-0159-41d1-a6f2-e445b3a6ea74",
@@ -18441,7 +20039,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0034648,
+            "output": 0.005328,
+            "cacheRead": 0.0023468200000000003,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.01113962
         },
         {
           "id": "0e30e84c-0e0b-41bc-8bad-a54fd4327d30",
@@ -18508,7 +20113,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.005868,
+            "output": 0.005304,
+            "cacheRead": 0.00192724,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.01309924
         },
         {
           "id": "0802b1c4-52db-41f8-9c8e-325414128575",
@@ -18582,7 +20194,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0026882000000000004,
+            "output": 0.0008556,
+            "cacheRead": 0.00105656,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.00460036
         },
         {
           "id": "0cff2ac7-2887-447d-9ee2-90f91691d83f",
@@ -18708,7 +20327,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.004205199999999999,
+            "output": 0.001672400000000001,
+            "cacheRead": 0.00107172,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.00694932
         }
       ],
       "subagents": [
@@ -18753,7 +20379,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 100096,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -18849,7 +20483,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.13826,
+            "output": 0.16446,
+            "cacheRead": 0.0287235,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.3314435
         },
         {
           "id": "ed0375aa-b55f-430f-a8c6-c6b6292e6158",
@@ -18948,7 +20589,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.10521,
+            "output": 0.11808,
+            "cacheRead": 0.014032,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.23732199999999998
         },
         {
           "id": "1637f802-aeab-459a-a6ac-202ec073c0ca",
@@ -19001,7 +20649,14 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-8a3e8a5c"
+          "branch": "rollback-8a3e8a5c",
+          "costBreakdown": {
+            "input": 0.0321,
+            "output": 0.05061,
+            "cacheRead": 0.0579545,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1406645
         },
         {
           "id": "f329909e-6010-404b-8d01-bf24ccb0f443",
@@ -19064,7 +20719,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.02446,
+            "output": 0.07122,
+            "cacheRead": 0.095576,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.19125599999999998
         },
         {
           "id": "6ebc2804-6419-40b6-a92b-2478045207af",
@@ -19143,7 +20805,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.14227,
+            "output": 0.16698,
+            "cacheRead": 0.020898,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.330148
         },
         {
           "id": "8ad1bca1-783b-4c90-90af-1a61a16f0539",
@@ -19244,7 +20913,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.10278,
+            "output": 0.14952,
+            "cacheRead": 0.019908,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.27220799999999995
         },
         {
           "id": "ee10ef30-e26d-4e8d-9a95-051158c2720a",
@@ -19302,7 +20978,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.05471999999999999,
+            "output": 0.08783000000000007,
+            "cacheRead": 0.059008000000000005,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.20155800000000007
         }
       ],
       "subagents": [
@@ -19347,7 +21030,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 105300,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -19407,7 +21098,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 105260,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -19467,7 +21166,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 205512,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -19527,7 +21234,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 192785,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -19633,7 +21348,14 @@
                   "type": "text",
                   "text": "Listo: apliqué el cambio y la suite pasa."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0.0028,
+                "output": 0.0004,
+                "cacheRead": 0.0014,
+                "cacheWrite": 0
+              },
+              "costUsd": 0.0046
             }
           ],
           "usage": {
@@ -19726,7 +21448,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.006156,
+            "output": 0.060852,
+            "cacheRead": 0.033538200000000004,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1005462
         },
         {
           "id": "82d2c0f3-b187-4c69-8e74-8c7999bdbbd6",
@@ -19764,7 +21493,14 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-cd78d92a"
+          "branch": "rollback-cd78d92a",
+          "costBreakdown": {
+            "input": 0.037538,
+            "output": 0.020856,
+            "cacheRead": 0.011802,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.07019600000000001
         },
         {
           "id": "800d91fd-3b33-495f-b480-977e17c0733f",
@@ -19820,7 +21556,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.014805999999999993,
+            "output": 0.04669200000000001,
+            "cacheRead": 0.01765979999999999,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.0791578
         }
       ],
       "subagents": [
@@ -19865,7 +21608,14 @@
                   "type": "text",
                   "text": "Listo: apliqué el cambio y la suite pasa."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0.0008,
+                "output": 0.0023,
+                "cacheRead": 0.0016,
+                "cacheWrite": 0
+              },
+              "costUsd": 0.0047
             }
           ],
           "usage": {
@@ -19980,7 +21730,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.0048885,
+            "output": 0.026064,
+            "cacheRead": 0.004400625,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.035353125
         },
         {
           "id": "59dcf8ad-23fa-4977-9a36-5301f49617a3",
@@ -20042,7 +21799,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.002079,
+            "output": 0.002907,
+            "cacheRead": 0.009645975000000001,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.014631975000000002
         },
         {
           "id": "ddcb269a-7580-4546-ad33-f4f733129524",
@@ -20080,7 +21844,14 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-5234443d"
+          "branch": "rollback-5234443d",
+          "costBreakdown": {
+            "input": 0.001653,
+            "output": 0.025479,
+            "cacheRead": 0.010771275,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.037903275
         },
         {
           "id": "4a55fc3f-c56e-4698-a084-527f0ad491f5",
@@ -20136,7 +21907,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.012933,
+            "output": 0.0093465,
+            "cacheRead": 0.0019842749999999998,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.024263775
         },
         {
           "id": "4e2d6f4d-e0ad-48da-b39b-e3ef306764ea",
@@ -20281,7 +22059,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.02160525,
+            "output": 0.015003,
+            "cacheRead": 0.00184455,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.0384528
         },
         {
           "id": "3580b286-3ca4-456a-b29b-ab09b5ad06c7",
@@ -20352,7 +22137,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.011341250000000004,
+            "output": 0.025800499999999976,
+            "cacheRead": 0.004253299999999998,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.041395049999999975
         }
       ],
       "subagents": [
@@ -20397,7 +22189,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 191755,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -20457,7 +22257,14 @@
                   "type": "text",
                   "text": "Listo: apliqué el cambio y la suite pasa."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0.0011,
+                "output": 0.0011,
+                "cacheRead": 0.0002,
+                "cacheWrite": 0
+              },
+              "costUsd": 0.0024000000000000002
             }
           ],
           "usage": {
@@ -20516,7 +22323,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 102295,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -20576,7 +22391,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 187911,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -20697,7 +22520,15 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "unpricedTokens": 176075,
+          "costUsd": 0
         },
         {
           "id": "c7b1ee81-7fcb-4f01-9a90-0be320a3d3de",
@@ -20746,7 +22577,15 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-e801edc8"
+          "branch": "rollback-e801edc8",
+          "costBreakdown": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "unpricedTokens": 156821,
+          "costUsd": 0
         },
         {
           "id": "1116eca4-a163-440b-ab16-8affb8a04779",
@@ -20817,7 +22656,15 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "unpricedTokens": 188783,
+          "costUsd": 0
         },
         {
           "id": "0f5f6f21-fc8d-4db0-a23b-23baf673666e",
@@ -20923,7 +22770,15 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "unpricedTokens": 121096,
+          "costUsd": 0
         }
       ],
       "subagents": [
@@ -20968,7 +22823,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 152725,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -21028,7 +22891,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 123744,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -21233,7 +23104,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.017968,
+            "output": 0.03834,
+            "cacheRead": 0.06070520000000001,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.11701320000000001
         },
         {
           "id": "56616b14-a12b-4975-b745-36fbe6a96b3d",
@@ -21282,7 +23160,14 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-41adf2e1"
+          "branch": "rollback-41adf2e1",
+          "costBreakdown": {
+            "input": 0.113756,
+            "output": 0.03286,
+            "cacheRead": 0.027891600000000003,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.17450759999999998
         },
         {
           "id": "1f78dcef-1da2-4305-95db-42590258f1ec",
@@ -21359,7 +23244,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.08457599999999998,
+            "output": 0.02490000000000002,
+            "cacheRead": 0.054403199999999985,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.1638792
         }
       ],
       "subagents": [
@@ -21404,7 +23296,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 228366,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -21464,7 +23364,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 215408,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -21524,7 +23432,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 89814,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -21662,7 +23578,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.034644,
+            "output": 0.04115,
+            "cacheRead": 0.015109,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.090903
         },
         {
           "id": "7e43ce71-fda7-4396-bd76-57f8ac23186c",
@@ -21700,7 +23623,14 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-e6c15027"
+          "branch": "rollback-e6c15027",
+          "costBreakdown": {
+            "input": 0.036506,
+            "output": 0.01639,
+            "cacheRead": 0.005931100000000001,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.0588271
         },
         {
           "id": "bc26a94f-5a09-4c7d-99ea-9eca13fd0ae3",
@@ -21821,7 +23751,14 @@
               "type": "text",
               "text": "Listo: apliqué el cambio y la suite pasa."
             }
-          ]
+          ],
+          "costBreakdown": {
+            "input": 0.04315000000000001,
+            "output": 0.03606000000000001,
+            "cacheRead": 0.014859900000000002,
+            "cacheWrite": 0
+          },
+          "costUsd": 0.09406990000000001
         }
       ],
       "subagents": [
@@ -21866,7 +23803,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 116885,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -21926,7 +23871,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 145682,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -21986,7 +23939,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 97812,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -22046,7 +24007,15 @@
                   "type": "text",
                   "text": "Aprobado con advertencia: modifica el lockfile."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 127278,
+              "costUsd": 0
             }
           ],
           "usage": {
@@ -22106,7 +24075,15 @@
                   "type": "text",
                   "text": "Aprobado: el comando solo lee archivos."
                 }
-              ]
+              ],
+              "costBreakdown": {
+                "input": 0,
+                "output": 0,
+                "cacheRead": 0,
+                "cacheWrite": 0
+              },
+              "unpricedTokens": 135226,
+              "costUsd": 0
             }
           ],
           "usage": {
