@@ -20,6 +20,9 @@ if (typeof window !== "undefined") {
     disconnect() {}
   };
   Element.prototype.scrollIntoView ??= () => {};
-  const { cleanup } = await import("@testing-library/react");
+  const { cleanup, configure } = await import("@testing-library/react");
   afterEach(cleanup);
+  // findBy*/waitFor default to 1 s; a filter that re-aggregates the whole mock fixture takes
+  // longer than that when the full suite saturates the CPU (see testTimeout in vite.config.ts).
+  configure({ asyncUtilTimeout: 10_000 });
 }
