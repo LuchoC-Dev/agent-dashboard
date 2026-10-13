@@ -201,7 +201,9 @@ the dashboards; the KPI strip and touched-files table in the session detail). Fi
      text color, underline on hover/focus, pointer. Never the accent. Non-clickable values stay
      regular weight (subtotal rows included: their background marks them, not bold figures).
      The same kind of element gets the same treatment everywhere: names that open a project,
-     session, tool or model; legend and heatmap-label filters; disclosure rows.
+     session, tool or model; legend and heatmap-label filters; disclosure rows. No color or
+     gray marks a data state in a clickable cell: a session title looks the same whether it
+     is the agent's title, the first prompt or "Sesión sin título" (likewise "Subagente").
   2. *No accent inside tables / data areas.* `--app-accent*` / `text-accent` is for mini-CTAs
      ("Ver todas (N) →", "Ver las sesiones detrás de estas métricas →", "+N más", `textLink`),
      selected states (pressed segments/labels, the selected row's wash) and focus rings.

@@ -65,8 +65,12 @@ describe("UI rules in every table", { timeout: 60_000 }, () => {
       // 1. Links and buttons in a table are clickable at a glance: semibold, normal text color.
       const controls = all.filter((el) => el.matches("a, button"));
       expect(controls.length).toBeGreaterThan(0);
+      // Same color for every one: no gray or other color to flag a data state (an untitled
+      // session reads like a titled one).
+      const textColors = (el: Element) =>
+        [...el.classList].filter((c) => /^text-(?!size-|left|right|center|ellipsis)/.test(c));
       const plain = controls.filter(
-        (el) => !el.classList.contains("font-semibold") || !el.className.match(/(^| )text-ink(-2!)?( |$)/),
+        (el) => !el.classList.contains("font-semibold") || textColors(el).join() !== "text-ink",
       );
       expect(plain.map((el) => el.outerHTML.slice(0, 120))).toEqual([]);
 

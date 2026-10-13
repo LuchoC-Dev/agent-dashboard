@@ -49,9 +49,7 @@ export function SessionsTable({
       render: (s) => (
         <div className="flex min-w-0 items-center whitespace-nowrap">
           <Link
-            className={
-              clickable + " block flex-[0_1_auto] truncate" + (!s.title ? " text-ink-2!" : "")
-            }
+            className={clickable + " block flex-[0_1_auto] truncate"}
             title={title(s)}
             to={sessionPath(s)}
           >
