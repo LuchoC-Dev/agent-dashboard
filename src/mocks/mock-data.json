@@ -28,7 +28,7 @@
       "costBreakdown": {
         "input": 0.0002,
         "output": 0.0885,
-        "cacheRead": 0.0273,
+        "cacheRead": 0.027299999999999998,
         "cacheWrite": 0.064
       },
       "costUsd": 0.18,
@@ -98,8 +98,8 @@
         "reasoningTokens": 5231
       },
       "costBreakdown": {
-        "input": 0.083,
-        "output": 0.1753,
+        "input": 0.08299999999999999,
+        "output": 0.17530000000000004,
         "cacheRead": 0.192,
         "cacheWrite": 0
       },
@@ -134,12 +134,12 @@
         "cacheCreationTokens": 60531
       },
       "costBreakdown": {
-        "input": 0.0002,
-        "output": 0.0727,
-        "cacheRead": 0.0891,
+        "input": 0.00019999999999999998,
+        "output": 0.07269999999999999,
+        "cacheRead": 0.08909999999999998,
         "cacheWrite": 0.0757
       },
-      "costUsd": 0.23770000000000002,
+      "costUsd": 0.23769999999999997,
       "projectKey": "git:github.com/example/inventory-service",
       "sourceDir": "C:\\Users\\dev\\.claude\\projects"
     },
@@ -312,12 +312,12 @@
         "reasoningTokens": 9633
       },
       "costBreakdown": {
-        "input": 0.1782,
-        "output": 0.1947,
-        "cacheRead": 0.0716,
+        "input": 0.13291399999999998,
+        "output": 0.17252,
+        "cacheRead": 0.05539829999999999,
         "cacheWrite": 0
       },
-      "costUsd": 0.4445,
+      "costUsd": 0.3608323,
       "unpricedTokens": 413949,
       "projectKey": "path:c:\\users\\dev\\desktop\\dev\\sandbox\\todo-api",
       "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -350,12 +350,12 @@
         "reasoningTokens": 7174
       },
       "costBreakdown": {
-        "input": 0.1359,
+        "input": 0.13589999999999997,
         "output": 0.1694,
         "cacheRead": 0.108,
         "cacheWrite": 0
       },
-      "costUsd": 0.4133,
+      "costUsd": 0.41329999999999995,
       "unpricedTokens": 307382,
       "projectKey": "path:c:\\users\\dev\\desktop\\dev\\sandbox\\todo-api",
       "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -423,7 +423,7 @@
       "costBreakdown": {
         "input": 0.0002,
         "output": 0.0588,
-        "cacheRead": 0.0897,
+        "cacheRead": 0.08970000000000002,
         "cacheWrite": 0.0634
       },
       "costUsd": 0.2121,
@@ -457,7 +457,7 @@
       },
       "costBreakdown": {
         "input": 0.0006,
-        "output": 0.2765,
+        "output": 0.27649999999999997,
         "cacheRead": 0.2349,
         "cacheWrite": 0.3254
       },
@@ -532,12 +532,12 @@
         "reasoningTokens": 24492
       },
       "costBreakdown": {
-        "input": 0.5255,
-        "output": 0.3464,
-        "cacheRead": 0.2903,
+        "input": 0.424464,
+        "output": 0.23541999999999996,
+        "cacheRead": 0.2471892,
         "cacheWrite": 0
       },
-      "costUsd": 1.1622,
+      "costUsd": 0.9070731999999999,
       "unpricedTokens": 1206665,
       "projectKey": "git:github.com/example/acme-shop",
       "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -571,9 +571,9 @@
         "input": 0.0001,
         "output": 0.0378,
         "cacheRead": 0.0714,
-        "cacheWrite": 0.0727
+        "cacheWrite": 0.07270000000000001
       },
-      "costUsd": 0.182,
+      "costUsd": 0.18200000000000002,
       "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
       "sourceDir": "C:\\Users\\dev\\.claude\\projects"
     },
@@ -644,12 +644,12 @@
         "reasoningTokens": 18315
       },
       "costBreakdown": {
-        "input": 0.6026,
-        "output": 0.8091,
-        "cacheRead": 0.2975,
+        "input": 0.5705,
+        "output": 0.75849,
+        "cacheRead": 0.23954550000000002,
         "cacheWrite": 0
       },
-      "costUsd": 1.7092,
+      "costUsd": 1.5685355,
       "unpricedTokens": 608857,
       "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
       "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -680,10 +680,10 @@
         "cacheCreationTokens": 74915
       },
       "costBreakdown": {
-        "input": 0.0004,
-        "output": 0.0831,
+        "input": 0.00039999999999999996,
+        "output": 0.08309999999999998,
         "cacheRead": 0.0965,
-        "cacheWrite": 0.0937
+        "cacheWrite": 0.09370000000000002
       },
       "costUsd": 0.2737,
       "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
@@ -750,7 +750,7 @@
         "cacheCreationTokens": 54682
       },
       "costBreakdown": {
-        "input": 0.0007,
+        "input": 0.0006999999999999999,
         "output": 0.3706,
         "cacheRead": 0.1759,
         "cacheWrite": 0.2734
@@ -788,7 +788,7 @@
       "costBreakdown": {
         "input": 0.0005,
         "output": 0.1802,
-        "cacheRead": 0.1854,
+        "cacheRead": 0.18539999999999998,
         "cacheWrite": 0.194
       },
       "costUsd": 0.5601,
@@ -858,12 +858,12 @@
         "reasoningTokens": 5652
       },
       "costBreakdown": {
-        "input": 0.0593,
-        "output": 0.1307,
-        "cacheRead": 0.0646,
+        "input": 0.021761999999999993,
+        "output": 0.10984400000000001,
+        "cacheRead": 0.05279799999999999,
         "cacheWrite": 0
       },
-      "costUsd": 0.2546,
+      "costUsd": 0.18440399999999998,
       "projectKey": "git:github.com/example/acme-shop",
       "sourceDir": "C:\\Users\\dev\\AppData\\Roaming\\orca\\codex-runtime-home\\home\\sessions"
     },
@@ -896,12 +896,12 @@
         "reasoningTokens": 13851
       },
       "costBreakdown": {
-        "input": 0.0556,
-        "output": 0.1057,
-        "cacheRead": 0.0331,
+        "input": 0.053947,
+        "output": 0.08022099999999999,
+        "cacheRead": 0.022328724999999997,
         "cacheWrite": 0
       },
-      "costUsd": 0.1944,
+      "costUsd": 0.15649672499999998,
       "unpricedTokens": 481961,
       "projectKey": "git:github.com/example/acme-shop",
       "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -933,7 +933,7 @@
       },
       "costBreakdown": {
         "input": 0.0001,
-        "output": 0.0161,
+        "output": 0.016100000000000003,
         "cacheRead": 0.0475,
         "cacheWrite": 0.0475
       },
@@ -968,12 +968,12 @@
         "cacheCreationTokens": 93317
       },
       "costBreakdown": {
-        "input": 0.0008,
-        "output": 0.4218,
+        "input": 0.0008000000000000001,
+        "output": 0.42180000000000006,
         "cacheRead": 0.2677,
         "cacheWrite": 0.3208
       },
-      "costUsd": 1.0110999999999999,
+      "costUsd": 1.0111,
       "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
       "sourceDir": "C:\\Users\\dev\\.claude\\projects"
     },
@@ -1003,7 +1003,7 @@
         "cacheCreationTokens": 35071
       },
       "costBreakdown": {
-        "input": 0.0003,
+        "input": 0.0002999999999999999,
         "output": 0.1764,
         "cacheRead": 0.168,
         "cacheWrite": 0.1315
@@ -1046,7 +1046,7 @@
         "cacheWrite": 0
       },
       "costUsd": 0,
-      "unpricedTokens": 919244,
+      "unpricedTokens": 762423,
       "projectKey": "git:github.com/example/inventory-service",
       "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
     },
@@ -1113,11 +1113,11 @@
       },
       "costBreakdown": {
         "input": 0.0001,
-        "output": 0.0893,
+        "output": 0.08929999999999999,
         "cacheRead": 0.0722,
         "cacheWrite": 0.042
       },
-      "costUsd": 0.20360000000000003,
+      "costUsd": 0.2036,
       "projectKey": "git:github.com/example/acme-shop",
       "sourceDir": "C:\\Users\\dev\\.claude\\projects"
     },
@@ -1149,12 +1149,12 @@
         "reasoningTokens": 7021
       },
       "costBreakdown": {
-        "input": 0.2163,
-        "output": 0.0961,
-        "cacheRead": 0.143,
+        "input": 0.10254399999999998,
+        "output": 0.06324000000000002,
+        "cacheRead": 0.1151084,
         "cacheWrite": 0
       },
-      "costUsd": 0.4554,
+      "costUsd": 0.2808924,
       "unpricedTokens": 533588,
       "projectKey": "git:github.com/example/acme-shop",
       "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -1222,7 +1222,7 @@
       "costBreakdown": {
         "input": 0.0002,
         "output": 0.1753,
-        "cacheRead": 0.0513,
+        "cacheRead": 0.05129999999999999,
         "cacheWrite": 0.1262
       },
       "costUsd": 0.353,
@@ -1257,12 +1257,12 @@
         "reasoningTokens": 10288
       },
       "costBreakdown": {
-        "input": 0.1143,
-        "output": 0.0936,
-        "cacheRead": 0.0359,
+        "input": 0.077794,
+        "output": 0.07721,
+        "cacheRead": 0.0299689,
         "cacheWrite": 0
       },
-      "costUsd": 0.24380000000000002,
+      "costUsd": 0.1849729,
       "unpricedTokens": 622883,
       "projectKey": "git:github.com/example/inventory-service",
       "sourceDir": "C:\\Users\\dev\\AppData\\Roaming\\orca\\codex-runtime-home\\home\\sessions"
@@ -1330,7 +1330,7 @@
       "costBreakdown": {
         "input": 0.0008,
         "output": 0.3433,
-        "cacheRead": 0.4644,
+        "cacheRead": 0.4643999999999999,
         "cacheWrite": 0.1877
       },
       "costUsd": 0.9962,
@@ -1363,7 +1363,7 @@
         "cacheCreationTokens": 22230
       },
       "costBreakdown": {
-        "input": 0.0002,
+        "input": 0.00020000000000000004,
         "output": 0.0416,
         "cacheRead": 0.067,
         "cacheWrite": 0.0556
@@ -1399,11 +1399,11 @@
       },
       "costBreakdown": {
         "input": 0.0001,
-        "output": 0.1252,
-        "cacheRead": 0.0304,
+        "output": 0.12519999999999998,
+        "cacheRead": 0.030399999999999996,
         "cacheWrite": 0.061
       },
-      "costUsd": 0.2167,
+      "costUsd": 0.21669999999999995,
       "projectKey": "path:c:\\users\\dev\\desktop\\dev\\dotfiles",
       "sourceDir": "C:\\Users\\dev\\.claude\\projects"
     },
@@ -2369,7 +2369,7 @@
           "cacheCreationTokens": 54682
         },
         "costBreakdown": {
-          "input": 0.0007,
+          "input": 0.0006999999999999999,
           "output": 0.3706,
           "cacheRead": 0.1759,
           "cacheWrite": 0.2734
@@ -2926,11 +2926,11 @@
         },
         "costBreakdown": {
           "input": 0.0001,
-          "output": 0.0893,
+          "output": 0.08929999999999999,
           "cacheRead": 0.0722,
           "cacheWrite": 0.042
         },
-        "costUsd": 0.20360000000000003,
+        "costUsd": 0.2036,
         "projectKey": "git:github.com/example/acme-shop",
         "sourceDir": "C:\\Users\\dev\\.claude\\projects"
       },
@@ -3360,7 +3360,7 @@
         "costBreakdown": {
           "input": 0.0008,
           "output": 0.3433,
-          "cacheRead": 0.4644,
+          "cacheRead": 0.4643999999999999,
           "cacheWrite": 0.1877
         },
         "costUsd": 0.9962,
@@ -3918,11 +3918,11 @@
         },
         "costBreakdown": {
           "input": 0.0001,
-          "output": 0.1252,
-          "cacheRead": 0.0304,
+          "output": 0.12519999999999998,
+          "cacheRead": 0.030399999999999996,
           "cacheWrite": 0.061
         },
-        "costUsd": 0.2167,
+        "costUsd": 0.21669999999999995,
         "projectKey": "path:c:\\users\\dev\\desktop\\dev\\dotfiles",
         "sourceDir": "C:\\Users\\dev\\.claude\\projects"
       },
@@ -5759,7 +5759,7 @@
           },
           "costBreakdown": {
             "input": 0,
-            "output": 0.026,
+            "output": 0.025999999999999995,
             "cacheRead": 0.032,
             "cacheWrite": 0.0386
           },
@@ -7382,7 +7382,7 @@
         "costBreakdown": {
           "input": 0.0002,
           "output": 0.0588,
-          "cacheRead": 0.0897,
+          "cacheRead": 0.08970000000000002,
           "cacheWrite": 0.0634
         },
         "costUsd": 0.2121,
@@ -8089,7 +8089,7 @@
           "costBreakdown": {
             "input": 0.0001,
             "output": 0.0092,
-            "cacheRead": 0.0362,
+            "cacheRead": 0.03620000000000001,
             "cacheWrite": 0.0366
           },
           "costUsd": 0.0821
@@ -8784,12 +8784,12 @@
           "cacheCreationTokens": 93317
         },
         "costBreakdown": {
-          "input": 0.0008,
-          "output": 0.4218,
+          "input": 0.0008000000000000001,
+          "output": 0.42180000000000006,
           "cacheRead": 0.2677,
           "cacheWrite": 0.3208
         },
-        "costUsd": 1.0110999999999999,
+        "costUsd": 1.0111,
         "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
         "sourceDir": "C:\\Users\\dev\\.claude\\projects"
       },
@@ -9516,7 +9516,7 @@
             "cacheCreationTokens": 25544
           },
           "costBreakdown": {
-            "input": 0.0001,
+            "input": 0.00009999999999999999,
             "output": 0.0427,
             "cacheRead": 0.0295,
             "cacheWrite": 0.0319
@@ -10013,7 +10013,7 @@
             "cacheCreationTokens": 7926
           },
           "costBreakdown": {
-            "input": 0,
+            "input": -3.3881317890172014e-21,
             "output": 0.0281,
             "cacheRead": 0.0259,
             "cacheWrite": 0.0099
@@ -10622,7 +10622,7 @@
         "costBreakdown": {
           "input": 0.0005,
           "output": 0.1802,
-          "cacheRead": 0.1854,
+          "cacheRead": 0.18539999999999998,
           "cacheWrite": 0.194
         },
         "costUsd": 0.5601,
@@ -11064,12 +11064,12 @@
             "cacheCreationTokens": 15534
           },
           "costBreakdown": {
-            "input": 0.0001,
+            "input": 0.00009999999999999999,
             "output": 0.0167,
-            "cacheRead": 0.0336,
+            "cacheRead": 0.03359999999999999,
             "cacheWrite": 0.0194
           },
-          "costUsd": 0.0698
+          "costUsd": 0.06979999999999999
         }
       ]
     },
@@ -11101,7 +11101,7 @@
         },
         "costBreakdown": {
           "input": 0.0006,
-          "output": 0.2765,
+          "output": 0.27649999999999997,
           "cacheRead": 0.2349,
           "cacheWrite": 0.3254
         },
@@ -11771,7 +11771,7 @@
         },
         "costBreakdown": {
           "input": 0.0001,
-          "output": 0.0161,
+          "output": 0.016100000000000003,
           "cacheRead": 0.0475,
           "cacheWrite": 0.0475
         },
@@ -12629,10 +12629,10 @@
           "cacheCreationTokens": 74915
         },
         "costBreakdown": {
-          "input": 0.0004,
-          "output": 0.0831,
+          "input": 0.00039999999999999996,
+          "output": 0.08309999999999998,
           "cacheRead": 0.0965,
-          "cacheWrite": 0.0937
+          "cacheWrite": 0.09370000000000002
         },
         "costUsd": 0.2737,
         "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
@@ -13077,7 +13077,7 @@
             "input": 0.0001,
             "output": 0.023,
             "cacheRead": 0.0192,
-            "cacheWrite": 0.0321
+            "cacheWrite": 0.032100000000000004
           },
           "costUsd": 0.0744
         },
@@ -13343,7 +13343,7 @@
           },
           "costBreakdown": {
             "input": 0.0001,
-            "output": 0.0173,
+            "output": 0.017299999999999996,
             "cacheRead": 0.034,
             "cacheWrite": 0.034
           },
@@ -13549,7 +13549,7 @@
           "cacheCreationTokens": 35071
         },
         "costBreakdown": {
-          "input": 0.0003,
+          "input": 0.0002999999999999999,
           "output": 0.1764,
           "cacheRead": 0.168,
           "cacheWrite": 0.1315
@@ -14042,7 +14042,7 @@
         "costBreakdown": {
           "input": 0.0002,
           "output": 0.1753,
-          "cacheRead": 0.0513,
+          "cacheRead": 0.05129999999999999,
           "cacheWrite": 0.1262
         },
         "costUsd": 0.353,
@@ -14561,7 +14561,7 @@
           "cacheCreationTokens": 22230
         },
         "costBreakdown": {
-          "input": 0.0002,
+          "input": 0.00020000000000000004,
           "output": 0.0416,
           "cacheRead": 0.067,
           "cacheWrite": 0.0556
@@ -14872,7 +14872,7 @@
         "costBreakdown": {
           "input": 0.0002,
           "output": 0.0885,
-          "cacheRead": 0.0273,
+          "cacheRead": 0.027299999999999998,
           "cacheWrite": 0.064
         },
         "costUsd": 0.18,
@@ -15296,9 +15296,9 @@
           "input": 0.0001,
           "output": 0.0378,
           "cacheRead": 0.0714,
-          "cacheWrite": 0.0727
+          "cacheWrite": 0.07270000000000001
         },
-        "costUsd": 0.182,
+        "costUsd": 0.18200000000000002,
         "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
         "sourceDir": "C:\\Users\\dev\\.claude\\projects"
       },
@@ -15787,12 +15787,12 @@
           "cacheCreationTokens": 60531
         },
         "costBreakdown": {
-          "input": 0.0002,
-          "output": 0.0727,
-          "cacheRead": 0.0891,
+          "input": 0.00019999999999999998,
+          "output": 0.07269999999999999,
+          "cacheRead": 0.08909999999999998,
           "cacheWrite": 0.0757
         },
-        "costUsd": 0.23770000000000002,
+        "costUsd": 0.23769999999999997,
         "projectKey": "git:github.com/example/inventory-service",
         "sourceDir": "C:\\Users\\dev\\.claude\\projects"
       },
@@ -16467,8 +16467,8 @@
           "reasoningTokens": 5231
         },
         "costBreakdown": {
-          "input": 0.083,
-          "output": 0.1753,
+          "input": 0.08299999999999999,
+          "output": 0.17530000000000004,
           "cacheRead": 0.192,
           "cacheWrite": 0
         },
@@ -16888,12 +16888,12 @@
           "reasoningTokens": 9633
         },
         "costBreakdown": {
-          "input": 0.1782,
-          "output": 0.1947,
-          "cacheRead": 0.0716,
+          "input": 0.13291399999999998,
+          "output": 0.17252,
+          "cacheRead": 0.05539829999999999,
           "cacheWrite": 0
         },
-        "costUsd": 0.4445,
+        "costUsd": 0.3608323,
         "unpricedTokens": 413949,
         "projectKey": "path:c:\\users\\dev\\desktop\\dev\\sandbox\\todo-api",
         "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -17148,14 +17148,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-dcb269a7",
-          "costBreakdown": {
-            "input": 0.045286,
-            "output": 0.02218,
-            "cacheRead": 0.0162017,
-            "cacheWrite": 0
-          },
-          "costUsd": 0.0836677
+          "branch": "rollback-dcb269a7"
         },
         {
           "id": "ffd04480-5adc-415c-bb14-932d87c9234f",
@@ -17369,12 +17362,12 @@
           "reasoningTokens": 7174
         },
         "costBreakdown": {
-          "input": 0.1359,
+          "input": 0.13589999999999997,
           "output": 0.1694,
           "cacheRead": 0.108,
           "cacheWrite": 0
         },
-        "costUsd": 0.4133,
+        "costUsd": 0.41329999999999995,
         "unpricedTokens": 307382,
         "projectKey": "path:c:\\users\\dev\\desktop\\dev\\sandbox\\todo-api",
         "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -18537,12 +18530,12 @@
           "reasoningTokens": 24492
         },
         "costBreakdown": {
-          "input": 0.5255,
-          "output": 0.3464,
-          "cacheRead": 0.2903,
+          "input": 0.424464,
+          "output": 0.23541999999999996,
+          "cacheRead": 0.2471892,
           "cacheWrite": 0
         },
-        "costUsd": 1.1622,
+        "costUsd": 0.9070731999999999,
         "unpricedTokens": 1206665,
         "projectKey": "git:github.com/example/acme-shop",
         "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -18681,14 +18674,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-7e65785c",
-          "costBreakdown": {
-            "input": 0.101036,
-            "output": 0.11098,
-            "cacheRead": 0.043110800000000005,
-            "cacheWrite": 0
-          },
-          "costUsd": 0.2551268
+          "branch": "rollback-7e65785c"
         },
         {
           "id": "23313597-1190-4d9c-8327-73b51fe24e6e",
@@ -20438,12 +20424,12 @@
           "reasoningTokens": 18315
         },
         "costBreakdown": {
-          "input": 0.6026,
-          "output": 0.8091,
-          "cacheRead": 0.2975,
+          "input": 0.5705,
+          "output": 0.75849,
+          "cacheRead": 0.23954550000000002,
           "cacheWrite": 0
         },
-        "costUsd": 1.7092,
+        "costUsd": 1.5685355,
         "unpricedTokens": 608857,
         "projectKey": "git:github.com/luchoc-dev/dashboard-v1",
         "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -20649,14 +20635,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-8a3e8a5c",
-          "costBreakdown": {
-            "input": 0.0321,
-            "output": 0.05061,
-            "cacheRead": 0.0579545,
-            "cacheWrite": 0
-          },
-          "costUsd": 0.1406645
+          "branch": "rollback-8a3e8a5c"
         },
         {
           "id": "f329909e-6010-404b-8d01-bf24ccb0f443",
@@ -21404,12 +21383,12 @@
           "reasoningTokens": 5652
         },
         "costBreakdown": {
-          "input": 0.0593,
-          "output": 0.1307,
-          "cacheRead": 0.0646,
+          "input": 0.021761999999999993,
+          "output": 0.10984400000000001,
+          "cacheRead": 0.05279799999999999,
           "cacheWrite": 0
         },
-        "costUsd": 0.2546,
+        "costUsd": 0.18440399999999998,
         "projectKey": "git:github.com/example/acme-shop",
         "sourceDir": "C:\\Users\\dev\\AppData\\Roaming\\orca\\codex-runtime-home\\home\\sessions"
       },
@@ -21493,14 +21472,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-cd78d92a",
-          "costBreakdown": {
-            "input": 0.037538,
-            "output": 0.020856,
-            "cacheRead": 0.011802,
-            "cacheWrite": 0
-          },
-          "costUsd": 0.07019600000000001
+          "branch": "rollback-cd78d92a"
         },
         {
           "id": "800d91fd-3b33-495f-b480-977e17c0733f",
@@ -21665,12 +21637,12 @@
           "reasoningTokens": 13851
         },
         "costBreakdown": {
-          "input": 0.0556,
-          "output": 0.1057,
-          "cacheRead": 0.0331,
+          "input": 0.053947,
+          "output": 0.08022099999999999,
+          "cacheRead": 0.022328724999999997,
           "cacheWrite": 0
         },
-        "costUsd": 0.1944,
+        "costUsd": 0.15649672499999998,
         "unpricedTokens": 481961,
         "projectKey": "git:github.com/example/acme-shop",
         "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -21844,14 +21816,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-5234443d",
-          "costBreakdown": {
-            "input": 0.001653,
-            "output": 0.025479,
-            "cacheRead": 0.010771275,
-            "cacheWrite": 0
-          },
-          "costUsd": 0.037903275
+          "branch": "rollback-5234443d"
         },
         {
           "id": "4a55fc3f-c56e-4698-a084-527f0ad491f5",
@@ -22455,7 +22420,7 @@
           "cacheWrite": 0
         },
         "costUsd": 0,
-        "unpricedTokens": 919244,
+        "unpricedTokens": 762423,
         "projectKey": "git:github.com/example/inventory-service",
         "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
       },
@@ -22577,15 +22542,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-e801edc8",
-          "costBreakdown": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "unpricedTokens": 156821,
-          "costUsd": 0
+          "branch": "rollback-e801edc8"
         },
         {
           "id": "1116eca4-a163-440b-ab16-8affb8a04779",
@@ -22949,12 +22906,12 @@
           "reasoningTokens": 7021
         },
         "costBreakdown": {
-          "input": 0.2163,
-          "output": 0.0961,
-          "cacheRead": 0.143,
+          "input": 0.10254399999999998,
+          "output": 0.06324000000000002,
+          "cacheRead": 0.1151084,
           "cacheWrite": 0
         },
-        "costUsd": 0.4554,
+        "costUsd": 0.2808924,
         "unpricedTokens": 533588,
         "projectKey": "git:github.com/example/acme-shop",
         "sourceDir": "C:\\Users\\dev\\.codex\\sessions"
@@ -23160,14 +23117,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-41adf2e1",
-          "costBreakdown": {
-            "input": 0.113756,
-            "output": 0.03286,
-            "cacheRead": 0.027891600000000003,
-            "cacheWrite": 0
-          },
-          "costUsd": 0.17450759999999998
+          "branch": "rollback-41adf2e1"
         },
         {
           "id": "1f78dcef-1da2-4305-95db-42590258f1ec",
@@ -23490,12 +23440,12 @@
           "reasoningTokens": 10288
         },
         "costBreakdown": {
-          "input": 0.1143,
-          "output": 0.0936,
-          "cacheRead": 0.0359,
+          "input": 0.077794,
+          "output": 0.07721,
+          "cacheRead": 0.0299689,
           "cacheWrite": 0
         },
-        "costUsd": 0.24380000000000002,
+        "costUsd": 0.1849729,
         "unpricedTokens": 622883,
         "projectKey": "git:github.com/example/inventory-service",
         "sourceDir": "C:\\Users\\dev\\AppData\\Roaming\\orca\\codex-runtime-home\\home\\sessions"
@@ -23623,14 +23573,7 @@
               "text": "Probé otra variante del cambio, pero la descarté."
             }
           ],
-          "branch": "rollback-e6c15027",
-          "costBreakdown": {
-            "input": 0.036506,
-            "output": 0.01639,
-            "cacheRead": 0.005931100000000001,
-            "cacheWrite": 0
-          },
-          "costUsd": 0.0588271
+          "branch": "rollback-e6c15027"
         },
         {
           "id": "bc26a94f-5a09-4c7d-99ea-9eca13fd0ae3",
@@ -24123,15 +24066,15 @@
         "cacheCreationTokens": 1406896,
         "reasoningTokens": 127298
       },
+      "costUsd": 16.539607025000002,
       "costBreakdown": {
-        "input": 2.010699999999999,
-        "output": 6.423499999999999,
-        "cacheRead": 4.895200000000001,
+        "input": 1.642824999999999,
+        "output": 6.144144999999999,
+        "cacheRead": 4.721537025000001,
         "cacheWrite": 4.0310999999999995
       },
-      "costUsd": 17.3605,
       "activeMs": 37546375,
-      "unpricedTokens": 5625265
+      "unpricedTokens": 5468444
     },
     "byDay": [
       {
@@ -24144,13 +24087,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24163,13 +24106,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24182,13 +24125,13 @@
           "cacheReadTokens": 1098747,
           "cacheCreationTokens": 65038
         },
+        "costUsd": 0.6915,
         "costBreakdown": {
           "input": 0.0005,
           "output": 0.2782,
           "cacheRead": 0.2197,
           "cacheWrite": 0.1931
         },
-        "costUsd": 0.6915,
         "unpricedTokens": 0
       },
       {
@@ -24201,13 +24144,13 @@
           "cacheReadTokens": 335127,
           "cacheCreationTokens": 22230
         },
+        "costUsd": 0.1644,
         "costBreakdown": {
-          "input": 0.0002,
+          "input": 0.00020000000000000004,
           "output": 0.0416,
           "cacheRead": 0.067,
           "cacheWrite": 0.0556
         },
-        "costUsd": 0.1644,
         "unpricedTokens": 0
       },
       {
@@ -24220,13 +24163,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24239,13 +24182,13 @@
           "cacheReadTokens": 928722,
           "cacheCreationTokens": 30028
         },
+        "costUsd": 0.9962,
         "costBreakdown": {
           "input": 0.0008,
           "output": 0.3433,
-          "cacheRead": 0.4644,
+          "cacheRead": 0.4643999999999999,
           "cacheWrite": 0.1877
         },
-        "costUsd": 0.9962,
         "unpricedTokens": 0
       },
       {
@@ -24258,13 +24201,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24278,13 +24221,13 @@
           "cacheCreationTokens": 23624,
           "reasoningTokens": 10288
         },
+        "costUsd": 0.5991729,
         "costBreakdown": {
-          "input": 0.1147,
-          "output": 0.2118,
-          "cacheRead": 0.18380000000000002,
+          "input": 0.078194,
+          "output": 0.19541,
+          "cacheRead": 0.1778689,
           "cacheWrite": 0.1477
         },
-        "costUsd": 0.6579999999999999,
         "unpricedTokens": 622883
       },
       {
@@ -24297,13 +24240,13 @@
           "cacheReadTokens": 1272912,
           "cacheCreationTokens": 89292
         },
+        "costUsd": 1.1994,
         "costBreakdown": {
           "input": 0.001,
           "output": 0.4973,
           "cacheRead": 0.2546,
           "cacheWrite": 0.4465
         },
-        "costUsd": 1.1994,
         "unpricedTokens": 0
       },
       {
@@ -24317,13 +24260,13 @@
           "cacheCreationTokens": 23812,
           "reasoningTokens": 7021
         },
+        "costUsd": 0.4844924,
         "costBreakdown": {
-          "input": 0.21639999999999998,
-          "output": 0.1854,
-          "cacheRead": 0.2152,
+          "input": 0.10264399999999999,
+          "output": 0.15254,
+          "cacheRead": 0.18730839999999999,
           "cacheWrite": 0.042
         },
-        "costUsd": 0.659,
         "unpricedTokens": 533588
       },
       {
@@ -24337,14 +24280,14 @@
           "cacheCreationTokens": 27960,
           "reasoningTokens": 7806
         },
+        "costUsd": 0.11,
         "costBreakdown": {
           "input": 0.0001,
           "output": 0.0367,
           "cacheRead": 0.0383,
           "cacheWrite": 0.0349
         },
-        "costUsd": 0.11,
-        "unpricedTokens": 919244
+        "unpricedTokens": 762423
       },
       {
         "date": "2026-09-17",
@@ -24356,13 +24299,13 @@
           "cacheReadTokens": 1759959,
           "cacheCreationTokens": 128388
         },
+        "costUsd": 1.4873,
         "costBreakdown": {
           "input": 0.0011,
           "output": 0.5982000000000001,
           "cacheRead": 0.4357,
           "cacheWrite": 0.4523
         },
-        "costUsd": 1.4873,
         "unpricedTokens": 0
       },
       {
@@ -24375,13 +24318,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24395,13 +24338,13 @@
           "cacheCreationTokens": 18990,
           "reasoningTokens": 13851
         },
+        "costUsd": 0.26769672499999997,
         "costBreakdown": {
-          "input": 0.0557,
-          "output": 0.1218,
-          "cacheRead": 0.0806,
+          "input": 0.054047000000000005,
+          "output": 0.09632099999999999,
+          "cacheRead": 0.069828725,
           "cacheWrite": 0.0475
         },
-        "costUsd": 0.3056,
         "unpricedTokens": 481961
       },
       {
@@ -24415,13 +24358,13 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 5652
         },
+        "costUsd": 0.18440399999999998,
         "costBreakdown": {
-          "input": 0.0593,
-          "output": 0.1307,
-          "cacheRead": 0.0646,
+          "input": 0.021761999999999993,
+          "output": 0.10984400000000001,
+          "cacheRead": 0.05279799999999999,
           "cacheWrite": 0
         },
-        "costUsd": 0.2546,
         "unpricedTokens": 0
       },
       {
@@ -24434,13 +24377,13 @@
           "cacheReadTokens": 809415,
           "cacheCreationTokens": 60047
         },
+        "costUsd": 0.6568,
         "costBreakdown": {
           "input": 0.0006,
           "output": 0.1882,
           "cacheRead": 0.2428,
           "cacheWrite": 0.2252
         },
-        "costUsd": 0.6568,
         "unpricedTokens": 0
       },
       {
@@ -24453,13 +24396,13 @@
           "cacheReadTokens": 2990336,
           "cacheCreationTokens": 233795
         },
+        "costUsd": 1.8518,
         "costBreakdown": {
-          "input": 0.0017000000000000001,
+          "input": 0.0017,
           "output": 0.7046,
           "cacheRead": 0.5085,
           "cacheWrite": 0.637
         },
-        "costUsd": 1.8518,
         "unpricedTokens": 0
       },
       {
@@ -24473,13 +24416,13 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 18315
         },
+        "costUsd": 1.5685355,
         "costBreakdown": {
-          "input": 0.6026,
-          "output": 0.8091,
-          "cacheRead": 0.2975,
+          "input": 0.5705,
+          "output": 0.75849,
+          "cacheRead": 0.23954550000000002,
           "cacheWrite": 0
         },
-        "costUsd": 1.7092,
         "unpricedTokens": 608857
       },
       {
@@ -24493,13 +24436,13 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 9063
         },
+        "costUsd": 0.052300000000000006,
         "costBreakdown": {
           "input": 0.019,
           "output": 0.0233,
           "cacheRead": 0.01,
           "cacheWrite": 0
         },
-        "costUsd": 0.052300000000000006,
         "unpricedTokens": 100096
       },
       {
@@ -24512,13 +24455,13 @@
           "cacheReadTokens": 714407,
           "cacheCreationTokens": 58159
         },
+        "costUsd": 0.18200000000000002,
         "costBreakdown": {
           "input": 0.0001,
           "output": 0.0378,
           "cacheRead": 0.0714,
-          "cacheWrite": 0.0727
+          "cacheWrite": 0.07270000000000001
         },
-        "costUsd": 0.182,
         "unpricedTokens": 0
       },
       {
@@ -24532,13 +24475,13 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 24492
         },
+        "costUsd": 0.9070731999999999,
         "costBreakdown": {
-          "input": 0.5255,
-          "output": 0.3464,
-          "cacheRead": 0.2903,
+          "input": 0.424464,
+          "output": 0.23541999999999996,
+          "cacheRead": 0.2471892,
           "cacheWrite": 0
         },
-        "costUsd": 1.1622,
         "unpricedTokens": 1206665
       },
       {
@@ -24551,13 +24494,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24570,13 +24513,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24590,13 +24533,13 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 8772
         },
+        "costUsd": 0.030599999999999995,
         "costBreakdown": {
           "input": 0.0113,
           "output": 0.0097,
           "cacheRead": 0.0096,
           "cacheWrite": 0
         },
-        "costUsd": 0.030599999999999995,
         "unpricedTokens": 159489
       },
       {
@@ -24609,13 +24552,13 @@
           "cacheReadTokens": 783119,
           "cacheCreationTokens": 86762
         },
+        "costUsd": 0.8374,
         "costBreakdown": {
           "input": 0.0006,
-          "output": 0.2765,
+          "output": 0.27649999999999997,
           "cacheRead": 0.2349,
           "cacheWrite": 0.3254
         },
-        "costUsd": 0.8374,
         "unpricedTokens": 0
       },
       {
@@ -24629,13 +24572,13 @@
           "cacheCreationTokens": 117438,
           "reasoningTokens": 7174
         },
+        "costUsd": 0.8842999999999999,
         "costBreakdown": {
-          "input": 0.1363,
+          "input": 0.13629999999999998,
           "output": 0.32130000000000003,
           "cacheRead": 0.2798,
           "cacheWrite": 0.1469
         },
-        "costUsd": 0.8843000000000001,
         "unpricedTokens": 307382
       },
       {
@@ -24648,13 +24591,13 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
       },
       {
@@ -24668,13 +24611,13 @@
           "cacheCreationTokens": 88243,
           "reasoningTokens": 9633
         },
+        "costUsd": 0.9319323,
         "costBreakdown": {
-          "input": 0.1786,
-          "output": 0.3844,
-          "cacheRead": 0.23199999999999998,
+          "input": 0.133314,
+          "output": 0.36222,
+          "cacheRead": 0.21579829999999997,
           "cacheWrite": 0.2206
         },
-        "costUsd": 1.0156,
         "unpricedTokens": 413949
       },
       {
@@ -24688,13 +24631,13 @@
           "cacheCreationTokens": 333090,
           "reasoningTokens": 5231
         },
+        "costUsd": 2.4523,
         "costBreakdown": {
-          "input": 0.08460000000000001,
+          "input": 0.0846,
           "output": 0.8771999999999999,
-          "cacheRead": 0.6945,
+          "cacheRead": 0.6944999999999999,
           "cacheWrite": 0.796
         },
-        "costUsd": 2.4523,
         "unpricedTokens": 271151
       },
       {
@@ -24707,55 +24650,14 @@
           "cacheReadTokens": 0,
           "cacheCreationTokens": 0
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 0
-      }
-    ],
-    "byProvider": [
-      {
-        "key": "claude",
-        "label": "Claude",
-        "sessions": 28,
-        "usage": {
-          "inputTokens": 4071,
-          "outputTokens": 356584,
-          "cacheReadTokens": 17542202,
-          "cacheCreationTokens": 1406896
-        },
-        "costBreakdown": {
-          "input": 0.0097,
-          "output": 4.2695,
-          "cacheRead": 3.6395999999999997,
-          "cacheWrite": 4.0310999999999995
-        },
-        "costUsd": 11.9499,
-        "unpricedTokens": 0
-      },
-      {
-        "key": "codex",
-        "label": "Codex",
-        "sessions": 12,
-        "usage": {
-          "inputTokens": 1549866,
-          "outputTokens": 323483,
-          "cacheReadTokens": 11454020,
-          "cacheCreationTokens": 0,
-          "reasoningTokens": 127298
-        },
-        "costBreakdown": {
-          "input": 2.001,
-          "output": 2.154,
-          "cacheRead": 1.2556,
-          "cacheWrite": 0
-        },
-        "costUsd": 5.4106,
-        "unpricedTokens": 5625265
       }
     ],
     "byProject": [
@@ -24770,13 +24672,13 @@
           "cacheCreationTokens": 266635,
           "reasoningTokens": 65310
         },
+        "costUsd": 5.035166324999999,
         "costBreakdown": {
-          "input": 0.961,
-          "output": 1.9362,
-          "cacheRead": 1.7944999999999998,
+          "input": 0.7070169999999999,
+          "output": 1.746025,
+          "cacheRead": 1.700924325,
           "cacheWrite": 0.8812
         },
-        "costUsd": 5.572899999999999,
         "unpricedTokens": 2593461
       },
       {
@@ -24790,13 +24692,13 @@
           "cacheCreationTokens": 349000,
           "reasoningTokens": 18315
         },
+        "costUsd": 3.8854354999999994,
         "costBreakdown": {
-          "input": 0.6046999999999999,
-          "output": 1.6571999999999998,
-          "cacheRead": 0.9841,
-          "cacheWrite": 0.7801
+          "input": 0.5725999999999999,
+          "output": 1.60659,
+          "cacheRead": 0.9261455000000001,
+          "cacheWrite": 0.7801000000000001
         },
-        "costUsd": 4.0261,
         "unpricedTokens": 608857
       },
       {
@@ -24810,13 +24712,13 @@
           "cacheCreationTokens": 325181,
           "reasoningTokens": 25579
         },
+        "costUsd": 3.4460323,
         "costBreakdown": {
-          "input": 0.3275,
-          "output": 1.2059000000000002,
-          "cacheRead": 0.9167000000000001,
+          "input": 0.28221399999999996,
+          "output": 1.18372,
+          "cacheRead": 0.9004983000000001,
           "cacheWrite": 1.0796
         },
-        "costUsd": 3.5297,
         "unpricedTokens": 880820
       },
       {
@@ -24830,14 +24732,14 @@
           "cacheCreationTokens": 352050,
           "reasoningTokens": 18094
         },
+        "costUsd": 3.2211729,
         "costBreakdown": {
-          "input": 0.11689999999999999,
-          "output": 1.2295,
-          "cacheRead": 0.9194,
+          "input": 0.080394,
+          "output": 1.21311,
+          "cacheRead": 0.9134688999999999,
           "cacheWrite": 1.0141999999999998
         },
-        "costUsd": 3.28,
-        "unpricedTokens": 1542127
+        "unpricedTokens": 1385306
       },
       {
         "key": "path:c:\\users\\dev\\desktop\\dev\\dotfiles",
@@ -24849,20 +24751,20 @@
           "cacheReadTokens": 1533646,
           "cacheCreationTokens": 114030
         },
+        "costUsd": 0.9518,
         "costBreakdown": {
-          "input": 0.0006000000000000001,
-          "output": 0.39470000000000005,
+          "input": 0.0006,
+          "output": 0.3947,
           "cacheRead": 0.28049999999999997,
           "cacheWrite": 0.276
         },
-        "costUsd": 0.9518,
         "unpricedTokens": 0
       }
     ],
     "byModel": [
       {
         "key": "claude-opus-5",
-        "label": "claude-opus-5",
+        "label": "Opus 5",
         "sessions": 5,
         "usage": {
           "inputTokens": 520,
@@ -24870,18 +24772,18 @@
           "cacheReadTokens": 2119745,
           "cacheCreationTokens": 152995
         },
+        "costUsd": 3.2305,
         "costBreakdown": {
-          "input": 0.0026,
-          "output": 1.2114,
-          "cacheRead": 1.0598725,
-          "cacheWrite": 0.9562187500000001
+          "input": 0.0027,
+          "output": 1.2115,
+          "cacheRead": 1.06,
+          "cacheWrite": 0.9562999999999999
         },
-        "costUsd": 3.23009125,
         "unpricedTokens": 0
       },
       {
         "key": "claude-sonnet-4-6",
-        "label": "claude-sonnet-4-6",
+        "label": "Sonnet 4.6",
         "sessions": 5,
         "usage": {
           "inputTokens": 662,
@@ -24889,18 +24791,18 @@
           "cacheReadTokens": 2802909,
           "cacheCreationTokens": 272588
         },
+        "costUsd": 2.6998,
         "costBreakdown": {
-          "input": 0.001986,
-          "output": 0.83475,
-          "cacheRead": 0.8408727,
-          "cacheWrite": 1.022205
+          "input": 0.0021,
+          "output": 0.8347,
+          "cacheRead": 0.8408000000000001,
+          "cacheWrite": 1.0222
         },
-        "costUsd": 2.6998137,
         "unpricedTokens": 0
       },
       {
         "key": "claude-haiku-4-5-20251001",
-        "label": "claude-haiku-4-5-20251001",
+        "label": "Haiku 4.5",
         "sessions": 13,
         "usage": {
           "inputTokens": 1867,
@@ -24908,18 +24810,18 @@
           "cacheReadTokens": 7850661,
           "cacheCreationTokens": 633060
         },
+        "costUsd": 2.3765,
         "costBreakdown": {
-          "input": 0.0018670000000000002,
-          "output": 0.7979350000000001,
-          "cacheRead": 0.7850661,
-          "cacheWrite": 0.7913250000000001
+          "input": 0.002,
+          "output": 0.7979,
+          "cacheRead": 0.7850999999999999,
+          "cacheWrite": 0.7915
         },
-        "costUsd": 2.3761931,
         "unpricedTokens": 0
       },
       {
         "key": "claude-opus-5-5",
-        "label": "claude-opus-5-5",
+        "label": "Opus 5.5",
         "sessions": 4,
         "usage": {
           "inputTokens": 458,
@@ -24927,18 +24829,18 @@
           "cacheReadTokens": 2304444,
           "cacheCreationTokens": 156164
         },
+        "costUsd": 2.2366999999999995,
         "costBreakdown": {
-          "input": 0.001832,
-          "output": 0.99316,
-          "cacheRead": 0.4608888,
-          "cacheWrite": 0.7808200000000001
+          "input": 0.0018000000000000002,
+          "output": 0.9931,
+          "cacheRead": 0.4609,
+          "cacheWrite": 0.7808999999999999
         },
-        "costUsd": 2.2367008000000004,
         "unpricedTokens": 0
       },
       {
         "key": "gpt-5.6-sol",
-        "label": "gpt-5.6-sol",
+        "label": "Sol 5.6",
         "sessions": 3,
         "usage": {
           "inputTokens": 205440,
@@ -24947,18 +24849,18 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 12463
         },
+        "costUsd": 1.6274655999999998,
         "costBreakdown": {
-          "input": 0.82176,
-          "output": 0.61292,
-          "cacheRead": 0.6224352,
+          "input": 0.607008,
+          "output": 0.46906,
+          "cacheRead": 0.5513976,
           "cacheWrite": 0
         },
-        "costUsd": 2.0571152,
         "unpricedTokens": 0
       },
       {
         "key": "gpt-5.5",
-        "label": "gpt-5.5",
+        "label": "GPT-5.5",
         "sessions": 1,
         "usage": {
           "inputTokens": 119961,
@@ -24967,18 +24869,18 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 11730
         },
+        "costUsd": 1.5639355,
         "costBreakdown": {
-          "input": 0.599805,
-          "output": 0.80874,
-          "cacheRead": 0.296106,
+          "input": 0.5677,
+          "output": 0.75809,
+          "cacheRead": 0.2381455,
           "cacheWrite": 0
         },
-        "costUsd": 1.7046510000000001,
         "unpricedTokens": 0
       },
       {
         "key": "claude-sonnet-5-5",
-        "label": "claude-sonnet-5-5",
+        "label": "Sonnet 5.5",
         "sessions": 5,
         "usage": {
           "inputTokens": 564,
@@ -24986,38 +24888,18 @@
           "cacheReadTokens": 2464443,
           "cacheCreationTokens": 192089
         },
+        "costUsd": 1.4064,
         "costBreakdown": {
-          "input": 0.001128,
-          "output": 0.43233,
-          "cacheRead": 0.4928886,
-          "cacheWrite": 0.4802225
+          "input": 0.0011,
+          "output": 0.4323,
+          "cacheRead": 0.4928,
+          "cacheWrite": 0.48019999999999996
         },
-        "costUsd": 1.4065691,
-        "unpricedTokens": 0
-      },
-      {
-        "key": "gpt-6.1-sol",
-        "label": "gpt-6.1-sol",
-        "sessions": 2,
-        "usage": {
-          "inputTokens": 146276,
-          "outputTokens": 28833,
-          "cacheReadTokens": 1074414,
-          "cacheCreationTokens": 0,
-          "reasoningTokens": 10816
-        },
-        "costBreakdown": {
-          "input": 0.29255200000000003,
-          "output": 0.28833,
-          "cacheRead": 0.10744140000000002,
-          "cacheWrite": 0
-        },
-        "costUsd": 0.6883234,
         "unpricedTokens": 0
       },
       {
         "key": "gpt-5.6-terra",
-        "label": "gpt-5.6-terra",
+        "label": "Terra 5.6",
         "sessions": 2,
         "usage": {
           "inputTokens": 97207,
@@ -25026,18 +24908,38 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 8504
         },
+        "costUsd": 0.593004,
         "costBreakdown": {
-          "input": 0.194414,
-          "output": 0.29784,
-          "cacheRead": 0.1709648,
+          "input": 0.15686199999999995,
+          "output": 0.276944,
+          "cacheRead": 0.159198,
           "cacheWrite": 0
         },
-        "costUsd": 0.6632188,
+        "unpricedTokens": 0
+      },
+      {
+        "key": "gpt-6.1-sol",
+        "label": "Sol 6.1",
+        "sessions": 2,
+        "usage": {
+          "inputTokens": 146276,
+          "outputTokens": 28833,
+          "cacheReadTokens": 1074414,
+          "cacheCreationTokens": 0,
+          "reasoningTokens": 10816
+        },
+        "costUsd": 0.5458052,
+        "costBreakdown": {
+          "input": 0.21070799999999998,
+          "output": 0.24973,
+          "cacheRead": 0.08536719999999999,
+          "cacheWrite": 0
+        },
         "unpricedTokens": 0
       },
       {
         "key": "gpt-5.4-mini",
-        "label": "gpt-5.4-mini",
+        "label": "Mini 5.4",
         "sessions": 1,
         "usage": {
           "inputTokens": 72688,
@@ -25046,18 +24948,18 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 9031
         },
+        "costUsd": 0.15409672499999996,
         "costBreakdown": {
-          "input": 0.054515999999999995,
-          "output": 0.10462950000000001,
-          "cacheRead": 0.032949075,
+          "input": 0.052847000000000005,
+          "output": 0.07912099999999998,
+          "cacheRead": 0.022128725,
           "cacheWrite": 0
         },
-        "costUsd": 0.192094575,
         "unpricedTokens": 0
       },
       {
         "key": "gpt-6-luna",
-        "label": "gpt-6-luna",
+        "label": "Luna 6",
         "sessions": 5,
         "usage": {
           "inputTokens": 190946,
@@ -25066,18 +24968,18 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 13938
         },
+        "costUsd": 0.053099999999999994,
         "costBreakdown": {
-          "input": 0.0190946,
-          "output": 0.018349999999999998,
-          "cacheRead": 0.015666689999999997,
+          "input": 0.019,
+          "output": 0.0184,
+          "cacheRead": 0.0157,
           "cacheWrite": 0
         },
-        "costUsd": 0.05311128999999999,
         "unpricedTokens": 0
       },
       {
         "key": "gpt-5.6-luna",
-        "label": "gpt-5.6-luna",
+        "label": "Luna 5.6",
         "sessions": 1,
         "usage": {
           "inputTokens": 95035,
@@ -25086,18 +24988,18 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 8681
         },
+        "costUsd": 0.052300000000000006,
         "costBreakdown": {
-          "input": 0.019007,
-          "output": 0.0232836,
-          "cacheRead": 0.01000824,
+          "input": 0.019,
+          "output": 0.0233,
+          "cacheRead": 0.01,
           "cacheWrite": 0
         },
-        "costUsd": 0.05229884,
         "unpricedTokens": 0
       },
       {
         "key": "codex-auto-review",
-        "label": "codex-auto-review",
+        "label": "Revisiones automáticas",
         "sessions": 11,
         "usage": {
           "inputTokens": 575691,
@@ -25106,18 +25008,18 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 47369
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 4982490
       },
       {
         "key": "gpt-5.5-mini",
-        "label": "gpt-5.5-mini",
+        "label": "Mini 5.5",
         "sessions": 1,
         "usage": {
           "inputTokens": 46622,
@@ -25126,14 +25028,1024 @@
           "cacheCreationTokens": 0,
           "reasoningTokens": 4766
         },
+        "costUsd": 0,
         "costBreakdown": {
           "input": 0,
           "output": 0,
           "cacheRead": 0,
           "cacheWrite": 0
         },
-        "costUsd": 0,
         "unpricedTokens": 642775
+      }
+    ],
+    "hourlyActivity": [
+      {
+        "weekday": 0,
+        "hour": 0,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 1,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 2,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 3,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 4,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 5,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 6,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 7,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 8,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 9,
+        "messages": 16,
+        "sessions": 1
+      },
+      {
+        "weekday": 0,
+        "hour": 10,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 11,
+        "messages": 6,
+        "sessions": 1
+      },
+      {
+        "weekday": 0,
+        "hour": 12,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 13,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 14,
+        "messages": 9,
+        "sessions": 1
+      },
+      {
+        "weekday": 0,
+        "hour": 15,
+        "messages": 9,
+        "sessions": 1
+      },
+      {
+        "weekday": 0,
+        "hour": 16,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 17,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 18,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 19,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 20,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 21,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 22,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 0,
+        "hour": 23,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 0,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 1,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 2,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 3,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 4,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 5,
+        "messages": 10,
+        "sessions": 1
+      },
+      {
+        "weekday": 1,
+        "hour": 6,
+        "messages": 12,
+        "sessions": 1
+      },
+      {
+        "weekday": 1,
+        "hour": 7,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 8,
+        "messages": 36,
+        "sessions": 3
+      },
+      {
+        "weekday": 1,
+        "hour": 9,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 10,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 11,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 12,
+        "messages": 50,
+        "sessions": 3
+      },
+      {
+        "weekday": 1,
+        "hour": 13,
+        "messages": 12,
+        "sessions": 1
+      },
+      {
+        "weekday": 1,
+        "hour": 14,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 15,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 16,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 17,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 18,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 19,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 20,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 21,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 22,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 1,
+        "hour": 23,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 0,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 1,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 2,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 3,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 4,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 5,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 6,
+        "messages": 10,
+        "sessions": 1
+      },
+      {
+        "weekday": 2,
+        "hour": 7,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 8,
+        "messages": 24,
+        "sessions": 1
+      },
+      {
+        "weekday": 2,
+        "hour": 9,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 10,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 11,
+        "messages": 6,
+        "sessions": 1
+      },
+      {
+        "weekday": 2,
+        "hour": 12,
+        "messages": 12,
+        "sessions": 1
+      },
+      {
+        "weekday": 2,
+        "hour": 13,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 14,
+        "messages": 15,
+        "sessions": 1
+      },
+      {
+        "weekday": 2,
+        "hour": 15,
+        "messages": 3,
+        "sessions": 1
+      },
+      {
+        "weekday": 2,
+        "hour": 16,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 17,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 18,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 19,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 20,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 21,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 22,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 2,
+        "hour": 23,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 0,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 1,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 2,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 3,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 4,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 5,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 6,
+        "messages": 28,
+        "sessions": 2
+      },
+      {
+        "weekday": 3,
+        "hour": 7,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 8,
+        "messages": 16,
+        "sessions": 1
+      },
+      {
+        "weekday": 3,
+        "hour": 9,
+        "messages": 14,
+        "sessions": 1
+      },
+      {
+        "weekday": 3,
+        "hour": 10,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 11,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 12,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 13,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 14,
+        "messages": 44,
+        "sessions": 2
+      },
+      {
+        "weekday": 3,
+        "hour": 15,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 16,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 17,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 18,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 19,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 20,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 21,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 22,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 3,
+        "hour": 23,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 0,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 1,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 2,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 3,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 4,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 5,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 6,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 7,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 8,
+        "messages": 14,
+        "sessions": 1
+      },
+      {
+        "weekday": 4,
+        "hour": 9,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 10,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 11,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 12,
+        "messages": 10,
+        "sessions": 1
+      },
+      {
+        "weekday": 4,
+        "hour": 13,
+        "messages": 2,
+        "sessions": 1
+      },
+      {
+        "weekday": 4,
+        "hour": 14,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 15,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 16,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 17,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 18,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 19,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 20,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 21,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 22,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 4,
+        "hour": 23,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 0,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 1,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 2,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 3,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 4,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 5,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 6,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 7,
+        "messages": 14,
+        "sessions": 1
+      },
+      {
+        "weekday": 5,
+        "hour": 8,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 9,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 10,
+        "messages": 20,
+        "sessions": 2
+      },
+      {
+        "weekday": 5,
+        "hour": 11,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 12,
+        "messages": 18,
+        "sessions": 1
+      },
+      {
+        "weekday": 5,
+        "hour": 13,
+        "messages": 14,
+        "sessions": 1
+      },
+      {
+        "weekday": 5,
+        "hour": 14,
+        "messages": 20,
+        "sessions": 1
+      },
+      {
+        "weekday": 5,
+        "hour": 15,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 16,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 17,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 18,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 19,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 20,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 21,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 22,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 5,
+        "hour": 23,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 0,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 1,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 2,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 3,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 4,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 5,
+        "messages": 32,
+        "sessions": 2
+      },
+      {
+        "weekday": 6,
+        "hour": 6,
+        "messages": 22,
+        "sessions": 2
+      },
+      {
+        "weekday": 6,
+        "hour": 7,
+        "messages": 4,
+        "sessions": 1
+      },
+      {
+        "weekday": 6,
+        "hour": 8,
+        "messages": 6,
+        "sessions": 1
+      },
+      {
+        "weekday": 6,
+        "hour": 9,
+        "messages": 8,
+        "sessions": 1
+      },
+      {
+        "weekday": 6,
+        "hour": 10,
+        "messages": 4,
+        "sessions": 1
+      },
+      {
+        "weekday": 6,
+        "hour": 11,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 12,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 13,
+        "messages": 18,
+        "sessions": 2
+      },
+      {
+        "weekday": 6,
+        "hour": 14,
+        "messages": 16,
+        "sessions": 1
+      },
+      {
+        "weekday": 6,
+        "hour": 15,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 16,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 17,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 18,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 19,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 20,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 21,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 22,
+        "messages": 0,
+        "sessions": 0
+      },
+      {
+        "weekday": 6,
+        "hour": 23,
+        "messages": 0,
+        "sessions": 0
       }
     ],
     "seriesByProvider": [
@@ -25143,7 +26055,7 @@
         "points": [
           {
             "date": "2026-09-08",
-            "costUsd": 0.6915714000000001,
+            "costUsd": 0.6914999999999999,
             "tokens": 1185589,
             "activeMs": 2134633,
             "sessions": 2,
@@ -25152,7 +26064,7 @@
           },
           {
             "date": "2026-09-09",
-            "costUsd": 0.16433840000000002,
+            "costUsd": 0.1644,
             "tokens": 361594,
             "activeMs": 393754,
             "sessions": 1,
@@ -25161,7 +26073,7 @@
           },
           {
             "date": "2026-09-11",
-            "costUsd": 0.9961110000000001,
+            "costUsd": 0.9961999999999998,
             "tokens": 972645,
             "activeMs": 1555632,
             "sessions": 1,
@@ -25170,7 +26082,7 @@
           },
           {
             "date": "2026-09-13",
-            "costUsd": 0.4141275,
+            "costUsd": 0.4142,
             "tokens": 324290,
             "activeMs": 750119,
             "sessions": 1,
@@ -25179,7 +26091,7 @@
           },
           {
             "date": "2026-09-14",
-            "costUsd": 1.1993584,
+            "costUsd": 1.1994,
             "tokens": 1387315,
             "activeMs": 2088402,
             "sessions": 2,
@@ -25188,7 +26100,7 @@
           },
           {
             "date": "2026-09-15",
-            "costUsd": 0.203645,
+            "costUsd": 0.2036,
             "tokens": 617301,
             "activeMs": 169694,
             "sessions": 1,
@@ -25197,7 +26109,7 @@
           },
           {
             "date": "2026-09-16",
-            "costUsd": 0.1099252,
+            "costUsd": 0.11,
             "tokens": 417501,
             "activeMs": 139047,
             "sessions": 1,
@@ -25206,7 +26118,7 @@
           },
           {
             "date": "2026-09-17",
-            "costUsd": 1.4873914000000001,
+            "costUsd": 1.4873000000000005,
             "tokens": 1931556,
             "activeMs": 2331199,
             "sessions": 2,
@@ -25215,7 +26127,7 @@
           },
           {
             "date": "2026-09-19",
-            "costUsd": 0.11120160000000001,
+            "costUsd": 0.1112,
             "tokens": 257930,
             "activeMs": 457049,
             "sessions": 1,
@@ -25224,7 +26136,7 @@
           },
           {
             "date": "2026-09-21",
-            "costUsd": 0.65679075,
+            "costUsd": 0.6568,
             "tokens": 882196,
             "activeMs": 1385466,
             "sessions": 1,
@@ -25233,7 +26145,7 @@
           },
           {
             "date": "2026-09-22",
-            "costUsd": 1.85162505,
+            "costUsd": 1.8518,
             "tokens": 3284015,
             "activeMs": 3293533,
             "sessions": 4,
@@ -25242,7 +26154,7 @@
           },
           {
             "date": "2026-09-25",
-            "costUsd": 0.18206345000000002,
+            "costUsd": 0.18200000000000002,
             "tokens": 780242,
             "activeMs": 910575,
             "sessions": 1,
@@ -25251,7 +26163,7 @@
           },
           {
             "date": "2026-09-30",
-            "costUsd": 0.8373102,
+            "costUsd": 0.8374,
             "tokens": 888496,
             "activeMs": 1990452,
             "sessions": 1,
@@ -25260,7 +26172,7 @@
           },
           {
             "date": "2026-10-01",
-            "costUsd": 0.4708152,
+            "costUsd": 0.47100000000000014,
             "tokens": 1866976,
             "activeMs": 2166163,
             "sessions": 2,
@@ -25269,7 +26181,7 @@
           },
           {
             "date": "2026-10-03",
-            "costUsd": 0.5710813,
+            "costUsd": 0.5711,
             "tokens": 909581,
             "activeMs": 1348682,
             "sessions": 1,
@@ -25278,7 +26190,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 2.0020120999999995,
+            "costUsd": 2.0020000000000002,
             "tokens": 3242526,
             "activeMs": 5158975,
             "sessions": 6,
@@ -25293,7 +26205,7 @@
         "points": [
           {
             "date": "2026-09-13",
-            "costUsd": 0.24386059999999998,
+            "costUsd": 0.1849729,
             "tokens": 1048322,
             "activeMs": 590000,
             "sessions": 1,
@@ -25302,7 +26214,7 @@
           },
           {
             "date": "2026-09-15",
-            "costUsd": 0.4554364,
+            "costUsd": 0.2808924,
             "tokens": 950068,
             "activeMs": 795000,
             "sessions": 1,
@@ -25320,7 +26232,7 @@
           },
           {
             "date": "2026-09-19",
-            "costUsd": 0.19459589500000002,
+            "costUsd": 0.156496725,
             "tokens": 1053381,
             "activeMs": 1081000,
             "sessions": 1,
@@ -25329,7 +26241,7 @@
           },
           {
             "date": "2026-09-20",
-            "costUsd": 0.25449934,
+            "costUsd": 0.184404,
             "tokens": 522961,
             "activeMs": 536000,
             "sessions": 1,
@@ -25338,7 +26250,7 @@
           },
           {
             "date": "2026-09-23",
-            "costUsd": 1.7092001499999998,
+            "costUsd": 1.5685355,
             "tokens": 1516706,
             "activeMs": 1503000,
             "sessions": 1,
@@ -25347,7 +26259,7 @@
           },
           {
             "date": "2026-09-24",
-            "costUsd": 0.05229884,
+            "costUsd": 0.0523,
             "tokens": 714946,
             "activeMs": 1707000,
             "sessions": 1,
@@ -25356,7 +26268,7 @@
           },
           {
             "date": "2026-09-26",
-            "costUsd": 1.1621828,
+            "costUsd": 0.9070731999999999,
             "tokens": 2402578,
             "activeMs": 935000,
             "sessions": 1,
@@ -25365,7 +26277,7 @@
           },
           {
             "date": "2026-09-29",
-            "costUsd": 0.030617079999999998,
+            "costUsd": 0.0306,
             "tokens": 1251141,
             "activeMs": 1048000,
             "sessions": 1,
@@ -25374,7 +26286,7 @@
           },
           {
             "date": "2026-10-01",
-            "costUsd": 0.4133568,
+            "costUsd": 0.4132999999999999,
             "tokens": 929397,
             "activeMs": 747000,
             "sessions": 1,
@@ -25383,7 +26295,7 @@
           },
           {
             "date": "2026-10-03",
-            "costUsd": 0.4444628,
+            "costUsd": 0.3608323,
             "tokens": 1238033,
             "activeMs": 1069000,
             "sessions": 1,
@@ -25392,7 +26304,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.4503024,
+            "costUsd": 0.45030000000000003,
             "tokens": 780592,
             "activeMs": 398000,
             "sessions": 1,
@@ -25409,7 +26321,7 @@
         "points": [
           {
             "date": "2026-09-11",
-            "costUsd": 0.9961110000000001,
+            "costUsd": 0.9961999999999998,
             "tokens": 972645,
             "activeMs": 1555632,
             "sessions": 1,
@@ -25418,7 +26330,7 @@
           },
           {
             "date": "2026-09-13",
-            "costUsd": 0.4141275,
+            "costUsd": 0.4142,
             "tokens": 324290,
             "activeMs": 750119,
             "sessions": 1,
@@ -25427,7 +26339,7 @@
           },
           {
             "date": "2026-09-17",
-            "costUsd": 0.7737475,
+            "costUsd": 0.7738,
             "tokens": 423626,
             "activeMs": 0,
             "sessions": 1,
@@ -25436,7 +26348,7 @@
           },
           {
             "date": "2026-09-22",
-            "costUsd": 0.490232,
+            "costUsd": 0.49030000000000007,
             "tokens": 338057,
             "activeMs": 0,
             "sessions": 1,
@@ -25445,7 +26357,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.5558732500000001,
+            "costUsd": 0.5559999999999999,
             "tokens": 263098,
             "activeMs": 643384,
             "sessions": 1,
@@ -25460,7 +26372,7 @@
         "points": [
           {
             "date": "2026-09-17",
-            "costUsd": 0.47622525,
+            "costUsd": 0.47620000000000007,
             "tokens": 607086,
             "activeMs": 1123902,
             "sessions": 1,
@@ -25469,7 +26381,7 @@
           },
           {
             "date": "2026-09-21",
-            "costUsd": 0.65679075,
+            "costUsd": 0.6568,
             "tokens": 882196,
             "activeMs": 1385466,
             "sessions": 1,
@@ -25478,7 +26390,7 @@
           },
           {
             "date": "2026-09-30",
-            "costUsd": 0.8373102,
+            "costUsd": 0.8374,
             "tokens": 888496,
             "activeMs": 1990452,
             "sessions": 1,
@@ -25487,7 +26399,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.7294875000000001,
+            "costUsd": 0.7294,
             "tokens": 754031,
             "activeMs": 360089,
             "sessions": 2,
@@ -25502,7 +26414,7 @@
         "points": [
           {
             "date": "2026-09-15",
-            "costUsd": 0.1185754,
+            "costUsd": 0.1187,
             "tokens": 461104,
             "activeMs": 169694,
             "sessions": 1,
@@ -25511,7 +26423,7 @@
           },
           {
             "date": "2026-09-16",
-            "costUsd": 0.1099252,
+            "costUsd": 0.11,
             "tokens": 417501,
             "activeMs": 139047,
             "sessions": 1,
@@ -25520,7 +26432,7 @@
           },
           {
             "date": "2026-09-17",
-            "costUsd": 0.23741864999999998,
+            "costUsd": 0.23729999999999996,
             "tokens": 900844,
             "activeMs": 1207297,
             "sessions": 1,
@@ -25529,7 +26441,7 @@
           },
           {
             "date": "2026-09-22",
-            "costUsd": 0.54074385,
+            "costUsd": 0.5409,
             "tokens": 1993111,
             "activeMs": 1896060,
             "sessions": 3,
@@ -25538,7 +26450,7 @@
           },
           {
             "date": "2026-09-25",
-            "costUsd": 0.18206345000000002,
+            "costUsd": 0.18200000000000002,
             "tokens": 780242,
             "activeMs": 910575,
             "sessions": 1,
@@ -25547,7 +26459,7 @@
           },
           {
             "date": "2026-10-01",
-            "costUsd": 0.4708152,
+            "costUsd": 0.47100000000000014,
             "tokens": 1866976,
             "activeMs": 2166163,
             "sessions": 2,
@@ -25556,7 +26468,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.7166513499999998,
+            "costUsd": 0.7166,
             "tokens": 2225397,
             "activeMs": 4155502,
             "sessions": 4,
@@ -25571,7 +26483,7 @@
         "points": [
           {
             "date": "2026-09-08",
-            "costUsd": 0.2166932,
+            "costUsd": 0.21669999999999998,
             "tokens": 170562,
             "activeMs": 435747,
             "sessions": 1,
@@ -25580,7 +26492,7 @@
           },
           {
             "date": "2026-09-14",
-            "costUsd": 1.1993584,
+            "costUsd": 1.1994,
             "tokens": 1387315,
             "activeMs": 2088402,
             "sessions": 2,
@@ -25589,7 +26501,7 @@
           },
           {
             "date": "2026-09-22",
-            "costUsd": 0.8206492,
+            "costUsd": 0.8206000000000001,
             "tokens": 952847,
             "activeMs": 1397473,
             "sessions": 1,
@@ -25604,7 +26516,7 @@
         "points": [
           {
             "date": "2026-09-15",
-            "costUsd": 0.4554364,
+            "costUsd": 0.2808924,
             "tokens": 416480,
             "activeMs": 0,
             "sessions": 1,
@@ -25613,7 +26525,7 @@
           },
           {
             "date": "2026-09-26",
-            "costUsd": 1.1513764,
+            "costUsd": 0.8962731999999999,
             "tokens": 866253,
             "activeMs": 0,
             "sessions": 1,
@@ -25622,7 +26534,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.4503024,
+            "costUsd": 0.45030000000000003,
             "tokens": 509441,
             "activeMs": 398000,
             "sessions": 1,
@@ -25637,7 +26549,7 @@
         "points": [
           {
             "date": "2026-09-23",
-            "costUsd": 1.704651,
+            "costUsd": 1.5639355000000001,
             "tokens": 739131,
             "activeMs": 1503000,
             "sessions": 1,
@@ -25652,7 +26564,7 @@
         "points": [
           {
             "date": "2026-09-08",
-            "costUsd": 0.4748781999999999,
+            "costUsd": 0.4748,
             "tokens": 1015027,
             "activeMs": 1698886,
             "sessions": 1,
@@ -25661,7 +26573,7 @@
           },
           {
             "date": "2026-09-09",
-            "costUsd": 0.16433840000000002,
+            "costUsd": 0.1644,
             "tokens": 361594,
             "activeMs": 393754,
             "sessions": 1,
@@ -25670,7 +26582,7 @@
           },
           {
             "date": "2026-09-15",
-            "costUsd": 0.0850696,
+            "costUsd": 0.0849,
             "tokens": 156197,
             "activeMs": 0,
             "sessions": 1,
@@ -25679,7 +26591,7 @@
           },
           {
             "date": "2026-09-19",
-            "costUsd": 0.11120160000000001,
+            "costUsd": 0.1112,
             "tokens": 257930,
             "activeMs": 457049,
             "sessions": 1,
@@ -25688,7 +26600,7 @@
           },
           {
             "date": "2026-10-03",
-            "costUsd": 0.5710813,
+            "costUsd": 0.5711,
             "tokens": 909581,
             "activeMs": 1348682,
             "sessions": 1,
@@ -25698,36 +26610,12 @@
         ]
       },
       {
-        "key": "gpt-6.1-sol",
-        "label": "gpt-6.1-sol",
-        "points": [
-          {
-            "date": "2026-09-13",
-            "costUsd": 0.24386059999999998,
-            "tokens": 425439,
-            "activeMs": 0,
-            "sessions": 1,
-            "toolCalls": 9,
-            "messages": 3
-          },
-          {
-            "date": "2026-10-03",
-            "costUsd": 0.4444628,
-            "tokens": 824084,
-            "activeMs": 1069000,
-            "sessions": 1,
-            "toolCalls": 6,
-            "messages": 5
-          }
-        ]
-      },
-      {
         "key": "gpt-5.6-terra",
         "label": "gpt-5.6-terra",
         "points": [
           {
             "date": "2026-09-20",
-            "costUsd": 0.24986200000000003,
+            "costUsd": 0.179704,
             "tokens": 354836,
             "activeMs": 536000,
             "sessions": 1,
@@ -25736,7 +26624,7 @@
           },
           {
             "date": "2026-10-01",
-            "costUsd": 0.4133568,
+            "costUsd": 0.4132999999999999,
             "tokens": 622015,
             "activeMs": 747000,
             "sessions": 1,
@@ -25746,12 +26634,36 @@
         ]
       },
       {
+        "key": "gpt-6.1-sol",
+        "label": "gpt-6.1-sol",
+        "points": [
+          {
+            "date": "2026-09-13",
+            "costUsd": 0.1849729,
+            "tokens": 425439,
+            "activeMs": 0,
+            "sessions": 1,
+            "toolCalls": 9,
+            "messages": 3
+          },
+          {
+            "date": "2026-10-03",
+            "costUsd": 0.3608323,
+            "tokens": 824084,
+            "activeMs": 1069000,
+            "sessions": 1,
+            "toolCalls": 6,
+            "messages": 5
+          }
+        ]
+      },
+      {
         "key": "gpt-5.4-mini",
         "label": "gpt-5.4-mini",
         "points": [
           {
             "date": "2026-09-19",
-            "costUsd": 0.19209457500000002,
+            "costUsd": 0.154096725,
             "tokens": 535260,
             "activeMs": 1081000,
             "sessions": 1,
@@ -25766,7 +26678,7 @@
         "points": [
           {
             "date": "2026-09-19",
-            "costUsd": 0.00250132,
+            "costUsd": 0.0024000000000000002,
             "tokens": 36160,
             "activeMs": 0,
             "sessions": 1,
@@ -25775,7 +26687,7 @@
           },
           {
             "date": "2026-09-20",
-            "costUsd": 0.00463734,
+            "costUsd": 0.0047,
             "tokens": 168125,
             "activeMs": 0,
             "sessions": 1,
@@ -25784,7 +26696,7 @@
           },
           {
             "date": "2026-09-23",
-            "costUsd": 0.00454915,
+            "costUsd": 0.0046,
             "tokens": 168718,
             "activeMs": 0,
             "sessions": 1,
@@ -25793,7 +26705,7 @@
           },
           {
             "date": "2026-09-26",
-            "costUsd": 0.0108064,
+            "costUsd": 0.0108,
             "tokens": 329660,
             "activeMs": 0,
             "sessions": 1,
@@ -25802,7 +26714,7 @@
           },
           {
             "date": "2026-09-29",
-            "costUsd": 0.030617079999999998,
+            "costUsd": 0.0306,
             "tokens": 1091652,
             "activeMs": 1048000,
             "sessions": 1,
@@ -25817,7 +26729,7 @@
         "points": [
           {
             "date": "2026-09-24",
-            "costUsd": 0.05229884,
+            "costUsd": 0.0523,
             "tokens": 614850,
             "activeMs": 1707000,
             "sessions": 1,
@@ -25954,7 +26866,7 @@
         "points": [
           {
             "date": "2026-09-09",
-            "costUsd": 0.16433840000000002,
+            "costUsd": 0.1644,
             "tokens": 361594,
             "activeMs": 393754,
             "sessions": 1,
@@ -25963,7 +26875,7 @@
           },
           {
             "date": "2026-09-11",
-            "costUsd": 0.9961110000000001,
+            "costUsd": 0.9961999999999998,
             "tokens": 972645,
             "activeMs": 1555632,
             "sessions": 1,
@@ -25972,7 +26884,7 @@
           },
           {
             "date": "2026-09-14",
-            "costUsd": 0.35297940000000005,
+            "costUsd": 0.353,
             "tokens": 290530,
             "activeMs": 759677,
             "sessions": 1,
@@ -25981,7 +26893,7 @@
           },
           {
             "date": "2026-09-15",
-            "costUsd": 0.6590814,
+            "costUsd": 0.48449240000000005,
             "tokens": 1567369,
             "activeMs": 964694,
             "sessions": 2,
@@ -25990,7 +26902,7 @@
           },
           {
             "date": "2026-09-19",
-            "costUsd": 0.30579749500000003,
+            "costUsd": 0.267696725,
             "tokens": 1311311,
             "activeMs": 1538049,
             "sessions": 2,
@@ -25999,7 +26911,7 @@
           },
           {
             "date": "2026-09-20",
-            "costUsd": 0.25449934,
+            "costUsd": 0.184404,
             "tokens": 522961,
             "activeMs": 536000,
             "sessions": 1,
@@ -26008,7 +26920,7 @@
           },
           {
             "date": "2026-09-24",
-            "costUsd": 0.05229884,
+            "costUsd": 0.0523,
             "tokens": 714946,
             "activeMs": 1707000,
             "sessions": 1,
@@ -26017,7 +26929,7 @@
           },
           {
             "date": "2026-09-26",
-            "costUsd": 1.1621828,
+            "costUsd": 0.9070731999999999,
             "tokens": 2402578,
             "activeMs": 935000,
             "sessions": 1,
@@ -26026,7 +26938,7 @@
           },
           {
             "date": "2026-09-30",
-            "costUsd": 0.8373102,
+            "costUsd": 0.8374,
             "tokens": 888496,
             "activeMs": 1990452,
             "sessions": 1,
@@ -26035,7 +26947,7 @@
           },
           {
             "date": "2026-10-01",
-            "costUsd": 0.21197395000000002,
+            "costUsd": 0.2121,
             "tokens": 960006,
             "activeMs": 734443,
             "sessions": 1,
@@ -26044,7 +26956,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.5762115,
+            "costUsd": 0.5761000000000001,
             "tokens": 908452,
             "activeMs": 758089,
             "sessions": 2,
@@ -26059,7 +26971,7 @@
         "points": [
           {
             "date": "2026-09-16",
-            "costUsd": 0.1099252,
+            "costUsd": 0.11,
             "tokens": 417501,
             "activeMs": 139047,
             "sessions": 1,
@@ -26068,7 +26980,7 @@
           },
           {
             "date": "2026-09-17",
-            "costUsd": 1.01116615,
+            "costUsd": 1.0111000000000003,
             "tokens": 1324470,
             "activeMs": 1207297,
             "sessions": 1,
@@ -26077,7 +26989,7 @@
           },
           {
             "date": "2026-09-22",
-            "costUsd": 0.83348865,
+            "costUsd": 0.8338,
             "tokens": 1749354,
             "activeMs": 1028002,
             "sessions": 2,
@@ -26086,7 +26998,7 @@
           },
           {
             "date": "2026-09-23",
-            "costUsd": 1.7092001499999998,
+            "costUsd": 1.5685355,
             "tokens": 1516706,
             "activeMs": 1503000,
             "sessions": 1,
@@ -26095,7 +27007,7 @@
           },
           {
             "date": "2026-09-25",
-            "costUsd": 0.18206345000000002,
+            "costUsd": 0.18200000000000002,
             "tokens": 780242,
             "activeMs": 910575,
             "sessions": 1,
@@ -26104,7 +27016,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.17991595,
+            "costUsd": 0.18000000000000002,
             "tokens": 341771,
             "activeMs": 1223879,
             "sessions": 1,
@@ -26119,7 +27031,7 @@
         "points": [
           {
             "date": "2026-09-13",
-            "costUsd": 0.4141275,
+            "costUsd": 0.4142,
             "tokens": 324290,
             "activeMs": 750119,
             "sessions": 1,
@@ -26128,7 +27040,7 @@
           },
           {
             "date": "2026-09-14",
-            "costUsd": 0.846379,
+            "costUsd": 0.8464,
             "tokens": 1096785,
             "activeMs": 1328725,
             "sessions": 1,
@@ -26137,7 +27049,7 @@
           },
           {
             "date": "2026-09-29",
-            "costUsd": 0.030617079999999998,
+            "costUsd": 0.0306,
             "tokens": 1251141,
             "activeMs": 1048000,
             "sessions": 1,
@@ -26146,7 +27058,7 @@
           },
           {
             "date": "2026-10-01",
-            "costUsd": 0.4133568,
+            "costUsd": 0.4132999999999999,
             "tokens": 929397,
             "activeMs": 747000,
             "sessions": 1,
@@ -26155,7 +27067,7 @@
           },
           {
             "date": "2026-10-03",
-            "costUsd": 1.0155441,
+            "costUsd": 0.9319323000000002,
             "tokens": 2147614,
             "activeMs": 2417682,
             "sessions": 2,
@@ -26164,7 +27076,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.8097176999999999,
+            "costUsd": 0.8096000000000001,
             "tokens": 1259822,
             "activeMs": 1328730,
             "sessions": 1,
@@ -26179,7 +27091,7 @@
         "points": [
           {
             "date": "2026-09-08",
-            "costUsd": 0.4748781999999999,
+            "costUsd": 0.4748,
             "tokens": 1015027,
             "activeMs": 1698886,
             "sessions": 1,
@@ -26188,7 +27100,7 @@
           },
           {
             "date": "2026-09-13",
-            "costUsd": 0.24386059999999998,
+            "costUsd": 0.1849729,
             "tokens": 1048322,
             "activeMs": 590000,
             "sessions": 1,
@@ -26206,7 +27118,7 @@
           },
           {
             "date": "2026-09-21",
-            "costUsd": 0.65679075,
+            "costUsd": 0.6568,
             "tokens": 882196,
             "activeMs": 1385466,
             "sessions": 1,
@@ -26215,7 +27127,7 @@
           },
           {
             "date": "2026-09-22",
-            "costUsd": 1.0181364,
+            "costUsd": 1.018,
             "tokens": 1534661,
             "activeMs": 2265531,
             "sessions": 2,
@@ -26224,7 +27136,7 @@
           },
           {
             "date": "2026-10-04",
-            "costUsd": 0.88646935,
+            "costUsd": 0.8865999999999999,
             "tokens": 1513073,
             "activeMs": 2246277,
             "sessions": 3,
@@ -26239,7 +27151,7 @@
         "points": [
           {
             "date": "2026-09-08",
-            "costUsd": 0.2166932,
+            "costUsd": 0.21669999999999998,
             "tokens": 170562,
             "activeMs": 435747,
             "sessions": 1,
@@ -26248,7 +27160,7 @@
           },
           {
             "date": "2026-09-17",
-            "costUsd": 0.47622525,
+            "costUsd": 0.47620000000000007,
             "tokens": 607086,
             "activeMs": 1123902,
             "sessions": 1,
@@ -26257,7 +27169,7 @@
           },
           {
             "date": "2026-10-01",
-            "costUsd": 0.25884124999999997,
+            "costUsd": 0.2589,
             "tokens": 906970,
             "activeMs": 1431720,
             "sessions": 1,
@@ -26265,6 +27177,47 @@
             "messages": 16
           }
         ]
+      }
+    ],
+    "byProvider": [
+      {
+        "key": "claude",
+        "label": "Claude",
+        "sessions": 28,
+        "usage": {
+          "inputTokens": 4071,
+          "outputTokens": 356584,
+          "cacheReadTokens": 17542202,
+          "cacheCreationTokens": 1406896
+        },
+        "costUsd": 11.9499,
+        "costBreakdown": {
+          "input": 0.009699999999999999,
+          "output": 4.2695,
+          "cacheRead": 3.6395999999999997,
+          "cacheWrite": 4.0310999999999995
+        },
+        "unpricedTokens": 0
+      },
+      {
+        "key": "codex",
+        "label": "Codex",
+        "sessions": 12,
+        "usage": {
+          "inputTokens": 1549866,
+          "outputTokens": 323483,
+          "cacheReadTokens": 11454020,
+          "cacheCreationTokens": 0,
+          "reasoningTokens": 127298
+        },
+        "costUsd": 4.589707025,
+        "costBreakdown": {
+          "input": 1.633125,
+          "output": 1.8746450000000001,
+          "cacheRead": 1.0819370250000002,
+          "cacheWrite": 0
+        },
+        "unpricedTokens": 5468444
       }
     ]
   },
