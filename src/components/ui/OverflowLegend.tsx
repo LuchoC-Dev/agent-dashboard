@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { Popover } from "./Popover";
+import { clickable } from "./styles";
 import { Swatch } from "./Swatch";
 
 export type LegendEntry = {
@@ -17,8 +18,9 @@ export type LegendEntry = {
 const GAP = 14; // gap-x-3.5
 const item =
   "inline-flex h-[18px] max-w-[260px] min-w-0 items-center gap-1.5 whitespace-nowrap rounded-xs";
+// A filter is clickable at a glance (semibold); the active one also gets the selected wash.
 const action =
-  " cursor-pointer border-0 bg-transparent p-0 font-[inherit] text-inherit hover:text-ink aria-pressed:font-semibold aria-pressed:text-ink";
+  " " + clickable + " border-0 bg-transparent p-0 aria-pressed:bg-accent-wash";
 
 /**
  * A chart legend that never takes more than two lines: what does not fit becomes a "+N más"
@@ -104,7 +106,10 @@ export function OverflowLegend({
           <Popover
             label={`+${hidden.length} más`}
             title="Más series"
-            buttonClassName={item + action + " font-medium text-accent"}
+            // "+N más" is a mini-CTA: the accent.
+            buttonClassName={
+              item + " cursor-pointer border-0 bg-transparent p-0 font-medium text-accent hover:underline"
+            }
           >
             {() => hidden.map((s) => entry(s, true))}
           </Popover>

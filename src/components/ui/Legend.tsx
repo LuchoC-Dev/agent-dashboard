@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { clickable } from "./styles";
 import { Swatch } from "./Swatch";
 
 export type LegendItem = {
@@ -41,7 +42,9 @@ export function Legend({
             type="button"
             className={
               itemClass +
-              " relative z-[1] -mx-1 cursor-pointer rounded-xs border-0 bg-transparent px-1 text-left font-[inherit] text-inherit hover:bg-sunken hover:text-ink aria-pressed:bg-accent-wash aria-pressed:font-semibold aria-pressed:text-ink"
+              " " +
+              clickable +
+              " relative z-[1] -mx-1 rounded-xs border-0 bg-transparent px-1 text-left hover:bg-sunken aria-pressed:bg-accent-wash"
             }
             aria-pressed={!!s.pressed}
             title={s.title}

@@ -3,6 +3,7 @@ import type { SessionSummary } from "../../../../bindings/SessionSummary";
 import { RangeLink as Link } from "../../../../components/RangeLink";
 import { ModelBadge } from "../../../../components/ui/ModelBadge";
 import {
+  clickable,
   detailHead,
   detailTitle,
   metaLine,
@@ -30,7 +31,7 @@ export function SessionHeader({
       )}
       <div className={metaLine}>
         <Link
-          className="text-inherit"
+          className={clickable}
           to={projectHref(s.projectKey)}
           title={s.projectPath}
         >

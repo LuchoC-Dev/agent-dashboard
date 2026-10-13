@@ -37,7 +37,7 @@ export function Component() {
       style={{ "--color-primary": providerColor(p) } as CSSProperties}
     >
       <h2 className="flex items-center gap-2 text-size-lg font-semibold">
-        <Swatch color={providerColor(p)} rounded="rounded-[3px]" />
+        <Swatch color={providerColor(p)} />
         {providerLabel(p)}
       </h2>
       <ToolsOverview

@@ -1,6 +1,7 @@
 import { Fragment, memo, useMemo } from "react";
 import type { HourlyActivity } from "../../../bindings/HourlyActivity";
 import { Panel } from "../../../components/ui/Panel";
+import { clickableButton } from "../../../components/ui/styles";
 import { timeZone } from "../../../lib/dates";
 import { int } from "../../../lib/format";
 
@@ -15,8 +16,8 @@ function heatmapColor(ratio: number) {
 }
 
 const cellBase = "h-5 rounded-[2px] border-0 p-0 transition-opacity duration-150 motion-reduce:transition-none";
-const labelButton =
-  "cursor-pointer rounded-xs border-0 bg-transparent p-0 text-left font-[inherit] text-inherit hover:text-ink aria-pressed:font-semibold aria-pressed:text-accent";
+// Weekday/hour labels filter: clickable at a glance; the active one in the selected color.
+const labelButton = clickableButton + " rounded-xs aria-pressed:text-accent";
 
 /**
  * Weekday × hour activity in local time, from the metrics' compact counts (Resumen and the

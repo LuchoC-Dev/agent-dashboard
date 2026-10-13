@@ -3,6 +3,7 @@ import { RangeLink as Link } from "../../../components/RangeLink";
 import { DataTable, type Column } from "../../../components/ui/DataTable";
 import { ModelBadge } from "../../../components/ui/ModelBadge";
 import {
+  clickable,
   mono,
   optionalColumn,
   secondaryColumn,
@@ -49,7 +50,7 @@ export function SessionsTable({
         <div className="flex min-w-0 items-center whitespace-nowrap">
           <Link
             className={
-              "block flex-[0_1_auto] truncate" + (!s.title ? " text-ink-2" : "")
+              clickable + " block flex-[0_1_auto] truncate" + (!s.title ? " text-ink-2!" : "")
             }
             title={title(s)}
             to={sessionPath(s)}
@@ -88,6 +89,7 @@ export function SessionsTable({
             value: (s: SessionSummary) => s.projectName,
             render: (s: SessionSummary) => (
               <Link
+                className={clickable + " whitespace-nowrap"}
                 title={s.projectPath}
                 onClick={(e) => e.stopPropagation()}
                 to={projectHref(s.projectKey)}
@@ -110,14 +112,13 @@ export function SessionsTable({
       label: "Modelo",
       value: (s) => sessionModels(s)[0] || "",
       render: (s) => (
-        <span title={sessionModels(s).join("\n")}>
+        <span className="whitespace-nowrap" title={sessionModels(s).join("\n")}>
           <ModelBadge id={sessionModels(s)[0] || "Desconocido"} colors={colors} />
           {sessionModels(s).slice(1).map((m, i) => (
             <Swatch
               key={m}
-              dot
               color={colors.modelColor(m)}
-              className={i === 0 ? "ml-1" : ""}
+              className={i === 0 ? "ml-1.5" : "ml-[3px]"}
             />
           ))}
         </span>
@@ -128,6 +129,7 @@ export function SessionsTable({
       label: "Inicio",
       value: (s) => s.startedAt,
       render: (s) => when(s.startedAt),
+      className: "whitespace-nowrap",
     },
     {
       key: "duration",

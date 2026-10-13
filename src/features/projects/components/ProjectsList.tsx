@@ -3,7 +3,7 @@ import type { DateRange } from "../../../bindings/DateRange";
 import type { SessionSummary } from "../../../bindings/SessionSummary";
 import { RangeLink as Link } from "../../../components/RangeLink";
 import { DataTable } from "../../../components/ui/DataTable";
-import { field, filters, panel, summary } from "../../../components/ui/styles";
+import { clickable, field, filters, panel, summary } from "../../../components/ui/styles";
 import { Swatch } from "../../../components/ui/Swatch";
 import { ToolCount } from "../../../components/ui/ToolCount";
 import { CostWithMark } from "../../../components/ui/UnpricedMark";
@@ -59,10 +59,14 @@ export function ProjectsList({
               label: "Proyecto",
               value: (p) => p.name,
               render: (p) => (
-                <Link title={[p.key, ...p.paths].join("\n")} to={projectHref(p.key)}>
+                <Link
+                  className={clickable}
+                  title={[p.key, ...p.paths].join("\n")}
+                  to={projectHref(p.key)}
+                >
                   <Swatch color={colors.projectColor(p.key)} /> {p.name}
                   {p.paths.length > 1 && (
-                    <span className="ml-1.5 text-size-xs text-ink-3">
+                    <span className="ml-1.5 text-size-xs font-normal text-ink-3">
                       {p.paths.length} copias
                     </span>
                   )}
@@ -101,9 +105,9 @@ export function ProjectsList({
               label: "Modelos",
               value: (p) => p.models.join(),
               render: (p) => (
-                <span title={p.models.join("\n")}>
+                <span className="inline-flex gap-[3px]" title={p.models.join("\n")}>
                   {p.models.map((m) => (
-                    <Swatch key={m} dot color={colors.modelColor(m)} />
+                    <Swatch key={m} color={colors.modelColor(m)} />
                   ))}
                 </span>
               ),

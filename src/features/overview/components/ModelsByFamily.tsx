@@ -5,6 +5,7 @@ import { RangeLink as Link } from "../../../components/RangeLink";
 import { useRangeNavigate } from "../../../hooks/useDateRange";
 import { Panel } from "../../../components/ui/Panel";
 import {
+  clickable,
   note,
   num,
   optionalColumn,
@@ -104,9 +105,10 @@ export const ModelsByFamily = memo(function ModelsByFamily({
       ...(provider === "codex" ? reviews : []),
     ];
     return (
-      <tr className="*:bg-sunken *:font-semibold">
+      <tr className="*:bg-sunken">
         <td className="name-cell">
           <Disclosure
+            className={clickable}
             open={!closedProviders.has(provider)}
             onToggle={() => setClosedProviders(toggle(closedProviders, provider))}
           >
@@ -165,7 +167,7 @@ export const ModelsByFamily = memo(function ModelsByFamily({
     return (
       <Fragment key={f}>
         <tr
-          className={"*:font-semibold" + (pick ? " link" : "")}
+          className={pick ? "link" : ""}
           data-selected={selected === value || undefined}
           tabIndex={pick ? 0 : undefined}
           title={
@@ -188,7 +190,11 @@ export const ModelsByFamily = memo(function ModelsByFamily({
           <td className={"name-cell " + familyIndent} title={`${f} · ${versions(gs.length)}`}>
             {/* The name expands the versions; the rest of the row filters by the family. */}
             <span className="relative z-[1]" onClick={(e) => e.stopPropagation()}>
-              <Disclosure open={open} onToggle={() => setOpenFamilies(toggle(openFamilies, f))}>
+              <Disclosure
+                className={clickable}
+                open={open}
+                onToggle={() => setOpenFamilies(toggle(openFamilies, f))}
+              >
                 <Swatch color={colors.modelColor(gs[0].key)} /> {familyLabel(f)} ·{" "}
                 {versions(gs.length)}
               </Disclosure>
@@ -231,7 +237,7 @@ export const ModelsByFamily = memo(function ModelsByFamily({
             >
               <td className={"name-cell " + versionIndent}>
                 <Link
-                  className="relative z-[1] inline-block max-w-full truncate align-bottom"
+                  className={clickable + " relative z-[1] inline-block max-w-full truncate align-bottom"}
                   title={`${g.key} · ver sus sesiones`}
                   onClick={(e) => e.stopPropagation()}
                   to={
@@ -242,7 +248,7 @@ export const ModelsByFamily = memo(function ModelsByFamily({
                     })
                   }
                 >
-                  <Swatch dot color={colors.modelColor(g.key)} /> {parseModel(g.key).name}
+                  <Swatch color={colors.modelColor(g.key)} /> {parseModel(g.key).name}
                 </Link>
               </td>
               <td className={sessions}>{int(g.sessions)}</td>

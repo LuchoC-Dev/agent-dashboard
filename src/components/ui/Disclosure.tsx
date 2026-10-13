@@ -9,18 +9,24 @@ export function Disclosure({
   open,
   onToggle,
   controls,
+  className = "",
   children,
 }: {
   open: boolean;
   onToggle: () => void;
   /** Id of the element (or first row) it shows and hides. */
   controls?: string;
+  /** Extra classes for the button (e.g. `clickable` in a table). */
+  className?: string;
   children: ReactNode;
 }) {
   return (
     <button
       type="button"
-      className="inline-flex max-w-full min-w-0 cursor-pointer items-center gap-1.5 border-0 bg-transparent p-0 text-left font-[inherit] text-inherit focus-visible:rounded-xs"
+      className={
+        "inline-flex max-w-full min-w-0 cursor-pointer items-center gap-1.5 border-0 bg-transparent p-0 text-left font-[inherit] focus-visible:rounded-xs " +
+        (className || "text-inherit")
+      }
       aria-expanded={open}
       aria-controls={controls}
       onClick={onToggle}

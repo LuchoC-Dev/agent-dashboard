@@ -31,9 +31,21 @@ export const errorText =
 /** See `.mono` in styles/components.css. */
 export const mono = "mono";
 
-/** A button that reads as a link. */
+/**
+ * A mini-CTA that is a button ("Ver distribución de duración"): the accent, like a link.
+ * Accent is for mini-CTAs, selected states and focus only, never inside tables or data lists.
+ */
 export const textLink =
   "cursor-pointer border-0 bg-none p-0 text-left text-accent hover:underline";
+
+/**
+ * Something that navigates or filters inside a table or data list: semibold in the normal text
+ * color, underlined on hover/focus (never the accent). Non-clickable values stay regular.
+ * On a `<Link>` it overrides the base `a` accent; a `<button>` takes `clickableButton`.
+ */
+export const clickable =
+  "cursor-pointer font-semibold text-ink hover:text-ink hover:underline focus-visible:underline";
+export const clickableButton = clickable + " border-0 bg-transparent p-0 text-left";
 
 /** Small muted explanatory text. */
 export const note = "text-size-xs leading-4 text-ink-3";

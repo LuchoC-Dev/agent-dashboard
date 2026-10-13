@@ -4,7 +4,7 @@ import { RangeLink as Link } from "../../../components/RangeLink";
 import { DataTable } from "../../../components/ui/DataTable";
 import { InlineBar } from "../../../components/ui/InlineBar";
 import { Panel } from "../../../components/ui/Panel";
-import { optionalColumn, secondaryColumn } from "../../../components/ui/styles";
+import { clickable, optionalColumn, secondaryColumn } from "../../../components/ui/styles";
 import { Swatch } from "../../../components/ui/Swatch";
 import { CostWithMark } from "../../../components/ui/UnpricedMark";
 import { useRangeNavigate } from "../../../hooks/useDateRange";
@@ -130,7 +130,7 @@ export const ProjectsBreakdown = memo(function ProjectsBreakdown({
             value: (g) => g.label,
             render: (g) => (
               <Link
-                className="relative z-[1] inline-block max-w-full truncate align-bottom"
+                className={clickable + " relative z-[1] inline-block max-w-full truncate align-bottom"}
                 onClick={(e) => e.stopPropagation()}
                 to={"/proyecto/" + encodeURIComponent(g.key)}
                 title={`${g.key} · abrir el tablero del proyecto`}

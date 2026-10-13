@@ -64,7 +64,7 @@ function ProjectHeader({
   return (
     <header className={detailHead}>
       <h1 className={detailTitle} title={projectKey}>
-        <Swatch color={colors.projectColor(projectKey)} rounded="rounded-[3px]" />{" "}
+        <Swatch color={colors.projectColor(projectKey)} />{" "}
         {colors.projectName(projectKey)}
       </h1>
       <WorkingCopies project={project} />
