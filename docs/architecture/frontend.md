@@ -153,6 +153,11 @@ the dashboards; the KPI strip and touched-files table in the session detail). Fi
   amounts are rounded to cents with `costSplit` (`lib/usage.ts`, largest remainder) so they add
   up to the total as shown. In the daily chart, Costo · Total stacks `byDay[].costBreakdown`
   like Tokens · Total stacks the token kinds.
+- **Per-answer cost (v2.9).** The session detail's "Por respuesta" chart has a **Costo** metric:
+  each answer's `costBreakdown` (contract v2.9) stacked by kind like Tokens (same colors, legend
+  and tooltip; `answerRow` in `features/sessions/answers.ts`). An answer with `unpricedTokens`
+  gets the `*` before its tooltip total and a note. The chart's answers plus the subagents'
+  add up to the Costo tile, which now carries the session's `*` before the amount.
 - **"Todo" span (v2.4.1).** An open range starts the daily chart at the first day with data
   in the current scope and filters (`trendSpan`, from the range-wide series) and ends it at the
   last one;
