@@ -15,17 +15,19 @@ import { Pagination } from "../../../../components/ui/Pagination";
 import { Panel } from "../../../../components/ui/Panel";
 import { Segments } from "../../../../components/ui/Segments";
 import { button, note } from "../../../../components/ui/styles";
-import { int, time, tok } from "../../../../lib/format";
-import { callsIn } from "../../../../lib/sessions";
+import { int, tok, usd } from "../../../../lib/format";
 import { tokenKinds } from "../../../../lib/usage";
+import { answerRow, type AnswerRow } from "../../answers";
 import type { Focus } from "../../focus";
 
-type AnswerMetric = "tokens" | "context" | "output" | "tools";
+type AnswerMetric = "cost" | "tokens" | "context" | "output" | "tools";
 const PAGE = 60;
 const tick = { fontSize: 10.5, fill: "var(--color-ink-3)" };
 
 const seriesFor = (metric: AnswerMetric) =>
-  metric === "tokens"
+  metric === "cost"
+    ? tokenKinds.map(([, l, c, ck]) => ({ key: "cost." + ck, label: l, color: c }))
+    : metric === "tokens"
     ? tokenKinds.map(([k, l, c]) => ({ key: k, label: l, color: c }))
     : metric === "tools"
       ? [
@@ -40,6 +42,25 @@ const seriesFor = (metric: AnswerMetric) =>
           },
         ];
 
+/** The chart tooltip; under Costo an answer with unpriced tokens gets the mark and a note. */
+function AnswerTooltip({
+  cost,
+  ...props
+}: Parameters<typeof ChartTooltip>[0] & { cost: boolean }) {
+  const row = (props.payload?.[0] as { payload?: AnswerRow } | undefined)?.payload,
+    unpriced = cost ? row?.unpriced : 0;
+  return (
+    <ChartTooltip
+      {...props}
+      unpriced={unpriced}
+      footer={
+        (unpriced ? `* ${int(unpriced)} tokens sin precio: el costo no los cuenta. ` : "") +
+        "Hacé click para ver el mensaje."
+      }
+    />
+  );
+}
+
 /** One bar per assistant answer (60 per page); a click opens it in the conversation. */
 export function PerAnswerChart({
   detail,
@@ -51,20 +72,9 @@ export function PerAnswerChart({
   const [metric, setMetric] = useState<AnswerMetric>("tokens"),
     [page, setPage] = useState(0);
   const answers = detail.messages.filter((m) => m.role === "assistant"),
-    rows = answers.slice(page * PAGE, (page + 1) * PAGE).map((m) => {
-      const calls = callsIn([m]);
-      return {
-        id: m.id,
-        time: time(m.timestamp),
-        ...m.usage,
-        context: m.usage?.cacheReadTokens || 0,
-        output: m.usage?.outputTokens || 0,
-        ok: calls.filter((c) => !c.isError).length,
-        error: calls.filter((c) => c.isError).length,
-      };
-    });
+    rows = answers.slice(page * PAGE, (page + 1) * PAGE).map(answerRow);
   const series = seriesFor(metric),
-    format = metric === "tools" ? int : tok;
+    format = metric === "tools" ? int : metric === "cost" ? usd : tok;
   return (
     <Panel
       title="Por respuesta"
@@ -74,6 +84,7 @@ export function PerAnswerChart({
           value={metric}
           onChange={setMetric}
           options={[
+            ["cost", "Costo"],
             ["tokens", "Tokens"],
             ["context", "Contexto"],
             ["output", "Salida"],
@@ -101,12 +112,7 @@ export function PerAnswerChart({
             <XAxis dataKey="time" tick={tick} />
             <YAxis tickFormatter={format} tick={tick} />
             <Tooltip
-              content={
-                <ChartTooltip
-                  format={format}
-                  footer="Hacé click para ver el mensaje."
-                />
-              }
+              content={<AnswerTooltip format={format} cost={metric === "cost"} />}
               cursor={{ fill: "var(--color-sunken)" }}
             />
             {series.map((x) => (
