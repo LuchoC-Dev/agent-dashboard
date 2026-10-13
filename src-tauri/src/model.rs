@@ -166,6 +166,17 @@ pub struct Message {
     pub blocks: Vec<Block>,
     /// Usage of this API message (assistant only).
     pub usage: Option<Usage>,
+    /// Estimated USD cost of this API message, when usage is available.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[ts(optional)]
+    pub cost_usd: Option<f64>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[ts(optional)]
+    pub cost_breakdown: Option<CostBreakdown>,
+    /// Tokens of this message whose model has no known price. Absent means zero.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[ts(optional, type = "number")]
+    pub unpriced_tokens: Option<u64>,
     /// Discarded Codex rollback branch id. `None` means main history.
     #[serde(default, skip_serializing_if = "Option::is_none")]
     #[ts(optional)]
