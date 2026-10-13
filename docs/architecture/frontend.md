@@ -193,6 +193,31 @@ the dashboards; the KPI strip and touched-files table in the session detail). Fi
   20 px body leading.
 - Dashboard tables respond to their own panel width: `table-md` / `table-sm` are custom variants
   for `@container dashboard-table (max-width: …)`.
+- **Tables and data lists (v2.7): the rules for every panel and page.** Checked on every screen
+  with tables by `src/app/ui-rules.test.tsx`.
+  1. *Clickable is visible at a glance.* Anything that navigates or filters shows it without
+     hovering. Inside tables, data lists and legends the cue is typographic: `clickable`
+     (`components/ui/styles.ts`; `clickableButton` for a `<button>`) — semibold in the normal
+     text color, underline on hover/focus, pointer. Never the accent. Non-clickable values stay
+     regular weight (subtotal rows included: their background marks them, not bold figures).
+     The same kind of element gets the same treatment everywhere: names that open a project,
+     session, tool or model; legend and heatmap-label filters; disclosure rows. No color or
+     gray marks a data state in a clickable cell: a session title looks the same whether it
+     is the agent's title, the first prompt or "Sesión sin título" (likewise "Subagente").
+  2. *No accent inside tables / data areas.* `--app-accent*` / `text-accent` is for mini-CTAs
+     ("Ver todas (N) →", "Ver las sesiones detrás de estas métricas →", "+N más", `textLink`),
+     selected states (pressed segments/labels, the selected row's wash) and focus rings.
+     Provider, project and model colors are data colors: one swatch style for every dimension,
+     `Swatch` (a 9 px square, like the bars it keys; there is no dot variant). Single-measure
+     fills (tool bars, the tool × project matrix, heatmap) use `--color-primary`, the scope's
+     data color. Status colors (⊗ errors, the `*` warning) stay.
+  3. *Markers never misalign figures.* Markers go before the figure, so right-aligned numbers
+     line up whether a row has one or not: `CostWithMark` renders `* US$ 1,23` (the
+     `UnpricedMark` with `before`), `ToolCount` renders `⊗ 2 · 7`. A standalone big figure (KPI,
+     the session's cost panel) may keep the mark after it.
+
+  Prefer the shared pieces (`DataTable`, `Swatch`, `UnpricedMark`/`CostWithMark`, `ToolCount`,
+  `clickable`) over per-panel styles.
 - Components use Tailwind utilities; shared class sets (button, panel, field, note…) live in
   `components/ui/styles.ts` because a "button" can be a `<button>` or a `<Link>`. The few rules that
   depend on document structure, pseudo-elements or the page container query stay as classes in

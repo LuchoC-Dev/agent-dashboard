@@ -2,7 +2,7 @@ import type { SessionDetail } from "../../../../bindings/SessionDetail";
 import { DataTable } from "../../../../components/ui/DataTable";
 import { ModelBadge } from "../../../../components/ui/ModelBadge";
 import { Panel } from "../../../../components/ui/Panel";
-import { mono, textLink } from "../../../../components/ui/styles";
+import { clickableButton, errorText, mono } from "../../../../components/ui/styles";
 import { ToolCount } from "../../../../components/ui/ToolCount";
 import type { Palette } from "../../../../lib/colors";
 import { dur, time, usd } from "../../../../lib/format";
@@ -40,7 +40,7 @@ export function SubagentsTable({
             value: (a) => a.agentType || "Subagente",
             render: (a) => (
               <button
-                className={textLink}
+                className={clickableButton}
                 onClick={() => onFocus({ sub: a.id })}
               >
                 {a.agentType || "Subagente"}
@@ -125,10 +125,10 @@ export function ErrorsTable({
             value: (c) => c.name,
             render: (c) => (
               <button
-                className={textLink}
+                className={clickableButton}
                 onClick={() => onFocus({ call: c.id })}
               >
-                ⊗ <span className={mono}>{c.name}</span>
+                <span className={errorText}>⊗</span> <span className={mono}>{c.name}</span>
               </button>
             ),
           },

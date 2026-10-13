@@ -7,10 +7,12 @@ import { Pagination } from "../../../components/ui/Pagination";
 import { Panel } from "../../../components/ui/Panel";
 import { ShareBar } from "../../../components/ui/ShareBar";
 import {
+  clickable,
+  clickableButton,
   errorText,
+  mono,
   note,
   num,
-  textLink,
 } from "../../../components/ui/styles";
 import { Swatch } from "../../../components/ui/Swatch";
 import type { Palette } from "../../../lib/colors";
@@ -54,16 +56,21 @@ function ToolBreakdown({
           {tool.byProject.map((p) => (
             <div key={p.key} className="flex items-center gap-2 tabular-nums">
               <Swatch color={colors.projectColor(p.key)} />
-              <Link to={"/sesiones?" + new URLSearchParams({ proyecto: p.key })}>
+              <Link
+                className={clickable}
+                to={"/sesiones?" + new URLSearchParams({ proyecto: p.key })}
+              >
                 {p.label}
               </Link>
-              <span className="ml-auto text-ink">{int(p.count)} llamadas</span>
+              <span className="ml-auto">{int(p.count)} llamadas</span>
             </div>
           ))}
         </div>
         <p className={note}>
           {sessionCount} sesiones en el rango.{" "}
-          <Link to="/sesiones">Explorar sesiones →</Link>
+          <Link className={clickable} to="/sesiones">
+            Explorar sesiones →
+          </Link>
         </p>
       </td>
     </tr>
@@ -151,9 +158,9 @@ export function ToolsRanking({
                   <td className="w-7 text-ink-3">
                     {tools.findIndex((x) => x.name === t.name) + 1}
                   </td>
-                  <td className="font-mono text-[12px] font-semibold">
+                  <td className={mono}>
                     <button
-                      className={textLink}
+                      className={clickableButton}
                       aria-expanded={selected === t.name}
                     >
                       {t.name}

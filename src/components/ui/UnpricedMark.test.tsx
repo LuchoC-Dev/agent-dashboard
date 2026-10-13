@@ -1,7 +1,7 @@
 /** @vitest-environment jsdom */
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { UnpricedMark } from "./UnpricedMark";
+import { CostWithMark, UnpricedMark } from "./UnpricedMark";
 
 describe("UnpricedMark", () => {
   it("shows only the mark; the explanation is its label and a tooltip on focus", () => {
@@ -56,6 +56,12 @@ describe("UnpricedMark", () => {
     fireEvent.focus(screen.getByRole("button"));
     expect(screen.getAllByRole("tooltip")).toHaveLength(1);
     expect(screen.getByRole("tooltip").textContent).toMatch(/Incluye 1 tokens/);
+  });
+
+  it("CostWithMark puts the mark before the amount, so amounts right-align", () => {
+    const { container } = render(<CostWithMark text="US$ 1,00" tokens={5} />);
+    expect(container.textContent).toBe("*US$ 1,00");
+    expect(screen.getByRole("img").className).toMatch(/(^| )mr-1( |$)/);
   });
 
   it("renders nothing without unpriced tokens", () => {

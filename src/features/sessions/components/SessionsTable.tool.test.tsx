@@ -48,8 +48,8 @@ describe("session tool column (contract v2.6.1)", () => {
     expect(header.textContent).toBe("Herram.");
     fireEvent.click(within(header).getByRole("button"));
     expect(cells()).toEqual([
-      ["Sesión 0", "90 · ⊗ 3"],
-      ["Sesión 2", "50 · ⊗ 1"],
+      ["Sesión 0", "⊗ 3 · 90"],
+      ["Sesión 2", "⊗ 1 · 50"],
       ["Sesión 1", "10"],
     ]);
   });
@@ -60,8 +60,8 @@ describe("session tool column (contract v2.6.1)", () => {
     expect(screen.queryByText("Herram.")).toBeNull();
     fireEvent.click(within(header).getByRole("button"));
     expect(cells()).toEqual([
-      ["Sesión 1", "7 · ⊗ 2"],
-      ["Sesión 2", "4 · ⊗ 1"],
+      ["Sesión 1", "⊗ 2 · 7"],
+      ["Sesión 2", "⊗ 1 · 4"],
       ["Sesión 0", "1"],
     ]);
     fireEvent.click(within(header).getByRole("button"));

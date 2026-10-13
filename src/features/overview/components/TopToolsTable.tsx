@@ -5,6 +5,7 @@ import { DataTable } from "../../../components/ui/DataTable";
 import { InlineBar } from "../../../components/ui/InlineBar";
 import { Panel } from "../../../components/ui/Panel";
 import {
+  clickable,
   errorText,
   mono,
   optionalColumn,
@@ -52,7 +53,7 @@ export const TopToolsTable = memo(function TopToolsTable({
             className: mono + " name-cell",
             render: (t) => (
               <Link
-                className="relative z-[1] block truncate"
+                className={clickable + " relative z-[1] block truncate"}
                 title={`${t.name} · ver en Herramientas`}
                 onClick={(e) => e.stopPropagation()}
                 to={"/herramientas?tool=" + encodeURIComponent(t.name)}

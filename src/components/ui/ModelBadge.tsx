@@ -9,7 +9,7 @@ export function ModelBadge({ id, colors }: { id: string; colors: Palette }) {
       title={id}
     >
       <span className="inline-flex items-center gap-[5px]">
-        <Swatch dot color={colors.modelColor(id)} />
+        <Swatch color={colors.modelColor(id)} />
         {parseModel(id).name}
       </span>
     </span>

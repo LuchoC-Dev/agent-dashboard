@@ -46,7 +46,7 @@ const COMBOS: Combo[] = [
 ];
 
 const shown = ({ calls, errors }: { calls: number; errors: number }) =>
-  int(calls) + (errors > 0 ? " · ⊗ " + int(errors) : "");
+  (errors > 0 ? "⊗ " + int(errors) + " · " : "") + int(calls);
 /** What the backend's list says for these filters, by session id. */
 async function expected(c: Combo, tool: string | null) {
   const { model, models } = tool && c.modelo ? modelArgs(c.modelo, palette.models) : { model: null, models: null };
@@ -121,7 +121,7 @@ describe("session tool column (contract v2.6.1)", { timeout: 60_000 }, () => {
         // Sorting by the column follows the counts it shows.
         fireEvent.click(within(header).getByRole("button"));
         await waitFor(() => {
-          const sorted = toolColumn(sessionsTable(), tool).rows.map(([, t]) => Number(t.split(" ")[0].replace(/\D/g, "")));
+          const sorted = toolColumn(sessionsTable(), tool).rows.map(([, t]) => Number(t.split(" · ").pop()!.replace(/\D/g, "")));
           expect(sorted).toEqual([...sorted].sort((a, b) => b - a));
         });
       });

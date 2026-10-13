@@ -33,7 +33,7 @@ export function JsonBlock({ value }: { value: unknown }) {
       {text.split(/("(?:[^"\\]|\\.)*"\s*:)/g).map((part, i) => (
         <span
           key={i}
-          className={/^".*":$/.test(part.trim()) ? "text-accent" : undefined}
+          className={/^".*":$/.test(part.trim()) ? "text-ink-2" : undefined}
         >
           {part}
         </span>

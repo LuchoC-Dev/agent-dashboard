@@ -4,7 +4,7 @@ import { RangeLink as Link } from "../../../components/RangeLink";
 import { DataTable } from "../../../components/ui/DataTable";
 import { Panel } from "../../../components/ui/Panel";
 import { Legend } from "../../../components/ui/Legend";
-import { filters, mono, summary } from "../../../components/ui/styles";
+import { clickable, filters, mono, summary } from "../../../components/ui/styles";
 import type { Palette } from "../../../lib/colors";
 import { int, pct } from "../../../lib/format";
 import { ToolsRanking } from "./ToolsRanking";
@@ -48,7 +48,7 @@ function ToolProjectMatrix({
                 <span
                   className="block rounded-[2px] px-2 py-1"
                   style={{
-                    background: `color-mix(in srgb, var(--color-series-1) ${count ? 10 + (55 * count) / max : 0}%, var(--color-surface))`,
+                    background: `color-mix(in srgb, var(--color-primary) ${count ? 10 + (55 * count) / max : 0}%, var(--color-surface))`,
                   }}
                 >
                   {int(count)}
@@ -96,7 +96,7 @@ export function ToolsOverview({
           key: p,
           color: colors.projectColor(p),
           label: (
-            <Link to={"/proyecto/" + encodeURIComponent(p)}>
+            <Link className={clickable} to={"/proyecto/" + encodeURIComponent(p)}>
               {colors.projectName(p)}
             </Link>
           ),

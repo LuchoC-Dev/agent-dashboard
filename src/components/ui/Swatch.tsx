@@ -1,23 +1,11 @@
-/** Color key: a 9 px square, or an 8 px dot for models. */
-export function Swatch({
-  color,
-  dot = false,
-  rounded = "rounded-[2px]",
-  className = "",
-}: {
-  color: string;
-  dot?: boolean;
-  /** Corner radius of the square key. */
-  rounded?: string;
-  className?: string;
-}) {
+/**
+ * Color key of a data series: a 9 px square for every dimension (provider, project, model,
+ * token kind), matching the chart bars it keys. Data colors, never the app accent.
+ */
+export function Swatch({ color, className = "" }: { color: string; className?: string }) {
   return (
     <i
-      className={
-        "inline-block flex-none " +
-        (dot ? "size-2 rounded-full " : "size-[9px] " + rounded + " ") +
-        className
-      }
+      className={"inline-block size-[9px] flex-none rounded-[2px] " + className}
       style={{ background: color }}
     />
   );
