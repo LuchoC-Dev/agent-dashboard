@@ -9,7 +9,14 @@ import { tooltip } from "./ChartTooltip";
  * label. Inside a button or link the mark is not a tab stop: focusing that control shows it.
  * The tooltip is portaled with fixed coordinates so table scrollers never clip it.
  */
-export function UnpricedMark({ tokens }: { tokens: number | undefined }) {
+export function UnpricedMark({
+  tokens,
+  before = false,
+}: {
+  tokens: number | undefined;
+  /** Placed before the amount (any figure in a column), so amounts stay right-aligned. */
+  before?: boolean;
+}) {
   const ref = useRef<HTMLSpanElement>(null),
     id = useId(),
     [nested, setNested] = useState(false),
@@ -59,7 +66,10 @@ export function UnpricedMark({ tokens }: { tokens: number | undefined }) {
       <span
         ref={ref}
         data-unpriced
-        className="ml-1 inline-block cursor-help align-baseline text-size-xs leading-none font-semibold text-warn focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-accent"
+        className={
+          (before ? "mr-1" : "ml-1") +
+          " inline-block cursor-help align-baseline text-size-xs leading-none font-semibold text-warn focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-accent"
+        }
         role="img"
         aria-label={text}
         aria-describedby={at ? id : undefined}
@@ -89,7 +99,10 @@ export function UnpricedMark({ tokens }: { tokens: number | undefined }) {
   );
 }
 
-/** A cost followed by the unpriced mark when it applies. */
+/**
+ * A cost with the unpriced mark before it when it applies: the mark never pushes the amount,
+ * so costs right-align in every column.
+ */
 export function CostWithMark({
   text,
   tokens,
@@ -98,9 +111,9 @@ export function CostWithMark({
   tokens: number | undefined;
 }) {
   return (
-    <>
+    <span className="whitespace-nowrap">
+      <UnpricedMark tokens={tokens} before />
       {text}
-      <UnpricedMark tokens={tokens} />
-    </>
+    </span>
   );
 }
