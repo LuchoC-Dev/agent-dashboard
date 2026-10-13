@@ -156,8 +156,9 @@ the dashboards; the KPI strip and touched-files table in the session detail). Fi
 - **Per-answer cost (v2.9).** The session detail's "Por respuesta" chart has a **Costo** metric:
   each answer's `costBreakdown` (contract v2.9) stacked by kind like Tokens (same colors, legend
   and tooltip; `answerRow` in `features/sessions/answers.ts`). An answer with `unpricedTokens`
-  gets the `*` before its tooltip total and a note. The chart's answers plus the subagents'
-  add up to the Costo tile, which now carries the session's `*` before the amount.
+  gets the `*` before its tooltip total and a note. Discarded Codex rollback branches stay out
+  of every metric (`chartAnswers`; the conversation still shows them), so the chart's answers
+  plus the subagents' add up to the Costo tile, which now carries the session's `*` before the amount.
 - **"Todo" span (v2.4.1).** An open range starts the daily chart at the first day with data
   in the current scope and filters (`trendSpan`, from the range-wide series) and ends it at the
   last one;
@@ -241,6 +242,9 @@ the dashboards; the KPI strip and touched-files table in the session detail). Fi
 - **Vitest + Testing Library** (`npm test`): unit tests for `lib/` (formatting, local days across
   time zones, aggregations against the mock fixture, hour heatmap), the mock API, and route-level
   smoke tests that render the real route tree with a memory router and mock data.
+- **The test clock is the mock's.** `src/test/setup.ts` starts `Date` at the fixture's anchor
+  (`scanReport.scannedAt`, the generator's `NOW`) and lets it tick, so no test depends on the real
+  date; regenerating the mock moves the anchor with it. `findBy*`/`waitFor` wait up to 10 s.
 - `npm run check` (read-only guard, `tsc`, `cargo test`) and `npm run build` must pass.
 - Visual parity is checked with before/after screenshots of every screen and fixture state in both
   themes (local, not committed).
